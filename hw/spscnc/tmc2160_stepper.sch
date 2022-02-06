@@ -1,0 +1,2232 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 10 15
+Title "Trinamic FluidNC CNC Controller"
+Date "2022-01-27"
+Rev "1.0.0"
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L industrial:TMC2160-TA IC1
+U 1 1 61E633C9
+P 3500 1475
+AR Path="/61E601B6/61E633C9" Ref="IC1"  Part="1"
+AR Path="/6203D74D/61E633C9" Ref="IC2"  Part="1"
+AR Path="/6203DA5D/61E633C9" Ref="IC3"  Part="1"
+AR Path="/6203DFCF/61E633C9" Ref="IC4"  Part="1"
+F 0 "IC1" H 4775 825 50  0000 C CNN
+F 1 "TMC2160-TA" H 4775 975 50  0000 C CNN
+F 2 "Package_QFP:TQFP-48-1EP_7x7mm_P0.5mm_EP5x5mm" H 3500 1475 50  0001 L BNN
+F 3 "" H 3500 1475 50  0001 L BNN
+F 4 "" H 3500 1475 50  0001 L BNN "DISTRIBUTOR2"
+F 5 "" H 3500 1475 50  0001 L BNN "DISTRIBUTOR1"
+F 6 "Universal high voltage controller for two-phase bipolar stepper motor. TQFP48-EP" H 3500 1475 50  0001 L BNN "DESCRIPTION"
+F 7 "" H 3500 1475 50  0001 L BNN "ORDERCODE-DISTR1"
+F 8 "" H 3500 1475 50  0001 L BNN "ORDERCODE-DISTR2"
+F 9 "TMC5160-TA" H 3500 1475 50  0001 L BNN "VALUE"
+F 10 "" H 3500 1475 50  0001 L BNN "DATASHEET"
+F 11 "TRINAMIC" H 3500 1475 50  0001 L BNN "MANUFACTURER"
+F 12 "TMC5160-TA" H 3500 1475 50  0001 L BNN "ORDERCODE-MANU1"
+F 13 "1.2mm" H 3500 1475 50  0001 L BNN "GEOMETRY_HEIGHT"
+F 14 "C465948" H 3500 1475 50  0001 C CNN "jlcpcb"
+	1    3500 1475
+	1    0    0    -1
+$EndComp
+Text HLabel 3500 2375 0    50   Input ~ 0
+~STEPPER_CS
+Text HLabel 3500 2675 0    50   Output ~ 0
+STEPPER_MISO
+Text HLabel 3500 2575 0    50   Input ~ 0
+STEPPER_MOSI
+Text HLabel 3500 2475 0    50   Input ~ 0
+STEPPER_SCK
+$Comp
+L Device:R_Small R15
+U 1 1 61E6B1A2
+P 2825 1975
+AR Path="/61E601B6/61E6B1A2" Ref="R15"  Part="1"
+AR Path="/6203D74D/61E6B1A2" Ref="R60"  Part="1"
+AR Path="/6203DA5D/61E6B1A2" Ref="R99"  Part="1"
+AR Path="/6203DFCF/61E6B1A2" Ref="R121"  Part="1"
+F 0 "R15" H 2884 2021 50  0000 L CNN
+F 1 "2R2" H 2884 1930 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2825 1975 50  0001 C CNN
+F 3 "~" H 2825 1975 50  0001 C CNN
+F 4 "C17477" H 2825 1975 50  0001 C CNN "jlcpcb"
+	1    2825 1975
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	2825 2075 3450 2075
+$Comp
+L Device:C C15
+U 1 1 61E6BC34
+P 2125 1825
+AR Path="/61E601B6/61E6BC34" Ref="C15"  Part="1"
+AR Path="/6203D74D/61E6BC34" Ref="C30"  Part="1"
+AR Path="/6203DA5D/61E6BC34" Ref="C53"  Part="1"
+AR Path="/6203DFCF/61E6BC34" Ref="C66"  Part="1"
+F 0 "C15" V 2175 1925 50  0000 C CNN
+F 1 "2.2uF" V 2275 1775 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2163 1675 50  0001 C CNN
+F 3 "~" H 2125 1825 50  0001 C CNN
+F 4 "C49217" H 2125 1825 50  0001 C CNN "jlcpcb"
+	1    2125 1825
+	-1   0    0    1
+$EndComp
+$Comp
+L power:GND-power #PWR0103
+U 1 1 61E6E495
+P 1875 2075
+AR Path="/61E601B6/61E6E495" Ref="#PWR0103"  Part="1"
+AR Path="/6203D74D/61E6E495" Ref="#PWR045"  Part="1"
+AR Path="/6203DA5D/61E6E495" Ref="#PWR065"  Part="1"
+AR Path="/6203DFCF/61E6E495" Ref="#PWR085"  Part="1"
+AR Path="/61E6E495" Ref="#PWR0103"  Part="1"
+F 0 "#PWR065" H 1875 1825 50  0001 C CNN
+F 1 "GND" H 1880 1902 50  0000 C CNN
+F 2 "" H 1875 2075 50  0001 C CNN
+F 3 "" H 1875 2075 50  0001 C CNN
+	1    1875 2075
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:C C14
+U 1 1 61E6ED25
+P 2675 1875
+AR Path="/61E601B6/61E6ED25" Ref="C14"  Part="1"
+AR Path="/6203D74D/61E6ED25" Ref="C42"  Part="1"
+AR Path="/6203DA5D/61E6ED25" Ref="C55"  Part="1"
+AR Path="/6203DFCF/61E6ED25" Ref="C68"  Part="1"
+F 0 "C14" V 2575 2025 50  0000 C CNN
+F 1 "2.2uF" V 2550 1800 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2713 1725 50  0001 C CNN
+F 3 "~" H 2675 1875 50  0001 C CNN
+F 4 "C49217" H 2675 1875 50  0001 C CNN "jlcpcb"
+	1    2675 1875
+	0    1    1    0
+$EndComp
+Connection ~ 2825 1875
+$Comp
+L Device:C C12
+U 1 1 61E6FC5C
+P 1875 1800
+AR Path="/61E601B6/61E6FC5C" Ref="C12"  Part="1"
+AR Path="/6203D74D/61E6FC5C" Ref="C28"  Part="1"
+AR Path="/6203DA5D/61E6FC5C" Ref="C52"  Part="1"
+AR Path="/6203DFCF/61E6FC5C" Ref="C65"  Part="1"
+F 0 "C12" V 2150 1825 50  0000 C CNN
+F 1 "100nF" V 2025 1775 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1913 1650 50  0001 C CNN
+F 3 "~" H 1875 1800 50  0001 C CNN
+F 4 "C14663" H 1875 1800 50  0001 C CNN "jlcpcb"
+	1    1875 1800
+	-1   0    0    1
+$EndComp
+Wire Wire Line
+	1875 2075 1875 1950
+Wire Wire Line
+	1875 1650 1875 1475
+Connection ~ 1875 1475
+Connection ~ 1875 2075
+$Comp
+L Device:C_Small C17
+U 1 1 61E71B55
+P 4425 1125
+AR Path="/61E601B6/61E71B55" Ref="C17"  Part="1"
+AR Path="/6203D74D/61E71B55" Ref="C43"  Part="1"
+AR Path="/6203DA5D/61E71B55" Ref="C56"  Part="1"
+AR Path="/6203DFCF/61E71B55" Ref="C69"  Part="1"
+F 0 "C17" V 4196 1125 50  0000 C CNN
+F 1 "22nF" V 4287 1125 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4425 1125 50  0001 C CNN
+F 3 "~" H 4425 1125 50  0001 C CNN
+F 4 "C273670" H 4425 1125 50  0001 C CNN "jlcpcb"
+	1    4425 1125
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	4325 1125 4200 1125
+Wire Wire Line
+	4200 1125 4200 1175
+Wire Wire Line
+	4525 1125 4700 1125
+Wire Wire Line
+	4700 1125 4700 1175
+$Comp
+L Device:C_Small C18
+U 1 1 61E73C31
+P 5025 1125
+AR Path="/61E601B6/61E73C31" Ref="C18"  Part="1"
+AR Path="/6203D74D/61E73C31" Ref="C44"  Part="1"
+AR Path="/6203DA5D/61E73C31" Ref="C57"  Part="1"
+AR Path="/6203DFCF/61E73C31" Ref="C70"  Part="1"
+F 0 "C18" V 4796 1125 50  0000 C CNN
+F 1 "100nF" V 4887 1125 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5025 1125 50  0001 C CNN
+F 3 "~" H 5025 1125 50  0001 C CNN
+F 4 "C14663" H 5025 1125 50  0001 C CNN "jlcpcb"
+	1    5025 1125
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	4925 1125 4800 1125
+Wire Wire Line
+	4800 1125 4800 1175
+Wire Wire Line
+	5125 1125 5300 1125
+Wire Wire Line
+	5300 1125 5300 1175
+Text HLabel 6625 700  0    50   Input ~ 0
+MOTOR_PWR
+$Comp
+L Device:C_Small C24
+U 1 1 61E748EB
+P 7050 950
+AR Path="/61E601B6/61E748EB" Ref="C24"  Part="1"
+AR Path="/6203D74D/61E748EB" Ref="C49"  Part="1"
+AR Path="/6203DA5D/61E748EB" Ref="C62"  Part="1"
+AR Path="/6203DFCF/61E748EB" Ref="C75"  Part="1"
+F 0 "C24" H 6958 904 50  0000 R CNN
+F 1 "100nF" H 6958 995 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7050 950 50  0001 C CNN
+F 3 "~" H 7050 950 50  0001 C CNN
+F 4 "C14663" H 7050 950 50  0001 C CNN "jlcpcb"
+	1    7050 950
+	-1   0    0    1
+$EndComp
+Wire Wire Line
+	7050 850  7050 700
+Wire Wire Line
+	7050 700  6625 700
+Connection ~ 7050 700
+$Comp
+L power:GND-power #PWR0104
+U 1 1 61E77854
+P 7050 1050
+AR Path="/61E601B6/61E77854" Ref="#PWR0104"  Part="1"
+AR Path="/6203D74D/61E77854" Ref="#PWR056"  Part="1"
+AR Path="/6203DA5D/61E77854" Ref="#PWR076"  Part="1"
+AR Path="/6203DFCF/61E77854" Ref="#PWR096"  Part="1"
+AR Path="/61E77854" Ref="#PWR0104"  Part="1"
+F 0 "#PWR076" H 7050 800 50  0001 C CNN
+F 1 "GND" H 7055 877 50  0000 C CNN
+F 2 "" H 7050 1050 50  0001 C CNN
+F 3 "" H 7050 1050 50  0001 C CNN
+	1    7050 1050
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0105
+U 1 1 61E77EC9
+P 8525 1050
+AR Path="/61E601B6/61E77EC9" Ref="#PWR0105"  Part="1"
+AR Path="/6203D74D/61E77EC9" Ref="#PWR060"  Part="1"
+AR Path="/6203DA5D/61E77EC9" Ref="#PWR080"  Part="1"
+AR Path="/6203DFCF/61E77EC9" Ref="#PWR0100"  Part="1"
+AR Path="/61E77EC9" Ref="#PWR0105"  Part="1"
+F 0 "#PWR080" H 8525 800 50  0001 C CNN
+F 1 "GND" H 8530 877 50  0000 C CNN
+F 2 "" H 8525 1050 50  0001 C CNN
+F 3 "" H 8525 1050 50  0001 C CNN
+	1    8525 1050
+	1    0    0    -1
+$EndComp
+$Comp
+L industrial:+3V3 #PWR0109
+U 1 1 61E7935F
+P 3500 5275
+AR Path="/61E601B6/61E7935F" Ref="#PWR0109"  Part="1"
+AR Path="/6203D74D/61E7935F" Ref="#PWR051"  Part="1"
+AR Path="/6203DA5D/61E7935F" Ref="#PWR071"  Part="1"
+AR Path="/6203DFCF/61E7935F" Ref="#PWR091"  Part="1"
+F 0 "#PWR071" H 3500 5125 50  0001 C CNN
+F 1 "+3V3" V 3515 5403 50  0000 L CNN
+F 2 "" H 3500 5275 50  0001 C CNN
+F 3 "" H 3500 5275 50  0001 C CNN
+	1    3500 5275
+	0    -1   -1   0
+$EndComp
+$Comp
+L power:+12V-power #PWR0110
+U 1 1 61E79E80
+P 1875 1475
+AR Path="/61E601B6/61E79E80" Ref="#PWR0110"  Part="1"
+AR Path="/6203D74D/61E79E80" Ref="#PWR044"  Part="1"
+AR Path="/6203DA5D/61E79E80" Ref="#PWR064"  Part="1"
+AR Path="/6203DFCF/61E79E80" Ref="#PWR084"  Part="1"
+AR Path="/61E79E80" Ref="#PWR0110"  Part="1"
+F 0 "#PWR064" H 1875 1325 50  0001 C CNN
+F 1 "+12V" H 1890 1648 50  0000 C CNN
+F 2 "" H 1875 1475 50  0001 C CNN
+F 3 "" H 1875 1475 50  0001 C CNN
+	1    1875 1475
+	1    0    0    -1
+$EndComp
+Text Notes 675  1100 0    50   ~ 0
+Using 12V reduces internal power dissipation, although the device could operate at 48V\n
+$Comp
+L Device:R R?
+U 1 1 61E823EB
+P 1050 2500
+AR Path="/5AD47FD6/61E823EB" Ref="R?"  Part="1"
+AR Path="/61FBB705/61E823EB" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61E823EB" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E823EB" Ref="R?"  Part="1"
+AR Path="/61E823EB" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61E823EB" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E823EB" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61E823EB" Ref="R?"  Part="1"
+AR Path="/61E601B6/61E823EB" Ref="R9"  Part="1"
+AR Path="/6203D74D/61E823EB" Ref="R49"  Part="1"
+AR Path="/6203DA5D/61E823EB" Ref="R94"  Part="1"
+AR Path="/6203DFCF/61E823EB" Ref="R116"  Part="1"
+F 0 "R9" V 1130 2500 50  0000 C CNN
+F 1 "10K" V 1050 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 980 2500 50  0001 C CNN
+F 3 "" H 1050 2500 50  0001 C CNN
+F 4 "" V 1050 2500 60  0001 C CNN "farnell"
+F 5 "C17414" H 1050 2500 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 1050 2500 50  0001 C CNN "precision"
+F 7 "1%" H 1050 2500 50  0001 C CNN "power"
+	1    1050 2500
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61E823F4
+P 1050 2800
+AR Path="/5AD47FD6/61E823F4" Ref="D?"  Part="1"
+AR Path="/61FBB705/61E823F4" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/61E823F4" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E823F4" Ref="D?"  Part="1"
+AR Path="/61E823F4" Ref="D?"  Part="1"
+AR Path="/61B9A8A6/61E823F4" Ref="D?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E823F4" Ref="D?"  Part="1"
+AR Path="/61C81F9D/61E823F4" Ref="D?"  Part="1"
+AR Path="/61E601B6/61E823F4" Ref="D2"  Part="1"
+AR Path="/6203D74D/61E823F4" Ref="D5"  Part="1"
+AR Path="/6203DA5D/61E823F4" Ref="D24"  Part="1"
+AR Path="/6203DFCF/61E823F4" Ref="D27"  Part="1"
+F 0 "D2" H 1050 2900 50  0000 C CNN
+F 1 "LED" H 1050 2700 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 1050 2800 50  0001 C CNN
+F 3 "" H 1050 2800 50  0001 C CNN
+F 4 "" H 1050 2800 60  0001 C CNN "farnell"
+F 5 "C84256" H 1050 2800 50  0001 C CNN "jlcpcb"
+F 6 "red" H 1050 2800 50  0001 C CNN "power"
+	1    1050 2800
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 61E82F89
+P 1425 2425
+AR Path="/5AD47FD6/61E82F89" Ref="R?"  Part="1"
+AR Path="/61FBB705/61E82F89" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61E82F89" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E82F89" Ref="R?"  Part="1"
+AR Path="/61E82F89" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61E82F89" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E82F89" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61E82F89" Ref="R?"  Part="1"
+AR Path="/61E601B6/61E82F89" Ref="R10"  Part="1"
+AR Path="/6203D74D/61E82F89" Ref="R52"  Part="1"
+AR Path="/6203DA5D/61E82F89" Ref="R95"  Part="1"
+AR Path="/6203DFCF/61E82F89" Ref="R117"  Part="1"
+F 0 "R10" V 1505 2425 50  0000 C CNN
+F 1 "10K" V 1425 2425 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1355 2425 50  0001 C CNN
+F 3 "" H 1425 2425 50  0001 C CNN
+F 4 "" V 1425 2425 60  0001 C CNN "farnell"
+F 5 "C17414" H 1425 2425 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 1425 2425 50  0001 C CNN "precision"
+F 7 "1%" H 1425 2425 50  0001 C CNN "power"
+	1    1425 2425
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 61E82F92
+P 1425 2725
+AR Path="/5AD47FD6/61E82F92" Ref="D?"  Part="1"
+AR Path="/61FBB705/61E82F92" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/61E82F92" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E82F92" Ref="D?"  Part="1"
+AR Path="/61E82F92" Ref="D?"  Part="1"
+AR Path="/61B9A8A6/61E82F92" Ref="D?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E82F92" Ref="D?"  Part="1"
+AR Path="/61C81F9D/61E82F92" Ref="D?"  Part="1"
+AR Path="/61E601B6/61E82F92" Ref="D3"  Part="1"
+AR Path="/6203D74D/61E82F92" Ref="D22"  Part="1"
+AR Path="/6203DA5D/61E82F92" Ref="D25"  Part="1"
+AR Path="/6203DFCF/61E82F92" Ref="D28"  Part="1"
+F 0 "D3" H 1425 2825 50  0000 C CNN
+F 1 "LED" H 1425 2625 50  0000 C CNN
+F 2 "Diode_SMD:D_0805_2012Metric" H 1425 2725 50  0001 C CNN
+F 3 "" H 1425 2725 50  0001 C CNN
+F 4 "" H 1425 2725 60  0001 C CNN "farnell"
+F 5 "C84256" H 1425 2725 50  0001 C CNN "jlcpcb"
+F 6 "red" H 1425 2725 50  0001 C CNN "power"
+	1    1425 2725
+	0    -1   -1   0
+$EndComp
+Wire Wire Line
+	3500 2875 1425 2875
+$Comp
+L power:GND-power #PWR0115
+U 1 1 61E86B21
+P 4400 5875
+AR Path="/61E601B6/61E86B21" Ref="#PWR0115"  Part="1"
+AR Path="/6203D74D/61E86B21" Ref="#PWR052"  Part="1"
+AR Path="/6203DA5D/61E86B21" Ref="#PWR072"  Part="1"
+AR Path="/6203DFCF/61E86B21" Ref="#PWR092"  Part="1"
+AR Path="/61E86B21" Ref="#PWR0115"  Part="1"
+F 0 "#PWR072" H 4400 5625 50  0001 C CNN
+F 1 "GND" H 4405 5702 50  0000 C CNN
+F 2 "" H 4400 5875 50  0001 C CNN
+F 3 "" H 4400 5875 50  0001 C CNN
+	1    4400 5875
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0116
+U 1 1 61E86EEA
+P 5200 5875
+AR Path="/61E601B6/61E86EEA" Ref="#PWR0116"  Part="1"
+AR Path="/6203D74D/61E86EEA" Ref="#PWR054"  Part="1"
+AR Path="/6203DA5D/61E86EEA" Ref="#PWR074"  Part="1"
+AR Path="/6203DFCF/61E86EEA" Ref="#PWR094"  Part="1"
+AR Path="/61E86EEA" Ref="#PWR0116"  Part="1"
+F 0 "#PWR074" H 5200 5625 50  0001 C CNN
+F 1 "GND" H 5205 5702 50  0000 C CNN
+F 2 "" H 5200 5875 50  0001 C CNN
+F 3 "" H 5200 5875 50  0001 C CNN
+	1    5200 5875
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61E870FD
+P 3200 3375
+AR Path="/5AD47FD6/61E870FD" Ref="R?"  Part="1"
+AR Path="/61FBB705/61E870FD" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61E870FD" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E870FD" Ref="R?"  Part="1"
+AR Path="/61E870FD" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61E870FD" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E870FD" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61E870FD" Ref="R?"  Part="1"
+AR Path="/61E601B6/61E870FD" Ref="R16"  Part="1"
+AR Path="/6203D74D/61E870FD" Ref="R61"  Part="1"
+AR Path="/6203DA5D/61E870FD" Ref="R100"  Part="1"
+AR Path="/6203DFCF/61E870FD" Ref="R122"  Part="1"
+F 0 "R16" V 3280 3375 50  0000 C CNN
+F 1 "10K" V 3200 3375 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3130 3375 50  0001 C CNN
+F 3 "" H 3200 3375 50  0001 C CNN
+F 4 "" V 3200 3375 60  0001 C CNN "farnell"
+F 5 "C17414" H 3200 3375 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 3200 3375 50  0001 C CNN "precision"
+F 7 "1%" H 3200 3375 50  0001 C CNN "power"
+	1    3200 3375
+	0    1    1    0
+$EndComp
+$Comp
+L industrial:+3V3 #PWR0117
+U 1 1 61E89FDE
+P 2675 3225
+AR Path="/61E601B6/61E89FDE" Ref="#PWR0117"  Part="1"
+AR Path="/6203D74D/61E89FDE" Ref="#PWR047"  Part="1"
+AR Path="/6203DA5D/61E89FDE" Ref="#PWR067"  Part="1"
+AR Path="/6203DFCF/61E89FDE" Ref="#PWR087"  Part="1"
+F 0 "#PWR067" H 2675 3075 50  0001 C CNN
+F 1 "+3V3" H 2690 3398 50  0000 C CNN
+F 2 "" H 2675 3225 50  0001 C CNN
+F 3 "" H 2675 3225 50  0001 C CNN
+	1    2675 3225
+	1    0    0    -1
+$EndComp
+Text HLabel 3350 3275 0    50   Input ~ 0
+~ENABLE
+Wire Wire Line
+	3350 3275 3500 3275
+Connection ~ 3500 3275
+$Comp
+L power:GND-power #PWR?
+U 1 1 61E8CEFE
+P 3350 3525
+AR Path="/5AD46BE5/61E8CEFE" Ref="#PWR?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E8CEFE" Ref="#PWR?"  Part="1"
+AR Path="/61E8CEFE" Ref="#PWR?"  Part="1"
+AR Path="/61B9A8A6/61E8CEFE" Ref="#PWR?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E8CEFE" Ref="#PWR?"  Part="1"
+AR Path="/61C81F9D/61E8CEFE" Ref="#PWR?"  Part="1"
+AR Path="/61E601B6/61E8CEFE" Ref="#PWR0118"  Part="1"
+AR Path="/6203D74D/61E8CEFE" Ref="#PWR049"  Part="1"
+AR Path="/6203DA5D/61E8CEFE" Ref="#PWR069"  Part="1"
+AR Path="/6203DFCF/61E8CEFE" Ref="#PWR089"  Part="1"
+F 0 "#PWR069" H 3350 3275 50  0001 C CNN
+F 1 "GND" H 3350 3375 50  0000 C CNN
+F 2 "" H 3350 3525 50  0001 C CNN
+F 3 "" H 3350 3525 50  0001 C CNN
+	1    3350 3525
+	-1   0    0    -1
+$EndComp
+Wire Wire Line
+	3350 3525 3350 3475
+Wire Wire Line
+	3350 3475 3500 3475
+Text HLabel 2400 3775 0    50   Input ~ 0
+STEP
+Text HLabel 2400 3875 0    50   Input ~ 0
+DIR
+$Comp
+L Device:R_Small R?
+U 1 1 61E917CF
+P 2875 3675
+AR Path="/5AD47FD6/61E917CF" Ref="R?"  Part="1"
+AR Path="/61FBB705/61E917CF" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61E917CF" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E917CF" Ref="R?"  Part="1"
+AR Path="/61E917CF" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61E917CF" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E917CF" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61E917CF" Ref="R?"  Part="1"
+AR Path="/61E601B6/61E917CF" Ref="R13"  Part="1"
+AR Path="/6203D74D/61E917CF" Ref="R57"  Part="1"
+AR Path="/6203DA5D/61E917CF" Ref="R97"  Part="1"
+AR Path="/6203DFCF/61E917CF" Ref="R119"  Part="1"
+F 0 "R13" V 2955 3675 50  0000 C CNN
+F 1 "10K" V 2875 3675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2805 3675 50  0001 C CNN
+F 3 "" H 2875 3675 50  0001 C CNN
+F 4 "" V 2875 3675 60  0001 C CNN "farnell"
+F 5 "C17414" H 2875 3675 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 2875 3675 50  0001 C CNN "precision"
+F 7 "1%" H 2875 3675 50  0001 C CNN "power"
+	1    2875 3675
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	3300 3375 3500 3375
+Wire Wire Line
+	3500 3375 3500 3275
+Wire Wire Line
+	3100 3375 2875 3375
+Wire Wire Line
+	2675 3375 2675 3225
+Wire Wire Line
+	3500 3775 2875 3775
+Connection ~ 2875 3775
+Wire Wire Line
+	2875 3775 2400 3775
+$Comp
+L Device:R_Small R?
+U 1 1 61E9C1C2
+P 2675 3625
+AR Path="/5AD47FD6/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/61FBB705/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61E9C1C2" Ref="R?"  Part="1"
+AR Path="/61E601B6/61E9C1C2" Ref="R12"  Part="1"
+AR Path="/6203D74D/61E9C1C2" Ref="R53"  Part="1"
+AR Path="/6203DA5D/61E9C1C2" Ref="R96"  Part="1"
+AR Path="/6203DFCF/61E9C1C2" Ref="R118"  Part="1"
+F 0 "R12" V 2755 3625 50  0000 C CNN
+F 1 "10K" V 2675 3625 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 2605 3625 50  0001 C CNN
+F 3 "" H 2675 3625 50  0001 C CNN
+F 4 "" V 2675 3625 60  0001 C CNN "farnell"
+F 5 "C17414" H 2675 3625 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 2675 3625 50  0001 C CNN "precision"
+F 7 "1%" H 2675 3625 50  0001 C CNN "power"
+	1    2675 3625
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	2675 3525 2675 3375
+Connection ~ 2675 3375
+Wire Wire Line
+	2875 3575 2875 3375
+Connection ~ 2875 3375
+Wire Wire Line
+	2875 3375 2675 3375
+Wire Wire Line
+	3500 3875 2675 3875
+Wire Wire Line
+	2675 3725 2675 3875
+Connection ~ 2675 3875
+Wire Wire Line
+	2675 3875 2400 3875
+$Comp
+L industrial:+3V3 #PWR0119
+U 1 1 61EA6B53
+P 3400 4675
+AR Path="/61E601B6/61EA6B53" Ref="#PWR0119"  Part="1"
+AR Path="/6203D74D/61EA6B53" Ref="#PWR050"  Part="1"
+AR Path="/6203DA5D/61EA6B53" Ref="#PWR070"  Part="1"
+AR Path="/6203DFCF/61EA6B53" Ref="#PWR090"  Part="1"
+F 0 "#PWR070" H 3400 4525 50  0001 C CNN
+F 1 "+3V3" H 3525 4700 50  0000 C CNN
+F 2 "" H 3400 4675 50  0001 C CNN
+F 3 "" H 3400 4675 50  0001 C CNN
+	1    3400 4675
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61EB4A65
+P 7300 2075
+AR Path="/61C80DCB/61EB4A65" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61EB4A65" Ref="Q5"  Part="1"
+AR Path="/6203D74D/61EB4A65" Ref="Q16"  Part="1"
+AR Path="/6203DA5D/61EB4A65" Ref="Q24"  Part="1"
+AR Path="/6203DFCF/61EB4A65" Ref="Q32"  Part="1"
+F 0 "Q5" H 7504 2121 50  0000 L CNN
+F 1 "KIA50N06B" H 7475 2225 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7500 2000 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 7300 2075 50  0001 L CNN
+F 4 "C130980" H 7300 2075 50  0001 C CNN "jlcpcb"
+	1    7300 2075
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61EB6931
+P 7300 2675
+AR Path="/61C80DCB/61EB6931" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61EB6931" Ref="Q6"  Part="1"
+AR Path="/6203D74D/61EB6931" Ref="Q17"  Part="1"
+AR Path="/6203DA5D/61EB6931" Ref="Q25"  Part="1"
+AR Path="/6203DFCF/61EB6931" Ref="Q33"  Part="1"
+F 0 "Q6" H 7504 2721 50  0000 L CNN
+F 1 "KIA50N06B" H 7504 2630 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7500 2600 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 7300 2675 50  0001 L CNN
+F 4 "C130980" H 7300 2675 50  0001 C CNN "jlcpcb"
+	1    7300 2675
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61EB7562
+P 8550 2075
+AR Path="/61C80DCB/61EB7562" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61EB7562" Ref="Q7"  Part="1"
+AR Path="/6203D74D/61EB7562" Ref="Q20"  Part="1"
+AR Path="/6203DA5D/61EB7562" Ref="Q28"  Part="1"
+AR Path="/6203DFCF/61EB7562" Ref="Q36"  Part="1"
+F 0 "Q7" H 8754 2121 50  0000 L CNN
+F 1 "KIA50N06B" H 8754 2030 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 8750 2000 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 8550 2075 50  0001 L CNN
+F 4 "C130980" H 8550 2075 50  0001 C CNN "jlcpcb"
+	1    8550 2075
+	-1   0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61EB9E3C
+P 8550 2675
+AR Path="/61C80DCB/61EB9E3C" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61EB9E3C" Ref="Q8"  Part="1"
+AR Path="/6203D74D/61EB9E3C" Ref="Q21"  Part="1"
+AR Path="/6203DA5D/61EB9E3C" Ref="Q29"  Part="1"
+AR Path="/6203DFCF/61EB9E3C" Ref="Q37"  Part="1"
+F 0 "Q8" H 8754 2721 50  0000 L CNN
+F 1 "KIA50N06B" H 8754 2630 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 8750 2600 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 8550 2675 50  0001 L CNN
+F 4 "C130980" H 8550 2675 50  0001 C CNN "jlcpcb"
+	1    8550 2675
+	-1   0    0    -1
+$EndComp
+$Comp
+L Device:C_Small C20
+U 1 1 61EBA392
+P 6225 1475
+AR Path="/61E601B6/61EBA392" Ref="C20"  Part="1"
+AR Path="/6203D74D/61EBA392" Ref="C45"  Part="1"
+AR Path="/6203DA5D/61EBA392" Ref="C58"  Part="1"
+AR Path="/6203DFCF/61EBA392" Ref="C71"  Part="1"
+F 0 "C20" V 6150 1400 50  0000 C CNN
+F 1 "470nF" V 6275 1375 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6225 1475 50  0001 C CNN
+F 3 "~" H 6225 1475 50  0001 C CNN
+F 4 "C0805" H 6225 1475 50  0001 C CNN "jlcpcb"
+	1    6225 1475
+	0    -1   -1   0
+$EndComp
+Wire Wire Line
+	6125 1475 6000 1475
+$Comp
+L Device:C_Small C21
+U 1 1 61EBF8AA
+P 6225 1875
+AR Path="/61E601B6/61EBF8AA" Ref="C21"  Part="1"
+AR Path="/6203D74D/61EBF8AA" Ref="C46"  Part="1"
+AR Path="/6203DA5D/61EBF8AA" Ref="C59"  Part="1"
+AR Path="/6203DFCF/61EBF8AA" Ref="C72"  Part="1"
+F 0 "C21" V 6150 1775 50  0000 C CNN
+F 1 "470nF" V 6300 1700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6225 1875 50  0001 C CNN
+F 3 "~" H 6225 1875 50  0001 C CNN
+F 4 "C0805" H 6225 1875 50  0001 C CNN "jlcpcb"
+	1    6225 1875
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R_Small R23
+U 1 1 61EC0FDC
+P 8850 2075
+AR Path="/61E601B6/61EC0FDC" Ref="R23"  Part="1"
+AR Path="/6203D74D/61EC0FDC" Ref="R90"  Part="1"
+AR Path="/6203DA5D/61EC0FDC" Ref="R112"  Part="1"
+AR Path="/6203DFCF/61EC0FDC" Ref="R134"  Part="1"
+F 0 "R23" V 8654 2075 50  0000 C CNN
+F 1 "10" V 8745 2075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8850 2075 50  0001 C CNN
+F 3 "~" H 8850 2075 50  0001 C CNN
+F 4 "C17415" H 8850 2075 50  0001 C CNN "jlcpcb"
+	1    8850 2075
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	6000 1675 9025 1675
+Wire Wire Line
+	8075 750  8075 700
+Connection ~ 8075 700
+Wire Wire Line
+	8525 700  8525 750
+Wire Wire Line
+	8075 700  8525 700
+$Comp
+L power:GND-power #PWR0121
+U 1 1 61ECB3CC
+P 8075 1050
+AR Path="/61E601B6/61ECB3CC" Ref="#PWR0121"  Part="1"
+AR Path="/6203D74D/61ECB3CC" Ref="#PWR059"  Part="1"
+AR Path="/6203DA5D/61ECB3CC" Ref="#PWR079"  Part="1"
+AR Path="/6203DFCF/61ECB3CC" Ref="#PWR099"  Part="1"
+AR Path="/61ECB3CC" Ref="#PWR0121"  Part="1"
+F 0 "#PWR079" H 8075 800 50  0001 C CNN
+F 1 "GND" H 8080 877 50  0000 C CNN
+F 2 "" H 8075 1050 50  0001 C CNN
+F 3 "" H 8075 1050 50  0001 C CNN
+	1    8075 1050
+	1    0    0    -1
+$EndComp
+Text HLabel 7175 1775 0    50   Input ~ 0
+MOTOR_PWR
+Wire Wire Line
+	7175 1775 7400 1775
+Wire Wire Line
+	8450 1775 8450 1875
+Wire Wire Line
+	7400 1875 7400 1775
+Connection ~ 7400 1775
+Wire Wire Line
+	7400 1775 8450 1775
+$Comp
+L Device:R_Small R20
+U 1 1 61ED1944
+P 7000 2075
+AR Path="/61E601B6/61ED1944" Ref="R20"  Part="1"
+AR Path="/6203D74D/61ED1944" Ref="R84"  Part="1"
+AR Path="/6203DA5D/61ED1944" Ref="R106"  Part="1"
+AR Path="/6203DFCF/61ED1944" Ref="R128"  Part="1"
+F 0 "R20" V 7196 2075 50  0000 C CNN
+F 1 "10" V 7105 2075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7000 2075 50  0001 C CNN
+F 3 "~" H 7000 2075 50  0001 C CNN
+F 4 "C17415" H 7000 2075 50  0001 C CNN "jlcpcb"
+	1    7000 2075
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R_Small R21
+U 1 1 61ED2316
+P 7000 2675
+AR Path="/61E601B6/61ED2316" Ref="R21"  Part="1"
+AR Path="/6203D74D/61ED2316" Ref="R85"  Part="1"
+AR Path="/6203DA5D/61ED2316" Ref="R107"  Part="1"
+AR Path="/6203DFCF/61ED2316" Ref="R129"  Part="1"
+F 0 "R21" V 7196 2675 50  0000 C CNN
+F 1 "10" V 7105 2675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7000 2675 50  0001 C CNN
+F 3 "~" H 7000 2675 50  0001 C CNN
+F 4 "C17415" H 7000 2675 50  0001 C CNN "jlcpcb"
+	1    7000 2675
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R_Small R24
+U 1 1 61ED2854
+P 8850 2675
+AR Path="/61E601B6/61ED2854" Ref="R24"  Part="1"
+AR Path="/6203D74D/61ED2854" Ref="R91"  Part="1"
+AR Path="/6203DA5D/61ED2854" Ref="R113"  Part="1"
+AR Path="/6203DFCF/61ED2854" Ref="R135"  Part="1"
+F 0 "R24" V 9046 2675 50  0000 C CNN
+F 1 "10" V 8955 2675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8850 2675 50  0001 C CNN
+F 3 "~" H 8850 2675 50  0001 C CNN
+F 4 "C17415" H 8850 2675 50  0001 C CNN "jlcpcb"
+	1    8850 2675
+	0    -1   -1   0
+$EndComp
+Wire Wire Line
+	6000 2075 6900 2075
+Wire Wire Line
+	8950 2075 9025 2075
+Wire Wire Line
+	9025 2075 9025 1675
+Text Label 6675 2275 0    50   ~ 0
+COIL_A_P
+Wire Wire Line
+	6000 2675 6900 2675
+Wire Wire Line
+	7400 2475 7400 2275
+Wire Wire Line
+	6000 2275 6400 2275
+Connection ~ 7400 2275
+Wire Wire Line
+	8450 2425 6525 2425
+Wire Wire Line
+	6000 2425 6000 2475
+Wire Wire Line
+	8450 2425 8450 2275
+Wire Wire Line
+	8450 2475 8450 2425
+Connection ~ 8450 2425
+$Comp
+L Device:R_Small R22
+U 1 1 61EFC776
+P 7900 3175
+AR Path="/61E601B6/61EFC776" Ref="R22"  Part="1"
+AR Path="/6203D74D/61EFC776" Ref="R88"  Part="1"
+AR Path="/6203DA5D/61EFC776" Ref="R110"  Part="1"
+AR Path="/6203DFCF/61EFC776" Ref="R132"  Part="1"
+F 0 "R22" H 7959 3221 50  0000 L CNN
+F 1 "0.050" H 7959 3130 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 7900 3175 50  0001 C CNN
+F 3 "~" H 7900 3175 50  0001 C CNN
+F 4 "purchase sep?" H 7900 3175 50  0001 C CNN "alternatives"
+F 5 "HOME050" H 7900 3175 50  0001 C CNN "jlcpcb"
+F 6 "DNP.C168610" H 7900 3175 50  0001 C CNN "jlcalt"
+	1    7900 3175
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R_Small R18
+U 1 1 61F10EA5
+P 6650 3075
+AR Path="/61E601B6/61F10EA5" Ref="R18"  Part="1"
+AR Path="/6203D74D/61F10EA5" Ref="R80"  Part="1"
+AR Path="/6203DA5D/61F10EA5" Ref="R102"  Part="1"
+AR Path="/6203DFCF/61F10EA5" Ref="R124"  Part="1"
+F 0 "R18" V 6575 3225 50  0000 C CNN
+F 1 "47" V 6575 3075 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 3075 50  0001 C CNN
+F 3 "~" H 6650 3075 50  0001 C CNN
+F 4 "C17714" H 6650 3075 50  0001 C CNN "jlcpcb"
+	1    6650 3075
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	6550 3075 6000 3075
+$Comp
+L Device:R_Small R19
+U 1 1 61F19C12
+P 6650 3275
+AR Path="/61E601B6/61F19C12" Ref="R19"  Part="1"
+AR Path="/6203D74D/61F19C12" Ref="R81"  Part="1"
+AR Path="/6203DA5D/61F19C12" Ref="R103"  Part="1"
+AR Path="/6203DFCF/61F19C12" Ref="R125"  Part="1"
+F 0 "R19" V 6600 3450 50  0000 C CNN
+F 1 "47" V 6575 3275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 3275 50  0001 C CNN
+F 3 "~" H 6650 3275 50  0001 C CNN
+F 4 "C17714" H 6650 3275 50  0001 C CNN "jlcpcb"
+	1    6650 3275
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	6550 3275 6000 3275
+Wire Wire Line
+	6750 3075 7400 3075
+Wire Wire Line
+	7900 3275 6750 3275
+$Comp
+L power:GND-power #PWR0122
+U 1 1 61F1EBF7
+P 7900 3325
+AR Path="/61E601B6/61F1EBF7" Ref="#PWR0122"  Part="1"
+AR Path="/6203D74D/61F1EBF7" Ref="#PWR057"  Part="1"
+AR Path="/6203DA5D/61F1EBF7" Ref="#PWR077"  Part="1"
+AR Path="/6203DFCF/61F1EBF7" Ref="#PWR097"  Part="1"
+AR Path="/61F1EBF7" Ref="#PWR0122"  Part="1"
+F 0 "#PWR077" H 7900 3075 50  0001 C CNN
+F 1 "GND" H 7905 3152 50  0000 C CNN
+F 2 "" H 7900 3325 50  0001 C CNN
+F 3 "" H 7900 3325 50  0001 C CNN
+	1    7900 3325
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	7900 3325 7900 3275
+Connection ~ 7900 3275
+Wire Wire Line
+	7400 2875 7400 3075
+Connection ~ 7400 3075
+Wire Wire Line
+	7400 3075 7900 3075
+Wire Wire Line
+	8450 3075 8450 2875
+Connection ~ 7900 3075
+Wire Wire Line
+	6000 2875 7175 2875
+Wire Wire Line
+	7175 2875 7175 2925
+Wire Wire Line
+	7175 2925 9025 2925
+Wire Wire Line
+	9025 2925 9025 2675
+Wire Wire Line
+	9025 2675 8950 2675
+Text Label 6675 2425 0    50   ~ 0
+COIL_A_N
+$Comp
+L power:GND-power #PWR0123
+U 1 1 61F26F6F
+P 2925 5150
+AR Path="/61E601B6/61F26F6F" Ref="#PWR0123"  Part="1"
+AR Path="/6203D74D/61F26F6F" Ref="#PWR048"  Part="1"
+AR Path="/6203DA5D/61F26F6F" Ref="#PWR068"  Part="1"
+AR Path="/6203DFCF/61F26F6F" Ref="#PWR088"  Part="1"
+AR Path="/61F26F6F" Ref="#PWR0123"  Part="1"
+F 0 "#PWR068" H 2925 4900 50  0001 C CNN
+F 1 "GND" H 2930 4977 50  0000 C CNN
+F 2 "" H 2925 5150 50  0001 C CNN
+F 3 "" H 2925 5150 50  0001 C CNN
+	1    2925 5150
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	3500 5075 2925 5075
+Wire Wire Line
+	2925 5075 2925 5150
+Wire Wire Line
+	3500 4275 3300 4275
+Wire Wire Line
+	3175 4375 3500 4375
+Wire Wire Line
+	3175 4475 3500 4475
+Wire Wire Line
+	3250 4875 3400 4875
+$Comp
+L Device:R_Small R?
+U 1 1 61F3A4EA
+P 3400 4775
+AR Path="/5AD47FD6/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/61FBB705/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61F3A4EA" Ref="R?"  Part="1"
+AR Path="/61E601B6/61F3A4EA" Ref="R17"  Part="1"
+AR Path="/6203D74D/61F3A4EA" Ref="R79"  Part="1"
+AR Path="/6203DA5D/61F3A4EA" Ref="R101"  Part="1"
+AR Path="/6203DFCF/61F3A4EA" Ref="R123"  Part="1"
+F 0 "R17" V 3480 4775 50  0000 C CNN
+F 1 "10K" V 3400 4775 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3330 4775 50  0001 C CNN
+F 3 "" H 3400 4775 50  0001 C CNN
+F 4 "" V 3400 4775 60  0001 C CNN "farnell"
+F 5 "C17414" H 3400 4775 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 3400 4775 50  0001 C CNN "precision"
+F 7 "1%" H 3400 4775 50  0001 C CNN "power"
+	1    3400 4775
+	1    0    0    -1
+$EndComp
+Connection ~ 3400 4875
+Wire Wire Line
+	3400 4875 3500 4875
+$Comp
+L power:GND-power #PWR0124
+U 1 1 61F3F591
+P 2475 4925
+AR Path="/61E601B6/61F3F591" Ref="#PWR0124"  Part="1"
+AR Path="/6203D74D/61F3F591" Ref="#PWR046"  Part="1"
+AR Path="/6203DA5D/61F3F591" Ref="#PWR066"  Part="1"
+AR Path="/6203DFCF/61F3F591" Ref="#PWR086"  Part="1"
+AR Path="/61F3F591" Ref="#PWR0124"  Part="1"
+F 0 "#PWR066" H 2475 4675 50  0001 C CNN
+F 1 "GND" H 2480 4752 50  0000 C CNN
+F 2 "" H 2475 4925 50  0001 C CNN
+F 3 "" H 2475 4925 50  0001 C CNN
+	1    2475 4925
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61F4501B
+P 3150 4875
+AR Path="/5AD47FD6/61F4501B" Ref="R?"  Part="1"
+AR Path="/61FBB705/61F4501B" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61F4501B" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61F4501B" Ref="R?"  Part="1"
+AR Path="/61F4501B" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61F4501B" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61F4501B" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61F4501B" Ref="R?"  Part="1"
+AR Path="/61E601B6/61F4501B" Ref="R14"  Part="1"
+AR Path="/6203D74D/61F4501B" Ref="R58"  Part="1"
+AR Path="/6203DA5D/61F4501B" Ref="R98"  Part="1"
+AR Path="/6203DFCF/61F4501B" Ref="R120"  Part="1"
+F 0 "R14" V 3230 4875 50  0000 C CNN
+F 1 "DNP" V 3150 4875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3080 4875 50  0001 C CNN
+F 3 "" H 3150 4875 50  0001 C CNN
+F 4 "" V 3150 4875 60  0001 C CNN "farnell"
+F 5 "DNP010" H 3150 4875 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 3150 4875 50  0001 C CNN "precision"
+F 7 "1%" H 3150 4875 50  0001 C CNN "power"
+	1    3150 4875
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	3050 4875 2475 4875
+Wire Wire Line
+	2475 4875 2475 4925
+Text HLabel 3175 4275 0    50   Input ~ 0
+DCEN
+Text HLabel 3175 4375 0    50   Input ~ 0
+DNIN
+Text HLabel 3175 4475 0    50   Output ~ 0
+DCO
+Text Notes 0    11075 0    50   ~ 0
+Sense:\n0.075 ohms 3.1 A RMS limit. 1W resistor\n0.050 ohms 4.7 A RMS limit. 0.6W\n0.033 ohms 7.1 A RMS limit. 0.4W\nChoose low inductance resistors\nwide traces around sense.\nExtra cap? DNP
+Text Notes 2475 11300 0    50   ~ 0
+PCB Layout:\nSense must be simetrical\nShort traces\nWell match sense resistors 0.1%\n\n
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 61F4E61C
+P 3125 10225
+AR Path="/61E601B6/61F4E61C" Ref="H4"  Part="1"
+AR Path="/6203D74D/61F4E61C" Ref="H5"  Part="1"
+AR Path="/6203DA5D/61F4E61C" Ref="H6"  Part="1"
+AR Path="/6203DFCF/61F4E61C" Ref="H7"  Part="1"
+F 0 "H4" H 3225 10274 50  0000 L CNN
+F 1 "MountingHole_Pad" H 3225 10183 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3125 10225 50  0001 C CNN
+F 3 "~" H 3125 10225 50  0001 C CNN
+F 4 "DNP003" H 3125 10225 50  0001 C CNN "jlcpcb"
+	1    3125 10225
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0125
+U 1 1 61F4F366
+P 3125 10325
+AR Path="/61E601B6/61F4F366" Ref="#PWR0125"  Part="1"
+AR Path="/6203D74D/61F4F366" Ref="#PWR055"  Part="1"
+AR Path="/6203DA5D/61F4F366" Ref="#PWR075"  Part="1"
+AR Path="/6203DFCF/61F4F366" Ref="#PWR095"  Part="1"
+AR Path="/61F4F366" Ref="#PWR0125"  Part="1"
+F 0 "#PWR075" H 3125 10075 50  0001 C CNN
+F 1 "GND" H 3130 10152 50  0000 C CNN
+F 2 "" H 3125 10325 50  0001 C CNN
+F 3 "" H 3125 10325 50  0001 C CNN
+	1    3125 10325
+	1    0    0    -1
+$EndComp
+$Comp
+L industrial:D_TVS D4
+U 1 1 61F5C876
+P 9075 900
+AR Path="/61E601B6/61F5C876" Ref="D4"  Part="1"
+AR Path="/6203D74D/61F5C876" Ref="D23"  Part="1"
+AR Path="/6203DA5D/61F5C876" Ref="D26"  Part="1"
+AR Path="/6203DFCF/61F5C876" Ref="D29"  Part="1"
+F 0 "D4" V 9029 979 50  0000 L CNN
+F 1 "SMBJ60A" V 9120 979 50  0000 L CNN
+F 2 "Diode_SMD:D_SMB" H 9075 900 50  0001 C CNN
+F 3 "" H 9075 900 50  0001 C CNN
+F 4 "C440310" H 9075 900 50  0001 C CNN "jlcpcb"
+	1    9075 900
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	9075 750  9075 700
+Wire Wire Line
+	9075 700  8525 700
+Connection ~ 8525 700
+$Comp
+L power:GND-power #PWR0126
+U 1 1 61F62E48
+P 9075 1050
+AR Path="/61E601B6/61F62E48" Ref="#PWR0126"  Part="1"
+AR Path="/6203D74D/61F62E48" Ref="#PWR061"  Part="1"
+AR Path="/6203DA5D/61F62E48" Ref="#PWR081"  Part="1"
+AR Path="/6203DFCF/61F62E48" Ref="#PWR0120"  Part="1"
+AR Path="/61F62E48" Ref="#PWR0126"  Part="1"
+F 0 "#PWR081" H 9075 800 50  0001 C CNN
+F 1 "GND" H 9080 877 50  0000 C CNN
+F 2 "" H 9075 1050 50  0001 C CNN
+F 3 "" H 9075 1050 50  0001 C CNN
+	1    9075 1050
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	6125 1875 6000 1875
+Wire Wire Line
+	6525 2425 6525 1475
+Wire Wire Line
+	6525 1475 6325 1475
+Connection ~ 6525 2425
+Wire Wire Line
+	6525 2425 6000 2425
+Wire Wire Line
+	6325 1875 6400 1875
+Wire Wire Line
+	6400 1875 6400 2275
+Connection ~ 6400 2275
+Wire Wire Line
+	6400 2275 7400 2275
+Text Label 10075 3050 2    50   ~ 0
+COIL_A_P
+Text Label 10075 2950 2    50   ~ 0
+COIL_A_N
+Text Label 10075 2750 2    50   ~ 0
+COIL_B_P
+Text Label 10075 2850 2    50   ~ 0
+COIL_B_N
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61F7F093
+P 7300 4275
+AR Path="/61C80DCB/61F7F093" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61F7F093" Ref="Q9"  Part="1"
+AR Path="/6203D74D/61F7F093" Ref="Q18"  Part="1"
+AR Path="/6203DA5D/61F7F093" Ref="Q26"  Part="1"
+AR Path="/6203DFCF/61F7F093" Ref="Q34"  Part="1"
+F 0 "Q9" H 7504 4321 50  0000 L CNN
+F 1 "KIA50N06B" H 7475 4425 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7500 4200 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 7300 4275 50  0001 L CNN
+F 4 "C130980" H 7300 4275 50  0001 C CNN "jlcpcb"
+	1    7300 4275
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61F7F457
+P 7300 4875
+AR Path="/61C80DCB/61F7F457" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61F7F457" Ref="Q13"  Part="1"
+AR Path="/6203D74D/61F7F457" Ref="Q19"  Part="1"
+AR Path="/6203DA5D/61F7F457" Ref="Q27"  Part="1"
+AR Path="/6203DFCF/61F7F457" Ref="Q35"  Part="1"
+F 0 "Q13" H 7504 4921 50  0000 L CNN
+F 1 "KIA50N06B" H 7504 4830 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7500 4800 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 7300 4875 50  0001 L CNN
+F 4 "C130980" H 7300 4875 50  0001 C CNN "jlcpcb"
+	1    7300 4875
+	1    0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61F7F461
+P 8550 4275
+AR Path="/61C80DCB/61F7F461" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61F7F461" Ref="Q14"  Part="1"
+AR Path="/6203D74D/61F7F461" Ref="Q22"  Part="1"
+AR Path="/6203DA5D/61F7F461" Ref="Q30"  Part="1"
+AR Path="/6203DFCF/61F7F461" Ref="Q38"  Part="1"
+F 0 "Q14" H 8754 4321 50  0000 L CNN
+F 1 "KIA50N06B" H 8754 4230 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 8750 4200 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 8550 4275 50  0001 L CNN
+F 4 "C130980" H 8550 4275 50  0001 C CNN "jlcpcb"
+	1    8550 4275
+	-1   0    0    -1
+$EndComp
+$Comp
+L Transistor_FET:BSP89 Q?
+U 1 1 61F7F46B
+P 8550 4875
+AR Path="/61C80DCB/61F7F46B" Ref="Q?"  Part="1"
+AR Path="/61E601B6/61F7F46B" Ref="Q15"  Part="1"
+AR Path="/6203D74D/61F7F46B" Ref="Q23"  Part="1"
+AR Path="/6203DA5D/61F7F46B" Ref="Q31"  Part="1"
+AR Path="/6203DFCF/61F7F46B" Ref="Q39"  Part="1"
+F 0 "Q15" H 8754 4921 50  0000 L CNN
+F 1 "KIA50N06B" H 8754 4830 50  0001 L CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 8750 4800 50  0001 L CIN
+F 3 "http://www.diodes.com/assets/Datasheets/ds30376.pdf" H 8550 4875 50  0001 L CNN
+F 4 "C130980" H 8550 4875 50  0001 C CNN "jlcpcb"
+	1    8550 4875
+	-1   0    0    -1
+$EndComp
+$Comp
+L Device:C_Small C34
+U 1 1 61F7F475
+P 6225 3675
+AR Path="/61E601B6/61F7F475" Ref="C34"  Part="1"
+AR Path="/6203D74D/61F7F475" Ref="C47"  Part="1"
+AR Path="/6203DA5D/61F7F475" Ref="C60"  Part="1"
+AR Path="/6203DFCF/61F7F475" Ref="C73"  Part="1"
+F 0 "C34" V 6150 3600 50  0000 C CNN
+F 1 "470nF" V 6275 3575 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6225 3675 50  0001 C CNN
+F 3 "~" H 6225 3675 50  0001 C CNN
+F 4 "C0805" H 6225 3675 50  0001 C CNN "jlcpcb"
+	1    6225 3675
+	0    -1   -1   0
+$EndComp
+Wire Wire Line
+	6125 3675 6000 3675
+$Comp
+L Device:C_Small C35
+U 1 1 61F7F480
+P 6225 4075
+AR Path="/61E601B6/61F7F480" Ref="C35"  Part="1"
+AR Path="/6203D74D/61F7F480" Ref="C48"  Part="1"
+AR Path="/6203DA5D/61F7F480" Ref="C61"  Part="1"
+AR Path="/6203DFCF/61F7F480" Ref="C74"  Part="1"
+F 0 "C35" V 6150 3975 50  0000 C CNN
+F 1 "470nF" V 6300 3900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 6225 4075 50  0001 C CNN
+F 3 "~" H 6225 4075 50  0001 C CNN
+F 4 "C0805" H 6225 4075 50  0001 C CNN "jlcpcb"
+	1    6225 4075
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R_Small R32
+U 1 1 61F7F48A
+P 8850 4275
+AR Path="/61E601B6/61F7F48A" Ref="R32"  Part="1"
+AR Path="/6203D74D/61F7F48A" Ref="R92"  Part="1"
+AR Path="/6203DA5D/61F7F48A" Ref="R114"  Part="1"
+AR Path="/6203DFCF/61F7F48A" Ref="R136"  Part="1"
+F 0 "R32" V 8654 4275 50  0000 C CNN
+F 1 "10" V 8745 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8850 4275 50  0001 C CNN
+F 3 "~" H 8850 4275 50  0001 C CNN
+F 4 "C17415" H 8850 4275 50  0001 C CNN "jlcpcb"
+	1    8850 4275
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	6000 3875 9025 3875
+Text HLabel 7175 3975 0    50   Input ~ 0
+MOTOR_PWR
+Wire Wire Line
+	7175 3975 7400 3975
+Wire Wire Line
+	8450 3975 8450 4075
+Wire Wire Line
+	7400 4075 7400 3975
+Connection ~ 7400 3975
+Wire Wire Line
+	7400 3975 8450 3975
+$Comp
+L Device:R_Small R27
+U 1 1 61F7F49B
+P 7000 4275
+AR Path="/61E601B6/61F7F49B" Ref="R27"  Part="1"
+AR Path="/6203D74D/61F7F49B" Ref="R86"  Part="1"
+AR Path="/6203DA5D/61F7F49B" Ref="R108"  Part="1"
+AR Path="/6203DFCF/61F7F49B" Ref="R130"  Part="1"
+F 0 "R27" V 7196 4275 50  0000 C CNN
+F 1 "10" V 7105 4275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7000 4275 50  0001 C CNN
+F 3 "~" H 7000 4275 50  0001 C CNN
+F 4 "C17415" H 7000 4275 50  0001 C CNN "jlcpcb"
+	1    7000 4275
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R_Small R29
+U 1 1 61F7F4A5
+P 7000 4875
+AR Path="/61E601B6/61F7F4A5" Ref="R29"  Part="1"
+AR Path="/6203D74D/61F7F4A5" Ref="R87"  Part="1"
+AR Path="/6203DA5D/61F7F4A5" Ref="R109"  Part="1"
+AR Path="/6203DFCF/61F7F4A5" Ref="R131"  Part="1"
+F 0 "R29" V 7196 4875 50  0000 C CNN
+F 1 "10" V 7105 4875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 7000 4875 50  0001 C CNN
+F 3 "~" H 7000 4875 50  0001 C CNN
+F 4 "C17415" H 7000 4875 50  0001 C CNN "jlcpcb"
+	1    7000 4875
+	0    -1   -1   0
+$EndComp
+$Comp
+L Device:R_Small R48
+U 1 1 61F7F4AF
+P 8850 4875
+AR Path="/61E601B6/61F7F4AF" Ref="R48"  Part="1"
+AR Path="/6203D74D/61F7F4AF" Ref="R93"  Part="1"
+AR Path="/6203DA5D/61F7F4AF" Ref="R115"  Part="1"
+AR Path="/6203DFCF/61F7F4AF" Ref="R137"  Part="1"
+F 0 "R48" V 9046 4875 50  0000 C CNN
+F 1 "10" V 8955 4875 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 8850 4875 50  0001 C CNN
+F 3 "~" H 8850 4875 50  0001 C CNN
+F 4 "C17415" H 8850 4875 50  0001 C CNN "jlcpcb"
+	1    8850 4875
+	0    -1   -1   0
+$EndComp
+Wire Wire Line
+	6000 4275 6900 4275
+Wire Wire Line
+	8950 4275 9025 4275
+Wire Wire Line
+	9025 4275 9025 3875
+Text Label 6675 4475 0    50   ~ 0
+COIL_B_P
+Wire Wire Line
+	6000 4875 6900 4875
+Wire Wire Line
+	7400 4675 7400 4475
+Wire Wire Line
+	6000 4475 6400 4475
+Connection ~ 7400 4475
+Wire Wire Line
+	8450 4625 6525 4625
+Wire Wire Line
+	8450 4625 8450 4475
+Wire Wire Line
+	8450 4675 8450 4625
+Connection ~ 8450 4625
+$Comp
+L Device:R_Small R31
+U 1 1 61F7F4C5
+P 7900 5375
+AR Path="/61E601B6/61F7F4C5" Ref="R31"  Part="1"
+AR Path="/6203D74D/61F7F4C5" Ref="R89"  Part="1"
+AR Path="/6203DA5D/61F7F4C5" Ref="R111"  Part="1"
+AR Path="/6203DFCF/61F7F4C5" Ref="R133"  Part="1"
+F 0 "R31" H 7959 5421 50  0000 L CNN
+F 1 "0.050" H 7959 5330 50  0000 L CNN
+F 2 "Resistor_SMD:R_2512_6332Metric" H 7900 5375 50  0001 C CNN
+F 3 "~" H 7900 5375 50  0001 C CNN
+F 4 "purchase sep?" H 7900 5375 50  0001 C CNN "alternatives"
+F 5 "HOME050" H 7900 5375 50  0001 C CNN "jlcpcb"
+F 6 "DNP.C168610" H 7900 5375 50  0001 C CNN "jlcalt"
+	1    7900 5375
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R_Small R25
+U 1 1 61F7F4CF
+P 6650 5275
+AR Path="/61E601B6/61F7F4CF" Ref="R25"  Part="1"
+AR Path="/6203D74D/61F7F4CF" Ref="R82"  Part="1"
+AR Path="/6203DA5D/61F7F4CF" Ref="R104"  Part="1"
+AR Path="/6203DFCF/61F7F4CF" Ref="R126"  Part="1"
+F 0 "R25" V 6575 5425 50  0000 C CNN
+F 1 "47" V 6575 5275 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 5275 50  0001 C CNN
+F 3 "~" H 6650 5275 50  0001 C CNN
+F 4 "C17714" H 6650 5275 50  0001 C CNN "jlcpcb"
+	1    6650 5275
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	6550 5275 6000 5275
+$Comp
+L Device:R_Small R26
+U 1 1 61F7F4DA
+P 6650 5475
+AR Path="/61E601B6/61F7F4DA" Ref="R26"  Part="1"
+AR Path="/6203D74D/61F7F4DA" Ref="R83"  Part="1"
+AR Path="/6203DA5D/61F7F4DA" Ref="R105"  Part="1"
+AR Path="/6203DFCF/61F7F4DA" Ref="R127"  Part="1"
+F 0 "R26" V 6600 5650 50  0000 C CNN
+F 1 "47" V 6575 5475 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 6650 5475 50  0001 C CNN
+F 3 "~" H 6650 5475 50  0001 C CNN
+F 4 "C17714" H 6650 5475 50  0001 C CNN "jlcpcb"
+	1    6650 5475
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	6550 5475 6000 5475
+Wire Wire Line
+	6750 5275 7400 5275
+Wire Wire Line
+	7900 5475 6750 5475
+$Comp
+L power:GND-power #PWR0127
+U 1 1 61F7F4E7
+P 7900 5525
+AR Path="/61E601B6/61F7F4E7" Ref="#PWR0127"  Part="1"
+AR Path="/6203D74D/61F7F4E7" Ref="#PWR058"  Part="1"
+AR Path="/6203DA5D/61F7F4E7" Ref="#PWR078"  Part="1"
+AR Path="/6203DFCF/61F7F4E7" Ref="#PWR098"  Part="1"
+AR Path="/61F7F4E7" Ref="#PWR0127"  Part="1"
+F 0 "#PWR078" H 7900 5275 50  0001 C CNN
+F 1 "GND" H 7905 5352 50  0000 C CNN
+F 2 "" H 7900 5525 50  0001 C CNN
+F 3 "" H 7900 5525 50  0001 C CNN
+	1    7900 5525
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	7900 5525 7900 5475
+Connection ~ 7900 5475
+Wire Wire Line
+	7400 5075 7400 5275
+Connection ~ 7400 5275
+Wire Wire Line
+	7400 5275 7900 5275
+Wire Wire Line
+	8450 5275 8450 5075
+Connection ~ 7900 5275
+Wire Wire Line
+	6000 5075 7175 5075
+Wire Wire Line
+	7175 5075 7175 5125
+Wire Wire Line
+	7175 5125 9025 5125
+Wire Wire Line
+	9025 5125 9025 4875
+Wire Wire Line
+	9025 4875 8950 4875
+Text Label 6675 4625 0    50   ~ 0
+COIL_B_N
+Wire Wire Line
+	6125 4075 6000 4075
+Wire Wire Line
+	6525 4625 6525 3675
+Wire Wire Line
+	6525 3675 6325 3675
+Connection ~ 6525 4625
+Wire Wire Line
+	6525 4625 6000 4625
+Wire Wire Line
+	6325 4075 6400 4075
+Wire Wire Line
+	6400 4075 6400 4475
+Connection ~ 6400 4475
+Wire Wire Line
+	6400 4475 7400 4475
+Wire Wire Line
+	6000 4675 6000 4625
+$Comp
+L Device:CP C?
+U 1 1 61F9D764
+P 8075 900
+AR Path="/61C80DCB/61F9D764" Ref="C?"  Part="1"
+AR Path="/61E601B6/61F9D764" Ref="C40"  Part="1"
+AR Path="/6203D74D/61F9D764" Ref="C50"  Part="1"
+AR Path="/6203DA5D/61F9D764" Ref="C63"  Part="1"
+AR Path="/6203DFCF/61F9D764" Ref="C76"  Part="1"
+F 0 "C40" H 8100 800 50  0000 L CNN
+F 1 "330uF @60V" V 7850 575 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D24.0mm_P10.00mm_SnapIn" H 8113 750 50  0001 C CNN
+F 3 "~" H 8075 900 50  0001 C CNN
+F 4 "DNP015" H 8075 900 50  0001 C CNN "jlcpcb"
+	1    8075 900
+	1    0    0    -1
+$EndComp
+Text HLabel 5400 1125 2    50   Input ~ 0
+MOTOR_PWR
+Text Notes 9425 2075 0    50   ~ 0
+Capacitors need to take ripple\n100uF per ampere coil\n3A x 2 => 600uF min
+$Comp
+L Device:CP C?
+U 1 1 61FE03B6
+P 8525 900
+AR Path="/61C80DCB/61FE03B6" Ref="C?"  Part="1"
+AR Path="/61E601B6/61FE03B6" Ref="C25"  Part="1"
+AR Path="/6203D74D/61FE03B6" Ref="C51"  Part="1"
+AR Path="/6203DA5D/61FE03B6" Ref="C64"  Part="1"
+AR Path="/6203DFCF/61FE03B6" Ref="C77"  Part="1"
+F 0 "C25" H 8550 800 50  0000 L CNN
+F 1 "330uF @60V" V 8325 550 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D24.0mm_P10.00mm_SnapIn" H 8563 750 50  0001 C CNN
+F 3 "~" H 8525 900 50  0001 C CNN
+F 4 "DNP015" H 8525 900 50  0001 C CNN "jlcpcb"
+	1    8525 900
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	7050 700  8075 700
+Wire Wire Line
+	5400 1125 5300 1125
+Connection ~ 5300 1125
+Wire Wire Line
+	2800 2075 2825 2075
+Connection ~ 2825 2075
+$Comp
+L Device:C C13
+U 1 1 62038D7F
+P 2650 2075
+AR Path="/61E601B6/62038D7F" Ref="C13"  Part="1"
+AR Path="/6203D74D/62038D7F" Ref="C41"  Part="1"
+AR Path="/6203DA5D/62038D7F" Ref="C54"  Part="1"
+AR Path="/6203DFCF/62038D7F" Ref="C67"  Part="1"
+F 0 "C13" V 2725 2200 50  0000 C CNN
+F 1 "2.2uF" V 2800 2125 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 2688 1925 50  0001 C CNN
+F 3 "~" H 2650 2075 50  0001 C CNN
+F 4 "C49217" H 2650 2075 50  0001 C CNN "jlcpcb"
+	1    2650 2075
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	7900 3075 8350 3075
+$Comp
+L Device:R_Small R40
+U 1 1 61ECC854
+P 8450 3175
+AR Path="/61E601B6/61ECC854" Ref="R40"  Part="1"
+AR Path="/6203D74D/61ECC854" Ref="R44"  Part="1"
+AR Path="/6203DA5D/61ECC854" Ref="R50"  Part="1"
+AR Path="/6203DFCF/61ECC854" Ref="R73"  Part="1"
+F 0 "R40" H 8575 3200 50  0000 L CNN
+F 1 "0R15" H 8525 3050 50  0000 L CNN
+F 2 "Resistor_SMD:R_MELF_MMB-0207" H 8450 3175 50  0001 C CNN
+F 3 "~" H 8450 3175 50  0001 C CNN
+F 4 "purchase sep?" H 8450 3175 50  0001 C CNN "alternatives"
+F 5 "HOMESTOCK00" H 8450 3175 50  0001 C CNN "jlcpcb"
+	1    8450 3175
+	1    0    0    -1
+$EndComp
+Connection ~ 8450 3075
+$Comp
+L Device:R_Small R38
+U 1 1 61ECCEA0
+P 8350 3175
+AR Path="/61E601B6/61ECCEA0" Ref="R38"  Part="1"
+AR Path="/6203D74D/61ECCEA0" Ref="R42"  Part="1"
+AR Path="/6203DA5D/61ECCEA0" Ref="R46"  Part="1"
+AR Path="/6203DFCF/61ECCEA0" Ref="R71"  Part="1"
+F 0 "R38" H 8575 3275 50  0000 L CNN
+F 1 "0R15" H 8525 3125 50  0000 L CNN
+F 2 "Resistor_SMD:R_MELF_MMB-0207" H 8350 3175 50  0001 C CNN
+F 3 "~" H 8350 3175 50  0001 C CNN
+F 4 "purchase sep?" H 8350 3175 50  0001 C CNN "alternatives"
+F 5 "HOMESTOCK00" H 8350 3175 50  0001 C CNN "jlcpcb"
+	1    8350 3175
+	1    0    0    -1
+$EndComp
+Connection ~ 8350 3075
+Wire Wire Line
+	8350 3075 8450 3075
+Wire Wire Line
+	8450 3275 8350 3275
+Connection ~ 8350 3275
+Wire Wire Line
+	8350 3275 7900 3275
+$Comp
+L Device:R_Small R41
+U 1 1 61EDADA2
+P 8450 5375
+AR Path="/61E601B6/61EDADA2" Ref="R41"  Part="1"
+AR Path="/6203D74D/61EDADA2" Ref="R45"  Part="1"
+AR Path="/6203DA5D/61EDADA2" Ref="R51"  Part="1"
+AR Path="/6203DFCF/61EDADA2" Ref="R74"  Part="1"
+F 0 "R41" H 8575 5400 50  0000 L CNN
+F 1 "0R15" H 8525 5250 50  0000 L CNN
+F 2 "Resistor_SMD:R_MELF_MMB-0207" H 8450 5375 50  0001 C CNN
+F 3 "~" H 8450 5375 50  0001 C CNN
+F 4 "purchase sep?" H 8450 5375 50  0001 C CNN "alternatives"
+F 5 "HOMESTOCK00" H 8450 5375 50  0001 C CNN "jlcpcb"
+	1    8450 5375
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:R_Small R39
+U 1 1 61EDB20C
+P 8350 5375
+AR Path="/61E601B6/61EDB20C" Ref="R39"  Part="1"
+AR Path="/6203D74D/61EDB20C" Ref="R43"  Part="1"
+AR Path="/6203DA5D/61EDB20C" Ref="R47"  Part="1"
+AR Path="/6203DFCF/61EDB20C" Ref="R72"  Part="1"
+F 0 "R39" H 8575 5475 50  0000 L CNN
+F 1 "0R15" H 8525 5325 50  0000 L CNN
+F 2 "Resistor_SMD:R_MELF_MMB-0207" H 8350 5375 50  0001 C CNN
+F 3 "~" H 8350 5375 50  0001 C CNN
+F 4 "purchase sep?" H 8350 5375 50  0001 C CNN "alternatives"
+F 5 "HOMESTOCK00" H 8350 5375 50  0001 C CNN "jlcpcb"
+	1    8350 5375
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	8450 5475 8350 5475
+Connection ~ 8350 5475
+Wire Wire Line
+	8350 5475 7900 5475
+Wire Wire Line
+	7900 5275 8350 5275
+Connection ~ 8350 5275
+Wire Wire Line
+	8350 5275 8450 5275
+Connection ~ 8450 5275
+NoConn ~ 12800 -100
+Wire Wire Line
+	2825 1875 3150 1875
+$Comp
+L Jumper:SolderJumper_2_Open JP4
+U 1 1 6203430D
+P 3300 1975
+AR Path="/61E601B6/6203430D" Ref="JP4"  Part="1"
+AR Path="/6203D74D/6203430D" Ref="JP5"  Part="1"
+AR Path="/6203DA5D/6203430D" Ref="JP6"  Part="1"
+AR Path="/6203DFCF/6203430D" Ref="JP7"  Part="1"
+F 0 "JP4" H 3300 2088 50  0001 C CNN
+F 1 "SolderJumper_2_Open" H 3300 2089 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_Pad1.0x1.5mm" H 3300 1975 50  0001 C CNN
+F 3 "~" H 3300 1975 50  0001 C CNN
+F 4 "DNP_NA1" H 3300 1975 50  0001 C CNN "jlcpcb"
+	1    3300 1975
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	3450 1975 3450 2075
+Connection ~ 3450 2075
+Wire Wire Line
+	3450 2075 3500 2075
+Wire Wire Line
+	3150 1975 3150 1875
+Connection ~ 3150 1875
+Wire Wire Line
+	3150 1875 3500 1875
+$Comp
+L power:PWR_FLAG-power #FLG0110
+U 1 1 620590A8
+P 3450 2075
+AR Path="/61E601B6/620590A8" Ref="#FLG0110"  Part="1"
+AR Path="/6203D74D/620590A8" Ref="#FLG0111"  Part="1"
+AR Path="/6203DA5D/620590A8" Ref="#FLG0112"  Part="1"
+AR Path="/6203DFCF/620590A8" Ref="#FLG0113"  Part="1"
+AR Path="/620590A8" Ref="#FLG0110"  Part="1"
+F 0 "#FLG0112" H 3450 2150 50  0001 C CNN
+F 1 "PWR_FLAG" H 3450 2248 50  0001 C CNN
+F 2 "" H 3450 2075 50  0001 C CNN
+F 3 "~" H 3450 2075 50  0001 C CNN
+	1    3450 2075
+	-1   0    0    1
+$EndComp
+$Comp
+L Device:R_Small R151
+U 1 1 6205DF2D
+P 2125 1575
+AR Path="/61E601B6/6205DF2D" Ref="R151"  Part="1"
+AR Path="/6203D74D/6205DF2D" Ref="R152"  Part="1"
+AR Path="/6203DA5D/6205DF2D" Ref="R153"  Part="1"
+AR Path="/6203DFCF/6205DF2D" Ref="R154"  Part="1"
+F 0 "R151" H 2184 1621 50  0000 L CNN
+F 1 "0" H 2184 1530 50  0000 L CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2125 1575 50  0001 C CNN
+F 3 "~" H 2125 1575 50  0001 C CNN
+F 4 "C17477" H 2125 1575 50  0001 C CNN "jlcpcb"
+	1    2125 1575
+	1    0    0    -1
+$EndComp
+Connection ~ 2125 1475
+Wire Wire Line
+	2125 1475 3500 1475
+Connection ~ 2125 1675
+Wire Wire Line
+	2125 1675 3500 1675
+Wire Wire Line
+	1875 1475 2125 1475
+$Comp
+L Connector:Conn_01x04_Female MOTOR_CONN?
+U 1 1 620D9509
+P 10275 2950
+AR Path="/61E0961E/620D9509" Ref="MOTOR_CONN?"  Part="1"
+AR Path="/61C743E7/61AF0AE8/620D9509" Ref="MOTOR_CONN?"  Part="1"
+AR Path="/61E601B6/620D9509" Ref="MOTOR_CONN1"  Part="1"
+AR Path="/6203D74D/620D9509" Ref="MOTOR_CONN2"  Part="1"
+AR Path="/6203DA5D/620D9509" Ref="MOTOR_CONN3"  Part="1"
+AR Path="/6203DFCF/620D9509" Ref="MOTOR_CONN4"  Part="1"
+F 0 "MOTOR_CONN1" H 10167 2525 50  0000 C CNN
+F 1 "MOTOR CONN" H 10167 2616 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_4-GF-5,08_1x04_P5.08mm_Vertical_ThreadedFlange_MountHole" H 10275 2950 50  0001 C CNN
+F 3 "~" H 10275 2950 50  0001 C CNN
+F 4 "DNP006" H 10275 2950 50  0001 C CNN "jlcpcb"
+	1    10275 2950
+	1    0    0    1
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 61FC28D3
+P 2775 10225
+AR Path="/61E601B6/61FC28D3" Ref="H3"  Part="1"
+AR Path="/6203D74D/61FC28D3" Ref="H8"  Part="1"
+AR Path="/6203DA5D/61FC28D3" Ref="H9"  Part="1"
+AR Path="/6203DFCF/61FC28D3" Ref="H10"  Part="1"
+F 0 "H3" H 2875 10274 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2875 10183 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2775 10225 50  0001 C CNN
+F 3 "~" H 2775 10225 50  0001 C CNN
+F 4 "DNP003" H 2775 10225 50  0001 C CNN "jlcpcb"
+	1    2775 10225
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR03
+U 1 1 61FC2A3D
+P 2775 10325
+AR Path="/61E601B6/61FC2A3D" Ref="#PWR03"  Part="1"
+AR Path="/6203D74D/61FC2A3D" Ref="#PWR04"  Part="1"
+AR Path="/6203DA5D/61FC2A3D" Ref="#PWR06"  Part="1"
+AR Path="/6203DFCF/61FC2A3D" Ref="#PWR037"  Part="1"
+AR Path="/61FC2A3D" Ref="#PWR03"  Part="1"
+F 0 "#PWR06" H 2775 10075 50  0001 C CNN
+F 1 "GND" H 2780 10152 50  0000 C CNN
+F 2 "" H 2775 10325 50  0001 C CNN
+F 3 "" H 2775 10325 50  0001 C CNN
+	1    2775 10325
+	1    0    0    -1
+$EndComp
+$Comp
+L industrial:8P8C_4xShielded J?
+U 1 1 61F14B50
+P 10060 3860
+AR Path="/61C80DFB/61F14B50" Ref="J?"  Part="1"
+AR Path="/61C80E48/61F14B50" Ref="J?"  Part="1"
+AR Path="/61C80E8F/61F14B50" Ref="J?"  Part="1"
+AR Path="/61CEF4C9/61F14B50" Ref="J?"  Part="1"
+AR Path="/61C80DCB/61F14B50" Ref="J?"  Part="1"
+AR Path="/61DEDDC1/61F14B50" Ref="J?"  Part="1"
+AR Path="/61E601B6/61F14B50" Ref="J4"  Part="1"
+AR Path="/6203D74D/61F14B50" Ref="J9"  Part="1"
+AR Path="/6203DA5D/61F14B50" Ref="J11"  Part="1"
+AR Path="/6203DFCF/61F14B50" Ref="J13"  Part="1"
+F 0 "J4" H 9730 3782 50  0000 R CNN
+F 1 "8P8C_4xShielded" V 9535 4135 50  0000 R CNN
+F 2 "industrial000:rj45_R-RJ45S08P-B000_C386763" V 10060 3885 50  0001 C CNN
+F 3 "~" V 10060 3885 50  0001 C CNN
+F 4 "DNP007" H 10060 3860 50  0001 C CNN "jlcpcb"
+	1    10060 3860
+	-1   0    0    1
+$EndComp
+Text Label 9620 3560 2    50   ~ 0
+COIL_B_P
+Wire Wire Line
+	9660 3560 9620 3560
+Text Label 9620 3660 2    50   ~ 0
+COIL_B_N
+Wire Wire Line
+	9620 3660 9660 3660
+Text Label 9660 3760 2    50   ~ 0
+COIL_B_P
+Text Label 9660 4060 2    50   ~ 0
+COIL_B_N
+Text Label 9660 3860 2    50   ~ 0
+COIL_A_N
+Text Label 9660 3960 2    50   ~ 0
+COIL_A_P
+Text Label 9660 4160 2    50   ~ 0
+COIL_A_P
+Text Label 9660 4260 2    50   ~ 0
+COIL_A_N
+NoConn ~ 9810 3310
+NoConn ~ 9960 3310
+NoConn ~ 10110 3310
+NoConn ~ 10260 3310
+$Comp
+L industrial:8P8C_4xShielded J?
+U 1 1 61F559AD
+P 10375 5450
+AR Path="/61C80DFB/61F559AD" Ref="J?"  Part="1"
+AR Path="/61C80E48/61F559AD" Ref="J?"  Part="1"
+AR Path="/61C80E8F/61F559AD" Ref="J?"  Part="1"
+AR Path="/61CEF4C9/61F559AD" Ref="J?"  Part="1"
+AR Path="/61C80DCB/61F559AD" Ref="J?"  Part="1"
+AR Path="/61DEDDC1/61F559AD" Ref="J?"  Part="1"
+AR Path="/61E601B6/61F559AD" Ref="J8"  Part="1"
+AR Path="/6203D74D/61F559AD" Ref="J10"  Part="1"
+AR Path="/6203DA5D/61F559AD" Ref="J12"  Part="1"
+AR Path="/6203DFCF/61F559AD" Ref="J14"  Part="1"
+F 0 "J8" H 10045 5372 50  0000 R CNN
+F 1 "8P8C_4xShielded" V 9850 5725 50  0000 R CNN
+F 2 "industrial000:rj45_R-RJ45S08P-B000_C386763" V 10375 5475 50  0001 C CNN
+F 3 "~" V 10375 5475 50  0001 C CNN
+F 4 "DNP007" H 10375 5450 50  0001 C CNN "jlcpcb"
+	1    10375 5450
+	-1   0    0    1
+$EndComp
+NoConn ~ 10125 4900
+NoConn ~ 10275 4900
+NoConn ~ 10425 4900
+NoConn ~ 10575 4900
+$Comp
+L Connector:Conn_01x04_Female MOTOR_CONN?
+U 1 1 61F5C974
+P 9375 5250
+AR Path="/61E0961E/61F5C974" Ref="MOTOR_CONN?"  Part="1"
+AR Path="/61C743E7/61AF0AE8/61F5C974" Ref="MOTOR_CONN?"  Part="1"
+AR Path="/61E601B6/61F5C974" Ref="RCON1"  Part="1"
+AR Path="/6203D74D/61F5C974" Ref="MOTOR_CONN5"  Part="1"
+AR Path="/6203DA5D/61F5C974" Ref="MOTOR_CONN6"  Part="1"
+AR Path="/6203DFCF/61F5C974" Ref="MOTOR_CONN7"  Part="1"
+F 0 "RCON1" H 9267 4825 50  0000 C CNN
+F 1 "RCONN" H 9267 4916 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_4-GF-5,08_1x04_P5.08mm_Vertical_ThreadedFlange_MountHole" H 9375 5250 50  0001 C CNN
+F 3 "~" H 9375 5250 50  0001 C CNN
+F 4 "DNP018" H 9375 5250 50  0001 C CNN "jlcpcb"
+	1    9375 5250
+	-1   0    0    -1
+$EndComp
+Wire Wire Line
+	9975 5150 9900 5150
+Wire Wire Line
+	9575 5250 9750 5250
+Wire Wire Line
+	9975 5850 9900 5850
+Wire Wire Line
+	9575 5850 9575 5450
+Wire Wire Line
+	9575 5350 9625 5350
+Wire Wire Line
+	9625 5350 9625 5750
+Wire Wire Line
+	9625 5750 9825 5750
+Wire Wire Line
+	9975 5350 9900 5350
+Wire Wire Line
+	9900 5350 9900 5150
+Connection ~ 9900 5150
+Wire Wire Line
+	9900 5150 9575 5150
+Wire Wire Line
+	9975 5650 9750 5650
+Wire Wire Line
+	9750 5650 9750 5250
+Connection ~ 9750 5250
+Wire Wire Line
+	9750 5250 9975 5250
+Wire Wire Line
+	9975 5450 9900 5450
+Wire Wire Line
+	9900 5450 9900 5850
+Connection ~ 9900 5850
+Wire Wire Line
+	9900 5850 9575 5850
+Wire Wire Line
+	9975 5550 9825 5550
+Wire Wire Line
+	9825 5550 9825 5750
+Connection ~ 9825 5750
+Wire Wire Line
+	9825 5750 9975 5750
+$Comp
+L Device:R_Small R?
+U 1 1 61F2FC8F
+P 3300 4175
+AR Path="/5AD47FD6/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/61FBB705/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/61B9A8A6/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/61C743E7/61B9A8A6/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/61C81F9D/61F2FC8F" Ref="R?"  Part="1"
+AR Path="/61E601B6/61F2FC8F" Ref="R168"  Part="1"
+AR Path="/6203D74D/61F2FC8F" Ref="R169"  Part="1"
+AR Path="/6203DA5D/61F2FC8F" Ref="R170"  Part="1"
+AR Path="/6203DFCF/61F2FC8F" Ref="R171"  Part="1"
+F 0 "R168" V 3380 4175 50  0000 C CNN
+F 1 "10K" V 3300 4175 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 3230 4175 50  0001 C CNN
+F 3 "" H 3300 4175 50  0001 C CNN
+F 4 "" V 3300 4175 60  0001 C CNN "farnell"
+F 5 "C17414" H 3300 4175 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 3300 4175 50  0001 C CNN "precision"
+F 7 "1%" H 3300 4175 50  0001 C CNN "power"
+	1    3300 4175
+	1    0    0    -1
+$EndComp
+Connection ~ 3300 4275
+Wire Wire Line
+	3300 4275 3175 4275
+$Comp
+L industrial:+3V3 #PWR0236
+U 1 1 61F301A3
+P 3300 4075
+AR Path="/61E601B6/61F301A3" Ref="#PWR0236"  Part="1"
+AR Path="/6203D74D/61F301A3" Ref="#PWR0237"  Part="1"
+AR Path="/6203DA5D/61F301A3" Ref="#PWR0238"  Part="1"
+AR Path="/6203DFCF/61F301A3" Ref="#PWR0239"  Part="1"
+F 0 "#PWR0238" H 3300 3925 50  0001 C CNN
+F 1 "+3V3" H 3425 4100 50  0000 C CNN
+F 2 "" H 3300 4075 50  0001 C CNN
+F 3 "" H 3300 4075 50  0001 C CNN
+	1    3300 4075
+	1    0    0    -1
+$EndComp
+Wire Wire Line
+	1050 2975 1050 2950
+Wire Wire Line
+	1050 2975 3500 2975
+$Comp
+L industrial:+3V3 #PWR0111
+U 1 1 61F599E0
+P 1425 2275
+AR Path="/61E601B6/61F599E0" Ref="#PWR0111"  Part="1"
+AR Path="/6203D74D/61F599E0" Ref="#PWR0240"  Part="1"
+AR Path="/6203DA5D/61F599E0" Ref="#PWR0242"  Part="1"
+AR Path="/6203DFCF/61F599E0" Ref="#PWR0244"  Part="1"
+F 0 "#PWR0242" H 1425 2125 50  0001 C CNN
+F 1 "+3V3" H 1440 2448 50  0000 C CNN
+F 2 "" H 1425 2275 50  0001 C CNN
+F 3 "" H 1425 2275 50  0001 C CNN
+	1    1425 2275
+	1    0    0    -1
+$EndComp
+$Comp
+L industrial:+3V3 #PWR0112
+U 1 1 61F5A3EC
+P 1050 2350
+AR Path="/61E601B6/61F5A3EC" Ref="#PWR0112"  Part="1"
+AR Path="/6203D74D/61F5A3EC" Ref="#PWR0241"  Part="1"
+AR Path="/6203DA5D/61F5A3EC" Ref="#PWR0243"  Part="1"
+AR Path="/6203DFCF/61F5A3EC" Ref="#PWR0245"  Part="1"
+F 0 "#PWR0243" H 1050 2200 50  0001 C CNN
+F 1 "+3V3" H 1065 2523 50  0000 C CNN
+F 2 "" H 1050 2350 50  0001 C CNN
+F 3 "" H 1050 2350 50  0001 C CNN
+	1    1050 2350
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:C_Small 1nF@100V1
+U 1 1 61FA5F90
+P 3525 7050
+AR Path="/61E601B6/61FA5F90" Ref="1nF@100V1"  Part="1"
+AR Path="/6203D74D/61FA5F90" Ref="1nF@100V5"  Part="1"
+AR Path="/6203DA5D/61FA5F90" Ref="1nF@100V9"  Part="1"
+AR Path="/6203DFCF/61FA5F90" Ref="1nF@100V13"  Part="1"
+F 0 "1nF@100V1" V 3675 6900 50  0000 L CNN
+F 1 "1nF" H 3617 7005 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3525 7050 50  0001 C CNN
+F 3 "~" H 3525 7050 50  0001 C CNN
+F 4 "C15177" H 3525 7050 50  0001 C CNN "jlcpcb"
+	1    3525 7050
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0247
+U 1 1 61FAA995
+P 3525 7225
+AR Path="/61E601B6/61FAA995" Ref="#PWR0247"  Part="1"
+AR Path="/6203D74D/61FAA995" Ref="#PWR0251"  Part="1"
+AR Path="/6203DA5D/61FAA995" Ref="#PWR0255"  Part="1"
+AR Path="/6203DFCF/61FAA995" Ref="#PWR0259"  Part="1"
+AR Path="/61FAA995" Ref="#PWR0247"  Part="1"
+F 0 "#PWR0255" H 3525 6975 50  0001 C CNN
+F 1 "GND" H 3530 7052 50  0000 C CNN
+F 2 "" H 3525 7225 50  0001 C CNN
+F 3 "" H 3525 7225 50  0001 C CNN
+	1    3525 7225
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:C_Small 1nF@100V2
+U 1 1 61FAECFF
+P 4300 7025
+AR Path="/61E601B6/61FAECFF" Ref="1nF@100V2"  Part="1"
+AR Path="/6203D74D/61FAECFF" Ref="1nF@100V6"  Part="1"
+AR Path="/6203DA5D/61FAECFF" Ref="1nF@100V10"  Part="1"
+AR Path="/6203DFCF/61FAECFF" Ref="1nF@100V14"  Part="1"
+F 0 "1nF@100V2" V 4175 6950 50  0000 L CNN
+F 1 "1nF" H 4392 6980 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4300 7025 50  0001 C CNN
+F 3 "~" H 4300 7025 50  0001 C CNN
+F 4 "C15177" H 4300 7025 50  0001 C CNN "jlcpcb"
+	1    4300 7025
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0248
+U 1 1 61FAED05
+P 4300 7225
+AR Path="/61E601B6/61FAED05" Ref="#PWR0248"  Part="1"
+AR Path="/6203D74D/61FAED05" Ref="#PWR0252"  Part="1"
+AR Path="/6203DA5D/61FAED05" Ref="#PWR0256"  Part="1"
+AR Path="/6203DFCF/61FAED05" Ref="#PWR0260"  Part="1"
+AR Path="/61FAED05" Ref="#PWR0248"  Part="1"
+F 0 "#PWR0256" H 4300 6975 50  0001 C CNN
+F 1 "GND" H 4305 7052 50  0000 C CNN
+F 2 "" H 4300 7225 50  0001 C CNN
+F 3 "" H 4300 7225 50  0001 C CNN
+	1    4300 7225
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:C_Small 1nF@100V3
+U 1 1 61FB687C
+P 4875 7000
+AR Path="/61E601B6/61FB687C" Ref="1nF@100V3"  Part="1"
+AR Path="/6203D74D/61FB687C" Ref="1nF@100V7"  Part="1"
+AR Path="/6203DA5D/61FB687C" Ref="1nF@100V11"  Part="1"
+AR Path="/6203DFCF/61FB687C" Ref="1nF@100V15"  Part="1"
+F 0 "1nF@100V3" V 4725 6775 50  0000 L CNN
+F 1 "1nF" H 4967 6955 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4875 7000 50  0001 C CNN
+F 3 "~" H 4875 7000 50  0001 C CNN
+F 4 "C15177" H 4875 7000 50  0001 C CNN "jlcpcb"
+	1    4875 7000
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0249
+U 1 1 61FB6882
+P 4875 7150
+AR Path="/61E601B6/61FB6882" Ref="#PWR0249"  Part="1"
+AR Path="/6203D74D/61FB6882" Ref="#PWR0253"  Part="1"
+AR Path="/6203DA5D/61FB6882" Ref="#PWR0257"  Part="1"
+AR Path="/6203DFCF/61FB6882" Ref="#PWR0261"  Part="1"
+AR Path="/61FB6882" Ref="#PWR0249"  Part="1"
+F 0 "#PWR0257" H 4875 6900 50  0001 C CNN
+F 1 "GND" H 4880 6977 50  0000 C CNN
+F 2 "" H 4875 7150 50  0001 C CNN
+F 3 "" H 4875 7150 50  0001 C CNN
+	1    4875 7150
+	1    0    0    -1
+$EndComp
+$Comp
+L Device:C_Small 1nF@100V4
+U 1 1 61FBE4BB
+P 5725 6975
+AR Path="/61E601B6/61FBE4BB" Ref="1nF@100V4"  Part="1"
+AR Path="/6203D74D/61FBE4BB" Ref="1nF@100V8"  Part="1"
+AR Path="/6203DA5D/61FBE4BB" Ref="1nF@100V12"  Part="1"
+AR Path="/6203DFCF/61FBE4BB" Ref="1nF@100V16"  Part="1"
+F 0 "1nF@100V4" V 5575 6750 50  0000 L CNN
+F 1 "1nF" H 5817 6930 50  0001 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5725 6975 50  0001 C CNN
+F 3 "~" H 5725 6975 50  0001 C CNN
+F 4 "C15177" H 5725 6975 50  0001 C CNN "jlcpcb"
+	1    5725 6975
+	1    0    0    -1
+$EndComp
+$Comp
+L power:GND-power #PWR0250
+U 1 1 61FBE4C1
+P 5725 7150
+AR Path="/61E601B6/61FBE4C1" Ref="#PWR0250"  Part="1"
+AR Path="/6203D74D/61FBE4C1" Ref="#PWR0254"  Part="1"
+AR Path="/6203DA5D/61FBE4C1" Ref="#PWR0258"  Part="1"
+AR Path="/6203DFCF/61FBE4C1" Ref="#PWR0262"  Part="1"
+AR Path="/61FBE4C1" Ref="#PWR0250"  Part="1"
+F 0 "#PWR0258" H 5725 6900 50  0001 C CNN
+F 1 "GND" H 5730 6977 50  0000 C CNN
+F 2 "" H 5725 7150 50  0001 C CNN
+F 3 "" H 5725 7150 50  0001 C CNN
+	1    5725 7150
+	1    0    0    -1
+$EndComp
+Text Label 3850 6650 2    50   ~ 0
+COIL_B_P
+Text Label 3350 6750 2    50   ~ 0
+COIL_B_N
+Text Label 5350 6650 2    50   ~ 0
+COIL_A_P
+Text Label 4775 6750 2    50   ~ 0
+COIL_A_N
+Wire Wire Line
+	4875 6900 4875 6750
+Wire Wire Line
+	4875 6750 4775 6750
+Wire Wire Line
+	5350 6650 5725 6650
+Wire Wire Line
+	5725 6650 5725 6875
+Wire Wire Line
+	3525 6950 3525 6750
+Wire Wire Line
+	3850 6650 4050 6650
+Wire Wire Line
+	4300 6650 4300 6925
+Text Notes -1775 10825 0    50   ~ 0
+1nF caps added to reduce ringing
+$Comp
+L Device:D_Schottky D?
+U 1 1 6203FB10
+P 3275 6950
+AR Path="/5AD46BE5/60DD7A40/6203FB10" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61A08BFB/6203FB10" Ref="D?"  Part="1"
+AR Path="/61A08BFB/6203FB10" Ref="D?"  Part="1"
+AR Path="/61C743E7/61A08BFB/6203FB10" Ref="D?"  Part="1"
+AR Path="/61E601B6/6203FB10" Ref="D36"  Part="1"
+AR Path="/6203D74D/6203FB10" Ref="D40"  Part="1"
+AR Path="/6203DA5D/6203FB10" Ref="D44"  Part="1"
+AR Path="/6203DFCF/6203FB10" Ref="D48"  Part="1"
+F 0 "D36" H 3525 6700 50  0000 L CNN
+F 1 "SS36-E3/57T" H 3075 6800 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 3275 6950 50  0001 C CNN
+F 3 "~" H 3275 6950 50  0001 C CNN
+F 4 "HOMESTOK444" V 3275 6950 50  0001 C CNN "jlcpcb"
+F 5 "C35722" V 3275 6950 50  0001 C CNN "jlcalt"
+	1    3275 6950
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	3525 7225 3525 7150
+Wire Wire Line
+	3525 7150 3275 7150
+Wire Wire Line
+	3275 7150 3275 7100
+Connection ~ 3525 7150
+Wire Wire Line
+	3275 6800 3275 6750
+Wire Wire Line
+	3275 6750 3525 6750
+$Comp
+L Device:D_Schottky D?
+U 1 1 620AA507
+P 4050 6875
+AR Path="/5AD46BE5/60DD7A40/620AA507" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61A08BFB/620AA507" Ref="D?"  Part="1"
+AR Path="/61A08BFB/620AA507" Ref="D?"  Part="1"
+AR Path="/61C743E7/61A08BFB/620AA507" Ref="D?"  Part="1"
+AR Path="/61E601B6/620AA507" Ref="D37"  Part="1"
+AR Path="/6203D74D/620AA507" Ref="D41"  Part="1"
+AR Path="/6203DA5D/620AA507" Ref="D45"  Part="1"
+AR Path="/6203DFCF/620AA507" Ref="D49"  Part="1"
+F 0 "D37" H 4300 6625 50  0000 L CNN
+F 1 "SS36-E3/57T" H 3850 6725 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 4050 6875 50  0001 C CNN
+F 3 "~" H 4050 6875 50  0001 C CNN
+F 4 "HOMESTOK444" V 4050 6875 50  0001 C CNN "jlcpcb"
+F 5 "C35722" V 4050 6875 50  0001 C CNN "jlcalt"
+	1    4050 6875
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	4050 6725 4050 6650
+Connection ~ 4050 6650
+Wire Wire Line
+	4050 6650 4300 6650
+Wire Wire Line
+	4300 7125 4300 7150
+Wire Wire Line
+	4050 7150 4300 7150
+Wire Wire Line
+	4050 7025 4050 7150
+Connection ~ 4300 7150
+Wire Wire Line
+	4300 7150 4300 7225
+$Comp
+L Device:D_Schottky D?
+U 1 1 620D6195
+P 5000 6950
+AR Path="/5AD46BE5/60DD7A40/620D6195" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61A08BFB/620D6195" Ref="D?"  Part="1"
+AR Path="/61A08BFB/620D6195" Ref="D?"  Part="1"
+AR Path="/61C743E7/61A08BFB/620D6195" Ref="D?"  Part="1"
+AR Path="/61E601B6/620D6195" Ref="D38"  Part="1"
+AR Path="/6203D74D/620D6195" Ref="D42"  Part="1"
+AR Path="/6203DA5D/620D6195" Ref="D46"  Part="1"
+AR Path="/6203DFCF/620D6195" Ref="D50"  Part="1"
+F 0 "D38" H 5150 7200 50  0000 L CNN
+F 1 "SS36-E3/57T" H 4800 7075 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 5000 6950 50  0001 C CNN
+F 3 "~" H 5000 6950 50  0001 C CNN
+F 4 "HOMESTOK444" V 5000 6950 50  0001 C CNN "jlcpcb"
+F 5 "C35722" V 5000 6950 50  0001 C CNN "jlcalt"
+	1    5000 6950
+	0    1    1    0
+$EndComp
+$Comp
+L Device:D_Schottky D?
+U 1 1 620D6FA9
+P 5900 6900
+AR Path="/5AD46BE5/60DD7A40/620D6FA9" Ref="D?"  Part="1"
+AR Path="/5AD46BE5/619A452E/61A08BFB/620D6FA9" Ref="D?"  Part="1"
+AR Path="/61A08BFB/620D6FA9" Ref="D?"  Part="1"
+AR Path="/61C743E7/61A08BFB/620D6FA9" Ref="D?"  Part="1"
+AR Path="/61E601B6/620D6FA9" Ref="D39"  Part="1"
+AR Path="/6203D74D/620D6FA9" Ref="D43"  Part="1"
+AR Path="/6203DA5D/620D6FA9" Ref="D47"  Part="1"
+AR Path="/6203DFCF/620D6FA9" Ref="D51"  Part="1"
+F 0 "D39" H 6050 7150 50  0000 L CNN
+F 1 "SS36-E3/57T" H 5700 7025 50  0000 L CNN
+F 2 "Diode_SMD:D_SMC" H 5900 6900 50  0001 C CNN
+F 3 "~" H 5900 6900 50  0001 C CNN
+F 4 "HOMESTOK444" V 5900 6900 50  0001 C CNN "jlcpcb"
+F 5 "C35722" V 5900 6900 50  0001 C CNN "jlcalt"
+	1    5900 6900
+	0    1    1    0
+$EndComp
+Wire Wire Line
+	4875 7150 4875 7100
+Wire Wire Line
+	4875 7100 5000 7100
+Connection ~ 4875 7100
+Wire Wire Line
+	5000 6800 5000 6750
+Wire Wire Line
+	5000 6750 4875 6750
+Connection ~ 4875 6750
+Wire Wire Line
+	5725 7150 5725 7075
+Wire Wire Line
+	5900 7050 5900 7075
+Wire Wire Line
+	5900 7075 5725 7075
+Connection ~ 5725 7075
+Wire Wire Line
+	5900 6750 5900 6650
+Wire Wire Line
+	5900 6650 5725 6650
+Connection ~ 5725 6650
+Wire Wire Line
+	1875 2075 2125 2075
+Text Label 2525 1875 2    50   ~ 0
+GNDA
+Text Label 4775 5975 2    50   ~ 0
+GNDA
+Wire Wire Line
+	4775 5975 4800 5975
+Wire Wire Line
+	4800 5975 4800 5875
+Wire Wire Line
+	2125 1975 2125 2075
+Connection ~ 2125 2075
+Wire Wire Line
+	2125 2075 2500 2075
+$Comp
+L power:PWR_FLAG-power #FLG0104
+U 1 1 61F8983B
+P 4800 5975
+AR Path="/61E601B6/61F8983B" Ref="#FLG0104"  Part="1"
+AR Path="/6203D74D/61F8983B" Ref="#FLG0109"  Part="1"
+AR Path="/6203DFCF/61F8983B" Ref="#FLG0114"  Part="1"
+AR Path="/6203DA5D/61F8983B" Ref="#FLG0115"  Part="1"
+AR Path="/61F8983B" Ref="#FLG0104"  Part="1"
+F 0 "#FLG0115" H 4800 6050 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 6148 50  0000 C CNN
+F 2 "" H 4800 5975 50  0001 C CNN
+F 3 "~" H 4800 5975 50  0001 C CNN
+	1    4800 5975
+	-1   0    0    1
+$EndComp
+Connection ~ 4800 5975
+$EndSCHEMATC

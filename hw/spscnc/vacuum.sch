@@ -1,0 +1,462 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 12 19
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text HLabel 7200 4500 0    50   Input ~ 0
+AIR_EN
+$Comp
+L Relay:AZ850-x K2
+U 1 1 61CAE8F7
+P 8225 3875
+F 0 "K2" H 8855 3921 50  0000 L CNN
+F 1 "AZ850-x" H 8855 3830 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 8775 3925 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 8225 3875 50  0001 C CNN
+	1    8225 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J26
+U 1 1 61CB17FE
+P 8025 4750
+F 0 "J26" H 8075 5125 50  0000 C CNN
+F 1 "Conn_01x03" H 8025 5000 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 8025 4750 50  0001 C CNN
+F 3 "~" H 8025 4750 50  0001 C CNN
+	1    8025 4750
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8225 4650 8225 4175
+Wire Wire Line
+	8225 4750 8625 4750
+Wire Wire Line
+	8625 4750 8625 4175
+$Comp
+L power:Earth #PWR0213
+U 1 1 61CB3628
+P 8325 4950
+F 0 "#PWR0213" H 8325 4700 50  0001 C CNN
+F 1 "Earth" H 8325 4800 50  0001 C CNN
+F 2 "" H 8325 4950 50  0001 C CNN
+F 3 "~" H 8325 4950 50  0001 C CNN
+	1    8325 4950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8325 4950 8325 4850
+Wire Wire Line
+	8325 4850 8225 4850
+$Comp
+L Connector_Generic:Conn_01x03 J25
+U 1 1 61CB3D2F
+P 7800 3000
+F 0 "J25" H 7718 2675 50  0000 C CNN
+F 1 "Conn_01x03" H 7718 2766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 7800 3000 50  0001 C CNN
+F 3 "~" H 7800 3000 50  0001 C CNN
+	1    7800 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J27
+U 1 1 61CB4A4C
+P 9250 3000
+F 0 "J27" H 9168 2675 50  0000 C CNN
+F 1 "Conn_01x03" H 9168 2766 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 9250 3000 50  0001 C CNN
+F 3 "~" H 9250 3000 50  0001 C CNN
+	1    9250 3000
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	8000 2900 8125 2900
+Wire Wire Line
+	8125 2900 8125 3575
+Wire Wire Line
+	8325 3575 8325 2900
+Wire Wire Line
+	8325 2900 9050 2900
+Wire Wire Line
+	8000 3000 8525 3000
+Wire Wire Line
+	8525 3000 8525 3575
+Wire Wire Line
+	9050 3000 8725 3000
+Wire Wire Line
+	8725 3000 8725 3575
+$Comp
+L power:Earth #PWR0214
+U 1 1 61CB701B
+P 8850 3175
+F 0 "#PWR0214" H 8850 2925 50  0001 C CNN
+F 1 "Earth" H 8850 3025 50  0001 C CNN
+F 2 "" H 8850 3175 50  0001 C CNN
+F 3 "~" H 8850 3175 50  0001 C CNN
+	1    8850 3175
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0215
+U 1 1 61CB77CE
+P 8000 3100
+F 0 "#PWR0215" H 8000 2850 50  0001 C CNN
+F 1 "Earth" H 8000 2950 50  0001 C CNN
+F 2 "" H 8000 3100 50  0001 C CNN
+F 3 "~" H 8000 3100 50  0001 C CNN
+	1    8000 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61CF9716
+P 7375 4500
+AR Path="/5AD46BE5/61CF9716" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61CF9716" Ref="R?"  Part="1" 
+AR Path="/61CF9716" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61CF9716" Ref="R?"  Part="1" 
+AR Path="/61CAE40F/61CF9716" Ref="R73"  Part="1" 
+F 0 "R73" V 7450 4475 50  0000 C CNN
+F 1 "1K" V 7500 4450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7375 4500 50  0001 C CNN
+F 3 "~" H 7375 4500 50  0001 C CNN
+F 4 "5%" V 7375 4500 50  0001 C CNN "precision"
+F 5 "C21190" H 7375 4500 50  0001 C CNN "jlcpcb"
+	1    7375 4500
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61CF971D
+P 7725 4500
+AR Path="/5AD46BE5/61CF971D" Ref="Q?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61CF971D" Ref="Q?"  Part="1" 
+AR Path="/61CF971D" Ref="Q?"  Part="1" 
+AR Path="/61C743E7/61CF971D" Ref="Q?"  Part="1" 
+AR Path="/61CAE40F/61CF971D" Ref="Q12"  Part="1" 
+F 0 "Q12" H 7875 4700 50  0000 L CNN
+F 1 "2N7002" H 7400 4700 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7925 4425 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 7725 4500 50  0001 L CNN
+F 4 "REPLACE_" H 7725 4500 50  0001 C CNN "jlcpcb"
+	1    7725 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61CF9723
+P 7825 4700
+AR Path="/5AD46BE5/61CF9723" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61CF9723" Ref="#PWR?"  Part="1" 
+AR Path="/61CF9723" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61CF9723" Ref="#PWR?"  Part="1" 
+AR Path="/61CAE40F/61CF9723" Ref="#PWR0216"  Part="1" 
+F 0 "#PWR0216" H 7825 4450 50  0001 C CNN
+F 1 "GND" H 7825 4550 50  0000 C CNN
+F 2 "" H 7825 4700 50  0001 C CNN
+F 3 "" H 7825 4700 50  0001 C CNN
+	1    7825 4700
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7825 4300 7825 4175
+$Comp
+L Device:R_Small R?
+U 1 1 61CF972C
+P 7500 4675
+AR Path="/5AD46BE5/61CF972C" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61CF972C" Ref="R?"  Part="1" 
+AR Path="/61CF972C" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61CF972C" Ref="R?"  Part="1" 
+AR Path="/61CAE40F/61CF972C" Ref="R74"  Part="1" 
+F 0 "R74" V 7575 4725 50  0000 C CNN
+F 1 "100K" V 7425 4675 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7500 4675 50  0001 C CNN
+F 3 "~" H 7500 4675 50  0001 C CNN
+F 4 "5%" V 7500 4675 50  0001 C CNN "precision"
+F 5 "C25803" H 7500 4675 50  0001 C CNN "jlcpcb"
+	1    7500 4675
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7475 4500 7500 4500
+Wire Wire Line
+	7275 4500 7200 4500
+$Comp
+L power:GND #PWR?
+U 1 1 61CF9734
+P 7500 4775
+AR Path="/5AD46BE5/61CF9734" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61CF9734" Ref="#PWR?"  Part="1" 
+AR Path="/61CF9734" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61CF9734" Ref="#PWR?"  Part="1" 
+AR Path="/61CAE40F/61CF9734" Ref="#PWR0217"  Part="1" 
+F 0 "#PWR0217" H 7500 4525 50  0001 C CNN
+F 1 "GND" H 7500 4625 50  0000 C CNN
+F 2 "" H 7500 4775 50  0001 C CNN
+F 3 "" H 7500 4775 50  0001 C CNN
+	1    7500 4775
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7500 4575 7500 4500
+Connection ~ 7500 4500
+Wire Wire Line
+	7500 4500 7525 4500
+$Comp
+L power:+24V #PWR0218
+U 1 1 61CFEF93
+P 7825 3575
+F 0 "#PWR0218" H 7825 3425 50  0001 C CNN
+F 1 "+24V" H 7840 3748 50  0000 C CNN
+F 2 "" H 7825 3575 50  0001 C CNN
+F 3 "" H 7825 3575 50  0001 C CNN
+	1    7825 3575
+	1    0    0    -1  
+$EndComp
+Text HLabel 3150 4650 0    50   Input ~ 0
+Vacuum_EN
+$Comp
+L Relay:AZ850-x K1
+U 1 1 61D0E358
+P 4175 4025
+F 0 "K1" H 4805 4071 50  0000 L CNN
+F 1 "AZ850-x" H 4805 3980 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_FRT5" H 4725 4075 50  0001 C CNN
+F 3 "http://www.azettler.com/pdfs/az850.pdf" H 4175 4025 50  0001 C CNN
+	1    4175 4025
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J23
+U 1 1 61D0E362
+P 3975 4900
+F 0 "J23" H 4025 5275 50  0000 C CNN
+F 1 "Conn_01x03" H 3975 5150 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3975 4900 50  0001 C CNN
+F 3 "~" H 3975 4900 50  0001 C CNN
+	1    3975 4900
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4175 4800 4175 4325
+Wire Wire Line
+	4175 4900 4575 4900
+Wire Wire Line
+	4575 4900 4575 4325
+$Comp
+L power:Earth #PWR0219
+U 1 1 61D0E36F
+P 4275 5100
+F 0 "#PWR0219" H 4275 4850 50  0001 C CNN
+F 1 "Earth" H 4275 4950 50  0001 C CNN
+F 2 "" H 4275 5100 50  0001 C CNN
+F 3 "~" H 4275 5100 50  0001 C CNN
+	1    4275 5100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4275 5100 4275 5000
+Wire Wire Line
+	4275 5000 4175 5000
+$Comp
+L Connector_Generic:Conn_01x03 J22
+U 1 1 61D0E37B
+P 3750 3150
+F 0 "J22" H 3668 2825 50  0000 C CNN
+F 1 "Conn_01x03" H 3668 2916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 3750 3150 50  0001 C CNN
+F 3 "~" H 3750 3150 50  0001 C CNN
+	1    3750 3150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x03 J24
+U 1 1 61D0E385
+P 5200 3150
+F 0 "J24" H 5118 2825 50  0000 C CNN
+F 1 "Conn_01x03" H 5118 2916 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5200 3150 50  0001 C CNN
+F 3 "~" H 5200 3150 50  0001 C CNN
+	1    5200 3150
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	3950 3050 4075 3050
+Wire Wire Line
+	4075 3050 4075 3725
+Wire Wire Line
+	4275 3725 4275 3050
+Wire Wire Line
+	4275 3050 5000 3050
+Wire Wire Line
+	3950 3150 4475 3150
+Wire Wire Line
+	4475 3150 4475 3725
+Wire Wire Line
+	5000 3150 4675 3150
+Wire Wire Line
+	4675 3150 4675 3725
+$Comp
+L power:Earth #PWR0220
+U 1 1 61D0E397
+P 5000 3250
+F 0 "#PWR0220" H 5000 3000 50  0001 C CNN
+F 1 "Earth" H 5000 3100 50  0001 C CNN
+F 2 "" H 5000 3250 50  0001 C CNN
+F 3 "~" H 5000 3250 50  0001 C CNN
+	1    5000 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth #PWR0221
+U 1 1 61D0E3A1
+P 3950 3250
+F 0 "#PWR0221" H 3950 3000 50  0001 C CNN
+F 1 "Earth" H 3950 3100 50  0001 C CNN
+F 2 "" H 3950 3250 50  0001 C CNN
+F 3 "~" H 3950 3250 50  0001 C CNN
+	1    3950 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R?
+U 1 1 61D0E3AD
+P 3325 4650
+AR Path="/5AD46BE5/61D0E3AD" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61D0E3AD" Ref="R?"  Part="1" 
+AR Path="/61D0E3AD" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61D0E3AD" Ref="R?"  Part="1" 
+AR Path="/61CAE40F/61D0E3AD" Ref="R71"  Part="1" 
+F 0 "R71" V 3400 4625 50  0000 C CNN
+F 1 "1K" V 3450 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3325 4650 50  0001 C CNN
+F 3 "~" H 3325 4650 50  0001 C CNN
+F 4 "5%" V 3325 4650 50  0001 C CNN "precision"
+F 5 "C21190" H 3325 4650 50  0001 C CNN "jlcpcb"
+	1    3325 4650
+	0    1    1    0   
+$EndComp
+$Comp
+L Transistor_FET:2N7002 Q?
+U 1 1 61D0E3B8
+P 3675 4650
+AR Path="/5AD46BE5/61D0E3B8" Ref="Q?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61D0E3B8" Ref="Q?"  Part="1" 
+AR Path="/61D0E3B8" Ref="Q?"  Part="1" 
+AR Path="/61C743E7/61D0E3B8" Ref="Q?"  Part="1" 
+AR Path="/61CAE40F/61D0E3B8" Ref="Q11"  Part="1" 
+F 0 "Q11" H 3825 4850 50  0000 L CNN
+F 1 "2N7002" H 3350 4850 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 3875 4575 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF" H 3675 4650 50  0001 L CNN
+F 4 "REPLACE_" H 3675 4650 50  0001 C CNN "jlcpcb"
+	1    3675 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61D0E3C2
+P 3775 4850
+AR Path="/5AD46BE5/61D0E3C2" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61D0E3C2" Ref="#PWR?"  Part="1" 
+AR Path="/61D0E3C2" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61D0E3C2" Ref="#PWR?"  Part="1" 
+AR Path="/61CAE40F/61D0E3C2" Ref="#PWR0222"  Part="1" 
+F 0 "#PWR0222" H 3775 4600 50  0001 C CNN
+F 1 "GND" H 3775 4700 50  0000 C CNN
+F 2 "" H 3775 4850 50  0001 C CNN
+F 3 "" H 3775 4850 50  0001 C CNN
+	1    3775 4850
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 4450 3775 4325
+$Comp
+L Device:R_Small R?
+U 1 1 61D0E3CF
+P 3450 4825
+AR Path="/5AD46BE5/61D0E3CF" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61D0E3CF" Ref="R?"  Part="1" 
+AR Path="/61D0E3CF" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61D0E3CF" Ref="R?"  Part="1" 
+AR Path="/61CAE40F/61D0E3CF" Ref="R72"  Part="1" 
+F 0 "R72" V 3525 4875 50  0000 C CNN
+F 1 "100K" V 3375 4825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 3450 4825 50  0001 C CNN
+F 3 "~" H 3450 4825 50  0001 C CNN
+F 4 "5%" V 3450 4825 50  0001 C CNN "precision"
+F 5 "C25803" H 3450 4825 50  0001 C CNN "jlcpcb"
+	1    3450 4825
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3425 4650 3450 4650
+Wire Wire Line
+	3225 4650 3150 4650
+$Comp
+L power:GND #PWR?
+U 1 1 61D0E3DB
+P 3450 4925
+AR Path="/5AD46BE5/61D0E3DB" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61D0E3DB" Ref="#PWR?"  Part="1" 
+AR Path="/61D0E3DB" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61D0E3DB" Ref="#PWR?"  Part="1" 
+AR Path="/61CAE40F/61D0E3DB" Ref="#PWR0223"  Part="1" 
+F 0 "#PWR0223" H 3450 4675 50  0001 C CNN
+F 1 "GND" H 3450 4775 50  0000 C CNN
+F 2 "" H 3450 4925 50  0001 C CNN
+F 3 "" H 3450 4925 50  0001 C CNN
+	1    3450 4925
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	3450 4725 3450 4650
+Connection ~ 3450 4650
+Wire Wire Line
+	3450 4650 3475 4650
+$Comp
+L power:+24V #PWR0224
+U 1 1 61D0E3E8
+P 3775 3725
+F 0 "#PWR0224" H 3775 3575 50  0001 C CNN
+F 1 "+24V" H 3790 3898 50  0000 C CNN
+F 2 "" H 3775 3725 50  0001 C CNN
+F 3 "" H 3775 3725 50  0001 C CNN
+	1    3775 3725
+	1    0    0    -1  
+$EndComp
+Text Notes 5675 1900 0    50   ~ 0
+230V?? Other relay solution ??\n
+$Comp
+L power:PWR_FLAG #FLG01
+U 1 1 61E6E70E
+P 9025 3175
+F 0 "#FLG01" H 9025 3250 50  0001 C CNN
+F 1 "PWR_FLAG" H 9025 3348 50  0000 C CNN
+F 2 "" H 9025 3175 50  0001 C CNN
+F 3 "~" H 9025 3175 50  0001 C CNN
+	1    9025 3175
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9025 3175 9025 3100
+Wire Wire Line
+	9025 3100 9050 3100
+Wire Wire Line
+	8850 3175 8850 3100
+Wire Wire Line
+	8850 3100 9025 3100
+Connection ~ 9025 3100
+$EndSCHEMATC
