@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name power)(type Legacy)(uri ${KIPRJMOD}/../libraries/power/power.lib)(options "")(descr ""))
+  (lib (name industrial)(type Legacy)(uri ${KIPRJMOD}/../libraries/industrial/industrial.lib)(options "")(descr ""))
+  (lib (name spscnc-rescue)(type Legacy)(uri ${KIPRJMOD}/spscnc-rescue.lib)(options "")(descr ""))
+)
