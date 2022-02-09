@@ -1,0 +1,25 @@
+# Set the default behavior, in case people don't have core.autocrlf set.
+* text eol=lf
+*.c text
+*.h text
+*.sln text eol=crlf
+*.py text eol=lf
+*.sh text eol=lf
+*.docx binary diff=pandoc
+*.xlsx binary diff=pandoc
+*.odt binary diff=pandoc
+*.pptx  binary diff=pandoc
+*.gif binary
+*.png binary
+*.zip binary
+*.rar binary
+*.gif binary
+*.vsd binary
+*.exe binary
+*.deb binary
+*.gz binary
+*.tgz binary
+*.tar binary
+*.bz2 binary
+*.pdf binary
+zImage binary

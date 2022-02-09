@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 16
+Sheet 5 17
 Title "Trinamic FluidNC CNC Controller"
 Date "2022-01-27"
 Rev "1.0.0"
@@ -17,57 +17,8 @@ Text HLabel 3575 2575 0    50   Input ~ 0
 EN
 Text HLabel 3575 2475 0    50   Input ~ 0
 PWM_IN
-NoConn ~ 7175 1750
-NoConn ~ 7325 1750
-NoConn ~ 7475 1750
-NoConn ~ 7625 1750
-NoConn ~ 7675 5975
-NoConn ~ 7525 5975
-NoConn ~ 7375 5975
-NoConn ~ 7225 5975
 Text Label 6900 2675 2    50   ~ 0
 MOTOR_A
-Wire Wire Line
-	7025 2700 7025 2675
-Connection ~ 7025 2600
-Wire Wire Line
-	7025 2600 7025 2500
-Connection ~ 7025 2500
-Wire Wire Line
-	7025 2500 7025 2400
-Connection ~ 7025 2400
-Wire Wire Line
-	7025 2400 7025 2300
-Connection ~ 7025 2300
-Wire Wire Line
-	7025 2300 7025 2200
-Connection ~ 7025 2200
-Wire Wire Line
-	7025 2200 7025 2100
-Connection ~ 7025 2100
-Wire Wire Line
-	7025 2100 7025 2000
-Wire Wire Line
-	7075 5725 7075 5625
-Connection ~ 7075 5025
-Connection ~ 7075 5125
-Wire Wire Line
-	7075 5125 7075 5025
-Connection ~ 7075 5225
-Wire Wire Line
-	7075 5225 7075 5125
-Connection ~ 7075 5325
-Wire Wire Line
-	7075 5325 7075 5225
-Connection ~ 7075 5425
-Wire Wire Line
-	7075 5425 7075 5325
-Connection ~ 7075 5525
-Wire Wire Line
-	7075 5525 7075 5425
-Connection ~ 7075 5625
-Wire Wire Line
-	7075 5625 7075 5525
 Text Label 6975 5000 2    50   ~ 0
 MOTOR_B
 Text HLabel 3550 4800 0    50   Input ~ 0
@@ -358,20 +309,13 @@ Wire Wire Line
 	5900 4875 5900 5000
 Wire Wire Line
 	5275 2675 5925 2675
-Connection ~ 7025 2675
-Wire Wire Line
-	7025 2675 7025 2600
 Connection ~ 5925 2675
 Wire Wire Line
 	5925 2675 5925 2600
 Wire Wire Line
-	5925 2675 7025 2675
-Wire Wire Line
 	5925 2675 5925 2775
 Wire Wire Line
 	5900 5000 7075 5000
-Wire Wire Line
-	7075 5000 7075 5025
 Wire Wire Line
 	5900 5000 5900 5100
 Wire Wire Line
@@ -396,40 +340,6 @@ Wire Wire Line
 	2950 1600 2725 1600
 Wire Wire Line
 	2725 1600 2725 1575
-$Comp
-L industrial:8P8C_4xShielded J?
-U 1 1 61D212C1
-P 7425 2300
-AR Path="/61C80DFB/61D212C1" Ref="J?"  Part="1" 
-AR Path="/61C80E48/61D212C1" Ref="J?"  Part="1" 
-AR Path="/61C80E8F/61D212C1" Ref="J?"  Part="1" 
-AR Path="/61CEF4C9/61D212C1" Ref="J?"  Part="1" 
-AR Path="/61C80DCB/61D212C1" Ref="J1"  Part="1" 
-F 0 "J1" H 7095 2222 50  0000 R CNN
-F 1 "8P8C_4xShielded" H 7095 2313 50  0000 R CNN
-F 2 "industrial000:rj45_R-RJ45S08P-B000_C386763" V 7425 2325 50  0001 C CNN
-F 3 "~" V 7425 2325 50  0001 C CNN
-F 4 "DNP007" H 7425 2300 50  0001 C CNN "jlcpcb"
-	1    7425 2300
-	-1   0    0    1   
-$EndComp
-$Comp
-L industrial:8P8C_4xShielded J?
-U 1 1 61D219D4
-P 7475 5425
-AR Path="/61C80DFB/61D219D4" Ref="J?"  Part="1" 
-AR Path="/61C80E48/61D219D4" Ref="J?"  Part="1" 
-AR Path="/61C80E8F/61D219D4" Ref="J?"  Part="1" 
-AR Path="/61CEF4C9/61D219D4" Ref="J?"  Part="1" 
-AR Path="/61C80DCB/61D219D4" Ref="J2"  Part="1" 
-F 0 "J2" H 7145 5347 50  0000 R CNN
-F 1 "8P8C_4xShielded" H 7145 5438 50  0000 R CNN
-F 2 "industrial000:rj45_R-RJ45S08P-B000_C386763" V 7475 5450 50  0001 C CNN
-F 3 "~" V 7475 5450 50  0001 C CNN
-F 4 "DNP007" H 7475 5425 50  0001 C CNN "jlcpcb"
-	1    7475 5425
-	-1   0    0    -1  
-$EndComp
 $Comp
 L Driver_FET:IR2104 U2
 U 1 1 61D24C63
@@ -743,7 +653,7 @@ F 4 "C17594" H 3100 1600 50  0001 C CNN "jlcpcb"
 	0    -1   -1   0   
 $EndComp
 Text Notes 7525 4075 0    50   ~ 0
-We could consider a half bridge to save cost.
+We could consider a half bridge to save cost. And consider no inversion
 $Comp
 L Device:R R150
 U 1 1 61FC0102
@@ -964,4 +874,36 @@ $EndComp
 Connection ~ 1475 6025
 Wire Wire Line
 	1475 6025 2200 6025
+$Comp
+L Connector:Conn_01x04_Female MOTOR_CONN?
+U 1 1 623B8ED3
+P 8000 2775
+AR Path="/61E0961E/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/61C743E7/61AF0AE8/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/61E601B6/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/6203D74D/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/6203DA5D/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/6203DFCF/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/6221509B/623B8ED3" Ref="MOTOR_CONN?"  Part="1" 
+AR Path="/61C80DCB/623B8ED3" Ref="MOTOR_CONN5"  Part="1" 
+F 0 "MOTOR_CONN5" H 7892 2350 50  0000 C CNN
+F 1 "MOTOR CONN" H 7892 2441 50  0000 C CNN
+F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_4-GF-5,08_1x04_P5.08mm_Vertical_ThreadedFlange_MountHole" H 8000 2775 50  0001 C CNN
+F 3 "~" H 8000 2775 50  0001 C CNN
+F 4 "DNP006" H 8000 2775 50  0001 C CNN "jlcpcb"
+	1    8000 2775
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	7800 2675 7800 2575
+Connection ~ 7800 2675
+Wire Wire Line
+	5925 2675 7800 2675
+Wire Wire Line
+	7800 2875 7800 2775
+Wire Wire Line
+	7800 2875 7075 2875
+Wire Wire Line
+	7075 2875 7075 5000
+Connection ~ 7800 2875
 $EndSCHEMATC

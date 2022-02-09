@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 12 16
+Sheet 12 17
 Title "Trinamic FluidNC CNC Controller"
 Date "2022-01-27"
 Rev "1.0.0"
@@ -283,8 +283,8 @@ F 3 "" H 1875 1475 50  0001 C CNN
 	1    1875 1475
 	1    0    0    -1  
 $EndComp
-Text Notes 675  1100 0    50   ~ 0
-Using 12V reduces internal power dissipation, although the device could operate at 48V\n
+Text Notes 1050 850  0    50   ~ 0
+Using 12V reduces internal power dissipation\nalthough the device could operate at 48V\n
 $Comp
 L Device:R R?
 U 1 1 61E823EB
@@ -1063,42 +1063,42 @@ Text HLabel 3175 4375 0    50   Input ~ 0
 DNIN
 Text HLabel 3175 4475 0    50   Output ~ 0
 DCO
-Text Notes 0    11075 0    50   ~ 0
+Text Notes 6200 6250 0    50   ~ 0
 Sense:\n0.075 ohms 3.1 A RMS limit. 1W resistor\n0.050 ohms 4.7 A RMS limit. 0.6W\n0.033 ohms 7.1 A RMS limit. 0.4W\nChoose low inductance resistors\nwide traces around sense.\nExtra cap? DNP
-Text Notes 2475 11300 0    50   ~ 0
+Text Notes 8250 6250 0    50   ~ 0
 PCB Layout:\nSense must be simetrical\nShort traces\nWell match sense resistors 0.1%\n\n
 $Comp
 L Mechanical:MountingHole_Pad H4
 U 1 1 61F4E61C
-P 3125 10225
+P 10475 5625
 AR Path="/61E601B6/61F4E61C" Ref="H4"  Part="1" 
 AR Path="/6203D74D/61F4E61C" Ref="H5"  Part="1" 
 AR Path="/6203DA5D/61F4E61C" Ref="H6"  Part="1" 
 AR Path="/6203DFCF/61F4E61C" Ref="H7"  Part="1" 
 AR Path="/6221509B/61F4E61C" Ref="H?"  Part="1" 
-F 0 "H6" H 3225 10274 50  0000 L CNN
-F 1 "MountingHole_Pad" H 3225 10183 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 3125 10225 50  0001 C CNN
-F 3 "~" H 3125 10225 50  0001 C CNN
-F 4 "DNP003" H 3125 10225 50  0001 C CNN "jlcpcb"
-	1    3125 10225
+F 0 "H6" H 10575 5674 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10575 5583 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10475 5625 50  0001 C CNN
+F 3 "~" H 10475 5625 50  0001 C CNN
+F 4 "DNP003" H 10475 5625 50  0001 C CNN "jlcpcb"
+	1    10475 5625
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND-power #PWR0125
 U 1 1 61F4F366
-P 3125 10325
+P 10475 5725
 AR Path="/61E601B6/61F4F366" Ref="#PWR0125"  Part="1" 
 AR Path="/6203D74D/61F4F366" Ref="#PWR055"  Part="1" 
 AR Path="/6203DA5D/61F4F366" Ref="#PWR075"  Part="1" 
 AR Path="/6203DFCF/61F4F366" Ref="#PWR095"  Part="1" 
 AR Path="/61F4F366" Ref="#PWR0125"  Part="1" 
 AR Path="/6221509B/61F4F366" Ref="#PWR?"  Part="1" 
-F 0 "#PWR075" H 3125 10075 50  0001 C CNN
-F 1 "GND" H 3130 10152 50  0000 C CNN
-F 2 "" H 3125 10325 50  0001 C CNN
-F 3 "" H 3125 10325 50  0001 C CNN
-	1    3125 10325
+F 0 "#PWR075" H 10475 5475 50  0001 C CNN
+F 1 "GND" H 10480 5552 50  0000 C CNN
+F 2 "" H 10475 5725 50  0001 C CNN
+F 3 "" H 10475 5725 50  0001 C CNN
+	1    10475 5725
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1747,172 +1747,37 @@ $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H3
 U 1 1 61FC28D3
-P 2775 10225
+P 10125 5625
 AR Path="/61E601B6/61FC28D3" Ref="H3"  Part="1" 
 AR Path="/6203D74D/61FC28D3" Ref="H8"  Part="1" 
 AR Path="/6203DA5D/61FC28D3" Ref="H9"  Part="1" 
 AR Path="/6203DFCF/61FC28D3" Ref="H10"  Part="1" 
 AR Path="/6221509B/61FC28D3" Ref="H?"  Part="1" 
-F 0 "H9" H 2875 10274 50  0000 L CNN
-F 1 "MountingHole_Pad" H 2875 10183 50  0001 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 2775 10225 50  0001 C CNN
-F 3 "~" H 2775 10225 50  0001 C CNN
-F 4 "DNP003" H 2775 10225 50  0001 C CNN "jlcpcb"
-	1    2775 10225
+F 0 "H9" H 10225 5674 50  0000 L CNN
+F 1 "MountingHole_Pad" H 10225 5583 50  0001 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10125 5625 50  0001 C CNN
+F 3 "~" H 10125 5625 50  0001 C CNN
+F 4 "DNP003" H 10125 5625 50  0001 C CNN "jlcpcb"
+	1    10125 5625
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND-power #PWR03
 U 1 1 61FC2A3D
-P 2775 10325
+P 10125 5725
 AR Path="/61E601B6/61FC2A3D" Ref="#PWR03"  Part="1" 
 AR Path="/6203D74D/61FC2A3D" Ref="#PWR04"  Part="1" 
 AR Path="/6203DA5D/61FC2A3D" Ref="#PWR06"  Part="1" 
 AR Path="/6203DFCF/61FC2A3D" Ref="#PWR037"  Part="1" 
 AR Path="/61FC2A3D" Ref="#PWR03"  Part="1" 
 AR Path="/6221509B/61FC2A3D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR06" H 2775 10075 50  0001 C CNN
-F 1 "GND" H 2780 10152 50  0000 C CNN
-F 2 "" H 2775 10325 50  0001 C CNN
-F 3 "" H 2775 10325 50  0001 C CNN
-	1    2775 10325
+F 0 "#PWR06" H 10125 5475 50  0001 C CNN
+F 1 "GND" H 10130 5552 50  0000 C CNN
+F 2 "" H 10125 5725 50  0001 C CNN
+F 3 "" H 10125 5725 50  0001 C CNN
+	1    10125 5725
 	1    0    0    -1  
 $EndComp
-$Comp
-L industrial:8P8C_4xShielded J?
-U 1 1 61F14B50
-P 10060 3860
-AR Path="/61C80DFB/61F14B50" Ref="J?"  Part="1" 
-AR Path="/61C80E48/61F14B50" Ref="J?"  Part="1" 
-AR Path="/61C80E8F/61F14B50" Ref="J?"  Part="1" 
-AR Path="/61CEF4C9/61F14B50" Ref="J?"  Part="1" 
-AR Path="/61C80DCB/61F14B50" Ref="J?"  Part="1" 
-AR Path="/61DEDDC1/61F14B50" Ref="J?"  Part="1" 
-AR Path="/61E601B6/61F14B50" Ref="J4"  Part="1" 
-AR Path="/6203D74D/61F14B50" Ref="J9"  Part="1" 
-AR Path="/6203DA5D/61F14B50" Ref="J11"  Part="1" 
-AR Path="/6203DFCF/61F14B50" Ref="J13"  Part="1" 
-AR Path="/6221509B/61F14B50" Ref="J?"  Part="1" 
-F 0 "J11" H 9730 3782 50  0000 R CNN
-F 1 "8P8C_4xShielded" V 9535 4135 50  0000 R CNN
-F 2 "industrial000:rj45_R-RJ45S08P-B000_C386763" V 10060 3885 50  0001 C CNN
-F 3 "~" V 10060 3885 50  0001 C CNN
-F 4 "DNP007" H 10060 3860 50  0001 C CNN "jlcpcb"
-	1    10060 3860
-	-1   0    0    1   
-$EndComp
-Text Label 9620 3560 2    50   ~ 0
-COIL_B_P
-Wire Wire Line
-	9660 3560 9620 3560
-Text Label 9620 3660 2    50   ~ 0
-COIL_B_N
-Wire Wire Line
-	9620 3660 9660 3660
-Text Label 9660 3760 2    50   ~ 0
-COIL_B_P
-Text Label 9660 4060 2    50   ~ 0
-COIL_B_N
-Text Label 9660 3860 2    50   ~ 0
-COIL_A_N
-Text Label 9660 3960 2    50   ~ 0
-COIL_A_P
-Text Label 9660 4160 2    50   ~ 0
-COIL_A_P
-Text Label 9660 4260 2    50   ~ 0
-COIL_A_N
-NoConn ~ 9810 3310
-NoConn ~ 9960 3310
-NoConn ~ 10110 3310
-NoConn ~ 10260 3310
-$Comp
-L industrial:8P8C_4xShielded J?
-U 1 1 61F559AD
-P 10375 5450
-AR Path="/61C80DFB/61F559AD" Ref="J?"  Part="1" 
-AR Path="/61C80E48/61F559AD" Ref="J?"  Part="1" 
-AR Path="/61C80E8F/61F559AD" Ref="J?"  Part="1" 
-AR Path="/61CEF4C9/61F559AD" Ref="J?"  Part="1" 
-AR Path="/61C80DCB/61F559AD" Ref="J?"  Part="1" 
-AR Path="/61DEDDC1/61F559AD" Ref="J?"  Part="1" 
-AR Path="/61E601B6/61F559AD" Ref="J8"  Part="1" 
-AR Path="/6203D74D/61F559AD" Ref="J10"  Part="1" 
-AR Path="/6203DA5D/61F559AD" Ref="J12"  Part="1" 
-AR Path="/6203DFCF/61F559AD" Ref="J14"  Part="1" 
-AR Path="/6221509B/61F559AD" Ref="J?"  Part="1" 
-F 0 "J12" H 10045 5372 50  0000 R CNN
-F 1 "8P8C_4xShielded" V 9850 5725 50  0000 R CNN
-F 2 "industrial000:rj45_R-RJ45S08P-B000_C386763" V 10375 5475 50  0001 C CNN
-F 3 "~" V 10375 5475 50  0001 C CNN
-F 4 "DNP007" H 10375 5450 50  0001 C CNN "jlcpcb"
-	1    10375 5450
-	-1   0    0    1   
-$EndComp
-NoConn ~ 10125 4900
-NoConn ~ 10275 4900
-NoConn ~ 10425 4900
-NoConn ~ 10575 4900
-$Comp
-L Connector:Conn_01x04_Female MOTOR_CONN?
-U 1 1 61F5C974
-P 9375 5250
-AR Path="/61E0961E/61F5C974" Ref="MOTOR_CONN?"  Part="1" 
-AR Path="/61C743E7/61AF0AE8/61F5C974" Ref="MOTOR_CONN?"  Part="1" 
-AR Path="/61E601B6/61F5C974" Ref="RCON1"  Part="1" 
-AR Path="/6203D74D/61F5C974" Ref="MOTOR_CONN5"  Part="1" 
-AR Path="/6203DA5D/61F5C974" Ref="MOTOR_CONN6"  Part="1" 
-AR Path="/6203DFCF/61F5C974" Ref="MOTOR_CONN7"  Part="1" 
-AR Path="/6221509B/61F5C974" Ref="RCON?"  Part="1" 
-F 0 "RCON1" H 9267 4825 50  0000 C CNN
-F 1 "RCONN" H 9267 4916 50  0000 C CNN
-F 2 "Connector_Phoenix_MSTB:PhoenixContact_MSTBV_2,5_4-GF-5,08_1x04_P5.08mm_Vertical_ThreadedFlange_MountHole" H 9375 5250 50  0001 C CNN
-F 3 "~" H 9375 5250 50  0001 C CNN
-F 4 "DNP018" H 9375 5250 50  0001 C CNN "jlcpcb"
-	1    9375 5250
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9975 5150 9900 5150
-Wire Wire Line
-	9575 5250 9750 5250
-Wire Wire Line
-	9975 5850 9900 5850
-Wire Wire Line
-	9575 5850 9575 5450
-Wire Wire Line
-	9575 5350 9625 5350
-Wire Wire Line
-	9625 5350 9625 5750
-Wire Wire Line
-	9625 5750 9825 5750
-Wire Wire Line
-	9975 5350 9900 5350
-Wire Wire Line
-	9900 5350 9900 5150
-Connection ~ 9900 5150
-Wire Wire Line
-	9900 5150 9575 5150
-Wire Wire Line
-	9975 5650 9750 5650
-Wire Wire Line
-	9750 5650 9750 5250
-Connection ~ 9750 5250
-Wire Wire Line
-	9750 5250 9975 5250
-Wire Wire Line
-	9975 5450 9900 5450
-Wire Wire Line
-	9900 5450 9900 5850
-Connection ~ 9900 5850
-Wire Wire Line
-	9900 5850 9575 5850
-Wire Wire Line
-	9975 5550 9825 5550
-Wire Wire Line
-	9825 5550 9825 5750
-Connection ~ 9825 5750
-Wire Wire Line
-	9825 5750 9975 5750
 $Comp
 L Device:R_Small R?
 U 1 1 61F2FC8F
@@ -2154,7 +2019,7 @@ Wire Wire Line
 	3850 6650 4050 6650
 Wire Wire Line
 	4300 6650 4300 6925
-Text Notes -1775 10825 0    50   ~ 0
+Text Notes 2700 6500 0    50   ~ 0
 1nF caps added to reduce ringing
 $Comp
 L Device:D_Schottky D?
@@ -2295,12 +2160,8 @@ Wire Wire Line
 	1875 2075 2125 2075
 Text Label 2525 1875 2    50   ~ 0
 GNDA
-Text Label 4775 5975 2    50   ~ 0
+Text Label 4800 5975 2    50   ~ 0
 GNDA
-Wire Wire Line
-	4775 5975 4800 5975
-Wire Wire Line
-	4800 5975 4800 5875
 Wire Wire Line
 	2125 1975 2125 2075
 Connection ~ 2125 2075
@@ -2309,19 +2170,20 @@ Wire Wire Line
 $Comp
 L power:PWR_FLAG-power #FLG0104
 U 1 1 61F8983B
-P 4800 5975
+P 4800 6125
 AR Path="/61E601B6/61F8983B" Ref="#FLG0104"  Part="1" 
 AR Path="/6203D74D/61F8983B" Ref="#FLG0109"  Part="1" 
 AR Path="/6203DFCF/61F8983B" Ref="#FLG0114"  Part="1" 
 AR Path="/6203DA5D/61F8983B" Ref="#FLG0115"  Part="1" 
 AR Path="/61F8983B" Ref="#FLG0104"  Part="1" 
 AR Path="/6221509B/61F8983B" Ref="#FLG?"  Part="1" 
-F 0 "#FLG0115" H 4800 6050 50  0001 C CNN
-F 1 "PWR_FLAG" H 4800 6148 50  0000 C CNN
-F 2 "" H 4800 5975 50  0001 C CNN
-F 3 "~" H 4800 5975 50  0001 C CNN
-	1    4800 5975
+F 0 "#FLG0115" H 4800 6200 50  0001 C CNN
+F 1 "PWR_FLAG" H 4800 6298 50  0000 C CNN
+F 2 "" H 4800 6125 50  0001 C CNN
+F 3 "~" H 4800 6125 50  0001 C CNN
+	1    4800 6125
 	-1   0    0    1   
 $EndComp
-Connection ~ 4800 5975
+Wire Wire Line
+	4800 6125 4800 5875
 $EndSCHEMATC
