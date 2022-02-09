@@ -10,3 +10,4 @@ The card integrates the ESP32 module, 4 axis, and a simple PWM controller for th
 
 The card could be produced in JLCPCB for less than 100 USD per card when ordering 10 pcs (without a heatsink). Cost optimizations are possible. But the card is intended to be reliable in systems requiring high current.
 
+[](pcb.render.1.0.0.png)

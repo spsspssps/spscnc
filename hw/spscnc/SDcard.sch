@@ -30,20 +30,20 @@ F 1 "+3V3" V 6700 2800 50  0000 C CNN
 F 2 "" H 6700 2550 50  0001 C CNN
 F 3 "" H 6700 2550 50  0001 C CNN
 	1    6700 2550
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND-power #PWR0200
 U 1 1 61CA91B5
 P 6025 3075
-AR Path="/61CA91B5" Ref="#PWR0200"  Part="1"
-AR Path="/61CA8BC6/61CA91B5" Ref="#PWR0200"  Part="1"
+AR Path="/61CA91B5" Ref="#PWR0200"  Part="1" 
+AR Path="/61CA8BC6/61CA91B5" Ref="#PWR0200"  Part="1" 
 F 0 "#PWR0200" H 6025 2825 50  0001 C CNN
 F 1 "GND" H 6030 2902 50  0000 C CNN
 F 2 "" H 6025 3075 50  0001 C CNN
 F 3 "" H 6025 3075 50  0001 C CNN
 	1    6025 3075
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:Conn_01x07_Female J6
@@ -55,7 +55,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x07_P2.54mm_Horizontal" H 6900 2550 5
 F 3 "~" H 6900 2550 50  0001 C CNN
 F 4 "DNP016" H 6900 2550 50  0001 C CNN "jlcpcb"
 	1    6900 2550
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6700 2350 6025 2350

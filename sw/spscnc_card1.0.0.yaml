@@ -161,6 +161,10 @@ PWM:
   tool_num: 0
   speed_map: 0=0% 10000=100%
 
+I2S:
+    bck_pin: gpio.22
+    data_pin: gpio.21
+    ws_pin: gpio.17
 
 #  0 x.dir: gpio.0
 #A 1 GPIO.1 UART
@@ -211,7 +215,8 @@ PWM:
 # 14 15  OK
 control:
 # Change bit: blue :TODO pu once installed
-# TODO place this  safety_door_pin: gpio.15:pu
+# TODO place this
+safety_door_pin: gpio.15:pu
 # Red kills the machine TODO :pu once installed
 #reset_pin: gpio.39
 # Pause yellow

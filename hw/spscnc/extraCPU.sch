@@ -17,12 +17,12 @@ $Comp
 L RF_Module:ESP32-WROOM-32D U?
 U 1 1 6204D0C2
 P 6575 3800
-AR Path="/61367F02/6204D0C2" Ref="U?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0C2" Ref="U?"  Part="1"
-AR Path="/61B9A8A6/6204D0C2" Ref="U?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D0C2" Ref="U?"  Part="1"
-AR Path="/61C81F9D/6204D0C2" Ref="U?"  Part="1"
-AR Path="/62040DF5/6204D0C2" Ref="U12"  Part="1"
+AR Path="/61367F02/6204D0C2" Ref="U?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0C2" Ref="U?"  Part="1" 
+AR Path="/61B9A8A6/6204D0C2" Ref="U?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D0C2" Ref="U?"  Part="1" 
+AR Path="/61C81F9D/6204D0C2" Ref="U?"  Part="1" 
+AR Path="/62040DF5/6204D0C2" Ref="U12"  Part="1" 
 F 0 "U12" H 6530 4160 50  0000 C CNN
 F 1 "ESP32-WROOM-32D" H 7150 5205 50  0000 C CNN
 F 2 "RF_Module:ESP32-WROOM-32" H 6575 2300 50  0001 C CNN
@@ -31,25 +31,25 @@ F 4 "STOCKSELF" H 6575 3800 50  0001 C CNN "jlcpcb"
 F 5 "was C473012 or C529578" H 6575 3800 50  0001 C CNN "power"
 F 6 "" H 6575 3800 50  0001 C CNN "alternatives"
 	1    6575 3800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D0C8
 P 6575 5200
-AR Path="/61367F02/6204D0C8" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0C8" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D0C8" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D0C8" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D0C8" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D0C8" Ref="#PWR0209"  Part="1"
-AR Path="/6204D0C8" Ref="#PWR0209"  Part="1"
+AR Path="/61367F02/6204D0C8" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0C8" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D0C8" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D0C8" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D0C8" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D0C8" Ref="#PWR0209"  Part="1" 
+AR Path="/6204D0C8" Ref="#PWR0209"  Part="1" 
 F 0 "#PWR0209" H 6575 4950 50  0001 C CNN
 F 1 "GND3" H 6580 5027 50  0000 C CNN
 F 2 "" H 6575 5200 50  0001 C CNN
 F 3 "" H 6575 5200 50  0001 C CNN
 	1    6575 5200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Notes 6200 3225 0    60   ~ 0
 ESP32-D0WDQ6
@@ -57,12 +57,12 @@ $Comp
 L Regulator_Linear:LM317_TO-263 U?
 U 1 1 6204D0D6
 P 2525 1050
-AR Path="/61367F02/6204D0D6" Ref="U?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0D6" Ref="U?"  Part="1"
-AR Path="/61B9A8A6/6204D0D6" Ref="U?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D0D6" Ref="U?"  Part="1"
-AR Path="/61C81F9D/6204D0D6" Ref="U?"  Part="1"
-AR Path="/62040DF5/6204D0D6" Ref="U11"  Part="1"
+AR Path="/61367F02/6204D0D6" Ref="U?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0D6" Ref="U?"  Part="1" 
+AR Path="/61B9A8A6/6204D0D6" Ref="U?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D0D6" Ref="U?"  Part="1" 
+AR Path="/61C81F9D/6204D0D6" Ref="U?"  Part="1" 
+AR Path="/62040DF5/6204D0D6" Ref="U11"  Part="1" 
 F 0 "U11" H 2525 1292 50  0000 C CNN
 F 1 "NCP1117ST33T3G" H 2525 1201 50  0000 C CNN
 F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 2525 1300 50  0001 C CIN
@@ -70,18 +70,18 @@ F 3 "" H 2525 1050 50  0001 C CNN
 F 4 "HOMEAMS1117-3v3" H 2525 1050 50  0001 C CNN "jlcpcb"
 F 5 "C26537" H 2525 1050 50  0001 C CNN "alternatives"
 	1    2525 1050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6204D0DF
 P 3450 1250
-AR Path="/61367F02/6204D0DF" Ref="C?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0DF" Ref="C?"  Part="1"
-AR Path="/61B9A8A6/6204D0DF" Ref="C?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D0DF" Ref="C?"  Part="1"
-AR Path="/61C81F9D/6204D0DF" Ref="C?"  Part="1"
-AR Path="/62040DF5/6204D0DF" Ref="C87"  Part="1"
+AR Path="/61367F02/6204D0DF" Ref="C?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0DF" Ref="C?"  Part="1" 
+AR Path="/61B9A8A6/6204D0DF" Ref="C?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D0DF" Ref="C?"  Part="1" 
+AR Path="/61C81F9D/6204D0DF" Ref="C?"  Part="1" 
+AR Path="/62040DF5/6204D0DF" Ref="C87"  Part="1" 
 F 0 "C87" H 3542 1296 50  0000 L CNN
 F 1 "10uF" H 3542 1205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 3450 1250 50  0001 C CNN
@@ -90,18 +90,18 @@ F 4 "C13585" H 3450 1250 50  0001 C CNN "jlcpcb"
 F 5 "<10V" H 3450 1250 50  0001 C CNN "power"
 F 6 "20%" H 3450 1250 50  0001 C CNN "precision"
 	1    3450 1250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6204D0E8
 P 1875 1250
-AR Path="/61367F02/6204D0E8" Ref="C?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0E8" Ref="C?"  Part="1"
-AR Path="/61B9A8A6/6204D0E8" Ref="C?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D0E8" Ref="C?"  Part="1"
-AR Path="/61C81F9D/6204D0E8" Ref="C?"  Part="1"
-AR Path="/62040DF5/6204D0E8" Ref="C86"  Part="1"
+AR Path="/61367F02/6204D0E8" Ref="C?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0E8" Ref="C?"  Part="1" 
+AR Path="/61B9A8A6/6204D0E8" Ref="C?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D0E8" Ref="C?"  Part="1" 
+AR Path="/61C81F9D/6204D0E8" Ref="C?"  Part="1" 
+AR Path="/62040DF5/6204D0E8" Ref="C86"  Part="1" 
 F 0 "C86" H 1967 1296 50  0000 L CNN
 F 1 "10uF" H 1967 1205 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 1875 1250 50  0001 C CNN
@@ -110,25 +110,25 @@ F 4 "C13585" H 1875 1250 50  0001 C CNN "jlcpcb"
 F 5 "<10V" H 1875 1250 50  0001 C CNN "power"
 F 6 "20% 15% over temperature X5R" H 1875 1250 50  0001 C CNN "precision"
 	1    1875 1250
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6204D0EE
 P 3450 1050
-AR Path="/61367F02/6204D0EE" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0EE" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D0EE" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D0EE" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D0EE" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D0EE" Ref="#PWR0210"  Part="1"
-AR Path="/6204D0EE" Ref="#PWR0210"  Part="1"
+AR Path="/61367F02/6204D0EE" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D0EE" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D0EE" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D0EE" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D0EE" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D0EE" Ref="#PWR0210"  Part="1" 
+AR Path="/6204D0EE" Ref="#PWR0210"  Part="1" 
 F 0 "#PWR0210" H 3450 900 50  0001 C CNN
 F 1 "+3.3VP" H 3465 1223 50  0000 C CNN
 F 2 "" H 3450 1050 50  0001 C CNN
 F 3 "" H 3450 1050 50  0001 C CNN
 	1    3450 1050
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3450 1050 3450 1150
@@ -151,74 +151,74 @@ $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D118
 P 3075 1950
-AR Path="/61367F02/6204D118" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D118" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D118" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D118" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D118" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D118" Ref="#PWR0212"  Part="1"
-AR Path="/6204D118" Ref="#PWR0212"  Part="1"
+AR Path="/61367F02/6204D118" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D118" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D118" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D118" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D118" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D118" Ref="#PWR0212"  Part="1" 
+AR Path="/6204D118" Ref="#PWR0212"  Part="1" 
 F 0 "#PWR0212" H 3075 1700 50  0001 C CNN
 F 1 "GND3" H 3080 1777 50  0000 C CNN
 F 2 "" H 3075 1950 50  0001 C CNN
 F 3 "" H 3075 1950 50  0001 C CNN
 	1    3075 1950
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6204D11F
 P 5475 2500
-AR Path="/61367F02/6204D11F" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D11F" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D11F" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D11F" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D11F" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D11F" Ref="R163"  Part="1"
+AR Path="/61367F02/6204D11F" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D11F" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D11F" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D11F" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D11F" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D11F" Ref="R163"  Part="1" 
 F 0 "R163" H 5534 2546 50  0000 L CNN
 F 1 "1K" H 5534 2455 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 5475 2500 50  0001 C CNN
 F 3 "~" H 5475 2500 50  0001 C CNN
 F 4 "C21190" H 5475 2500 50  0001 C CNN "jlcpcb"
 	1    5475 2500
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Connection ~ 5475 2600
 $Comp
 L Switch:SW_DIP_x01 BOOTM?
 U 1 1 6204D13A
 P 9875 1900
-AR Path="/61367F02/6204D13A" Ref="BOOTM?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D13A" Ref="BOOTM?"  Part="1"
-AR Path="/61B9A8A6/6204D13A" Ref="BOOTM?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D13A" Ref="BOOTM?"  Part="1"
-AR Path="/61C81F9D/6204D13A" Ref="BOOTM?"  Part="1"
-AR Path="/62040DF5/6204D13A" Ref="BOOTM2"  Part="1"
+AR Path="/61367F02/6204D13A" Ref="BOOTM?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D13A" Ref="BOOTM?"  Part="1" 
+AR Path="/61B9A8A6/6204D13A" Ref="BOOTM?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D13A" Ref="BOOTM?"  Part="1" 
+AR Path="/61C81F9D/6204D13A" Ref="BOOTM?"  Part="1" 
+AR Path="/62040DF5/6204D13A" Ref="BOOTM2"  Part="1" 
 F 0 "BOOTM2" V 9829 2030 50  0000 L CNN
 F 1 "SW_DIP_x01" V 9920 2030 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 9875 1900 50  0001 C CNN
 F 3 "~" H 9875 1900 50  0001 C CNN
 F 4 "DNP001" V 9875 1900 50  0001 C CNN "jlcpcb"
 	1    9875 1900
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 6204D141
 P 9875 1400
-AR Path="/61367F02/6204D141" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D141" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D141" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D141" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D141" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D141" Ref="R166"  Part="1"
+AR Path="/61367F02/6204D141" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D141" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D141" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D141" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D141" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D141" Ref="R166"  Part="1" 
 F 0 "R166" H 9934 1446 50  0000 L CNN
 F 1 "1K" H 9934 1355 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9875 1400 50  0001 C CNN
 F 3 "~" H 9875 1400 50  0001 C CNN
 F 4 "C21190" H 9875 1400 50  0001 C CNN "jlcpcb"
 	1    9875 1400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 9725 1575 2    60   ~ 0
 BOOTM
@@ -233,19 +233,19 @@ $Comp
 L Device:R_Small R?
 U 1 1 6204D14E
 P 9225 2100
-AR Path="/61367F02/6204D14E" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D14E" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D14E" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D14E" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D14E" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D14E" Ref="R165"  Part="1"
+AR Path="/61367F02/6204D14E" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D14E" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D14E" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D14E" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D14E" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D14E" Ref="R165"  Part="1" 
 F 0 "R165" H 9284 2146 50  0000 L CNN
 F 1 "1K" H 9284 2055 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 9225 2100 50  0001 C CNN
 F 3 "~" H 9225 2100 50  0001 C CNN
 F 4 "C21190" H 9225 2100 50  0001 C CNN "jlcpcb"
 	1    9225 2100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 9225 2000 2    60   ~ 0
 GPIO2
@@ -253,48 +253,48 @@ $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D156
 P 9225 2200
-AR Path="/61367F02/6204D156" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D156" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D156" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D156" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D156" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D156" Ref="#PWR0215"  Part="1"
-AR Path="/6204D156" Ref="#PWR0215"  Part="1"
+AR Path="/61367F02/6204D156" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D156" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D156" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D156" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D156" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D156" Ref="#PWR0215"  Part="1" 
+AR Path="/6204D156" Ref="#PWR0215"  Part="1" 
 F 0 "#PWR0215" H 9225 1950 50  0001 C CNN
 F 1 "GND3" H 9230 2027 50  0000 C CNN
 F 2 "" H 9225 2200 50  0001 C CNN
 F 3 "" H 9225 2200 50  0001 C CNN
 	1    9225 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D15C
 P 9875 2200
-AR Path="/61367F02/6204D15C" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D15C" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D15C" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D15C" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D15C" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D15C" Ref="#PWR0216"  Part="1"
-AR Path="/6204D15C" Ref="#PWR0216"  Part="1"
+AR Path="/61367F02/6204D15C" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D15C" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D15C" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D15C" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D15C" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D15C" Ref="#PWR0216"  Part="1" 
+AR Path="/6204D15C" Ref="#PWR0216"  Part="1" 
 F 0 "#PWR0216" H 9875 1950 50  0001 C CNN
 F 1 "GND3" H 9880 2027 50  0000 C CNN
 F 2 "" H 9875 2200 50  0001 C CNN
 F 3 "" H 9875 2200 50  0001 C CNN
 	1    9875 2200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6204D16B
 P 5300 2700
-AR Path="/61367F02/6204D16B" Ref="C?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D16B" Ref="C?"  Part="1"
-AR Path="/61B9A8A6/6204D16B" Ref="C?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D16B" Ref="C?"  Part="1"
-AR Path="/61C81F9D/6204D16B" Ref="C?"  Part="1"
-AR Path="/62040DF5/6204D16B" Ref="C89"  Part="1"
+AR Path="/61367F02/6204D16B" Ref="C?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D16B" Ref="C?"  Part="1" 
+AR Path="/61B9A8A6/6204D16B" Ref="C?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D16B" Ref="C?"  Part="1" 
+AR Path="/61C81F9D/6204D16B" Ref="C?"  Part="1" 
+AR Path="/62040DF5/6204D16B" Ref="C89"  Part="1" 
 F 0 "C89" H 5125 2750 50  0000 L CNN
 F 1 "10uF" H 5050 2675 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 5300 2700 50  0001 C CNN
@@ -303,7 +303,7 @@ F 4 "C13585" H 5300 2700 50  0001 C CNN "jlcpcb"
 F 5 "<10V" H 5300 2700 50  0001 C CNN "power"
 F 6 "20%" H 5300 2700 50  0001 C CNN "precision"
 	1    5300 2700
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	5475 2825 5475 2800
@@ -315,31 +315,31 @@ $Comp
 L Switch:SW_DIP_x01 RST?
 U 1 1 6204D176
 P 4700 2900
-AR Path="/61367F02/6204D176" Ref="RST?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D176" Ref="RST?"  Part="1"
-AR Path="/61B9A8A6/6204D176" Ref="RST?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D176" Ref="RST?"  Part="1"
-AR Path="/61C81F9D/6204D176" Ref="RST?"  Part="1"
-AR Path="/62040DF5/6204D176" Ref="RST2"  Part="1"
+AR Path="/61367F02/6204D176" Ref="RST?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D176" Ref="RST?"  Part="1" 
+AR Path="/61B9A8A6/6204D176" Ref="RST?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D176" Ref="RST?"  Part="1" 
+AR Path="/61C81F9D/6204D176" Ref="RST?"  Part="1" 
+AR Path="/62040DF5/6204D176" Ref="RST2"  Part="1" 
 F 0 "RST2" V 4654 3030 50  0000 L CNN
 F 1 "SW_DIP_x01" V 4745 3030 50  0000 L CNN
 F 2 "Button_Switch_SMD:SW_DIP_SPSTx01_Slide_6.7x4.1mm_W6.73mm_P2.54mm_LowProfile_JPin" H 4700 2900 50  0001 C CNN
 F 3 "~" H 4700 2900 50  0001 C CNN
 F 4 "DNP011" V 4700 2900 50  0001 C CNN "jlcpcb"
 	1    4700 2900
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Connection ~ 5300 2600
 $Comp
 L Device:C_Small C?
 U 1 1 6204D18A
 P 4700 5025
-AR Path="/61367F02/6204D18A" Ref="C?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D18A" Ref="C?"  Part="1"
-AR Path="/61B9A8A6/6204D18A" Ref="C?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D18A" Ref="C?"  Part="1"
-AR Path="/61C81F9D/6204D18A" Ref="C?"  Part="1"
-AR Path="/62040DF5/6204D18A" Ref="C90"  Part="1"
+AR Path="/61367F02/6204D18A" Ref="C?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D18A" Ref="C?"  Part="1" 
+AR Path="/61B9A8A6/6204D18A" Ref="C?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D18A" Ref="C?"  Part="1" 
+AR Path="/61C81F9D/6204D18A" Ref="C?"  Part="1" 
+AR Path="/62040DF5/6204D18A" Ref="C90"  Part="1" 
 F 0 "C90" H 4792 5071 50  0000 L CNN
 F 1 "10uF" H 4792 4980 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 4700 5025 50  0001 C CNN
@@ -348,18 +348,18 @@ F 4 "C13585" H 4700 5025 50  0001 C CNN "jlcpcb"
 F 5 "<10V" H 4700 5025 50  0001 C CNN "power"
 F 6 "20%" H 4700 5025 50  0001 C CNN "precision"
 	1    4700 5025
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 6204D19E
 P 4375 5025
-AR Path="/61367F02/6204D19E" Ref="C?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D19E" Ref="C?"  Part="1"
-AR Path="/61B9A8A6/6204D19E" Ref="C?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D19E" Ref="C?"  Part="1"
-AR Path="/61C81F9D/6204D19E" Ref="C?"  Part="1"
-AR Path="/62040DF5/6204D19E" Ref="C88"  Part="1"
+AR Path="/61367F02/6204D19E" Ref="C?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D19E" Ref="C?"  Part="1" 
+AR Path="/61B9A8A6/6204D19E" Ref="C?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D19E" Ref="C?"  Part="1" 
+AR Path="/61C81F9D/6204D19E" Ref="C?"  Part="1" 
+AR Path="/62040DF5/6204D19E" Ref="C88"  Part="1" 
 F 0 "C88" V 4425 4900 50  0000 L CNN
 F 1 "100nF" V 4300 5075 50  0001 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4375 5025 50  0001 C CNN
@@ -367,7 +367,7 @@ F 3 "~" H 4375 5025 50  0001 C CNN
 F 4 "5%" H 4375 5025 50  0001 C CNN "precision"
 F 5 "C14663" H 4375 5025 50  0001 C CNN "jlcpcb"
 	1    4375 5025
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	2525 1350 2525 1950
@@ -380,15 +380,15 @@ $Comp
 L Device:R R?
 U 1 1 6204D1B9
 P 2925 1725
-AR Path="/5AD47FD6/6204D1B9" Ref="R?"  Part="1"
-AR Path="/61FBB705/6204D1B9" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/6204D1B9" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D1B9" Ref="R?"  Part="1"
-AR Path="/6204D1B9" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D1B9" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D1B9" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D1B9" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D1B9" Ref="R160"  Part="1"
+AR Path="/5AD47FD6/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/61FBB705/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D1B9" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D1B9" Ref="R160"  Part="1" 
 F 0 "R160" V 3005 1725 50  0000 C CNN
 F 1 "10K" V 2925 1725 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2855 1725 50  0001 C CNN
@@ -398,21 +398,21 @@ F 5 "C17414" H 2925 1725 50  0001 C CNN "jlcpcb"
 F 6 "5%" H 2925 1725 50  0001 C CNN "precision"
 F 7 "1%" H 2925 1725 50  0001 C CNN "power"
 	1    2925 1725
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6204D1C2
 P 2925 1425
-AR Path="/5AD47FD6/6204D1C2" Ref="D?"  Part="1"
-AR Path="/61FBB705/6204D1C2" Ref="D?"  Part="1"
-AR Path="/5AD46BE5/6204D1C2" Ref="D?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D1C2" Ref="D?"  Part="1"
-AR Path="/6204D1C2" Ref="D?"  Part="1"
-AR Path="/61B9A8A6/6204D1C2" Ref="D?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D1C2" Ref="D?"  Part="1"
-AR Path="/61C81F9D/6204D1C2" Ref="D?"  Part="1"
-AR Path="/62040DF5/6204D1C2" Ref="D30"  Part="1"
+AR Path="/5AD47FD6/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/61FBB705/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/5AD46BE5/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/61B9A8A6/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/61C81F9D/6204D1C2" Ref="D?"  Part="1" 
+AR Path="/62040DF5/6204D1C2" Ref="D30"  Part="1" 
 F 0 "D30" H 2925 1525 50  0000 C CNN
 F 1 "LED" H 2925 1325 50  0000 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric" H 2925 1425 50  0001 C CNN
@@ -421,7 +421,7 @@ F 4 "" H 2925 1425 60  0001 C CNN "farnell"
 F 5 "C84256" H 2925 1425 50  0001 C CNN "jlcpcb"
 F 6 "red" H 2925 1425 50  0001 C CNN "power"
 	1    2925 1425
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Text Label 7175 2600 0    60   ~ 0
 BOOTM
@@ -441,15 +441,15 @@ $Comp
 L Interface_USB:FT232RL U?
 U 1 1 6204D20B
 P 2350 4225
-AR Path="/61C81F9D/6204D20B" Ref="U?"  Part="1"
-AR Path="/62040DF5/6204D20B" Ref="U10"  Part="1"
+AR Path="/61C81F9D/6204D20B" Ref="U?"  Part="1" 
+AR Path="/62040DF5/6204D20B" Ref="U10"  Part="1" 
 F 0 "U10" H 2325 4250 50  0000 C CNN
 F 1 "FT232RL" H 2325 4425 50  0000 C CNN
 F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3450 3325 50  0001 C CNN
 F 3 "https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT232R.pdf" H 2350 4225 50  0001 C CNN
 F 4 "HOMESTOCK01" H 2350 4225 50  0001 C CNN "jlcpcb"
 	1    2350 4225
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 3275 3625 0    50   ~ 0
 TX
@@ -476,15 +476,15 @@ $Comp
 L Connector:USB_B_Micro J?
 U 1 1 6204D22A
 P 975 3825
-AR Path="/61C81F9D/6204D22A" Ref="J?"  Part="1"
-AR Path="/62040DF5/6204D22A" Ref="J15"  Part="1"
+AR Path="/61C81F9D/6204D22A" Ref="J?"  Part="1" 
+AR Path="/62040DF5/6204D22A" Ref="J15"  Part="1" 
 F 0 "J15" H 1032 4292 50  0000 C CNN
 F 1 "USB_B_Micro" H 1032 4201 50  0000 C CNN
 F 2 "Connector_USB:USB_Micro-B_Molex-105017-0001" H 1125 3775 50  0001 C CNN
 F 3 "~" H 1125 3775 50  0001 C CNN
 F 4 "HOMESTOCK010" H 975 3825 50  0001 C CNN "jlcpcb"
 	1    975  3825
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1275 3825 1550 3825
@@ -496,12 +496,12 @@ $Comp
 L Device:C_Small C?
 U 1 1 6204D236
 P 1525 2975
-AR Path="/61367F02/6204D236" Ref="C?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D236" Ref="C?"  Part="1"
-AR Path="/61B9A8A6/6204D236" Ref="C?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D236" Ref="C?"  Part="1"
-AR Path="/61C81F9D/6204D236" Ref="C?"  Part="1"
-AR Path="/62040DF5/6204D236" Ref="C85"  Part="1"
+AR Path="/61367F02/6204D236" Ref="C?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D236" Ref="C?"  Part="1" 
+AR Path="/61B9A8A6/6204D236" Ref="C?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D236" Ref="C?"  Part="1" 
+AR Path="/61C81F9D/6204D236" Ref="C?"  Part="1" 
+AR Path="/62040DF5/6204D236" Ref="C85"  Part="1" 
 F 0 "C85" H 1617 3021 50  0000 L CNN
 F 1 "10uF" H 1617 2930 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 1525 2975 50  0001 C CNN
@@ -510,25 +510,25 @@ F 4 "C13585" H 1525 2975 50  0001 C CNN "jlcpcb"
 F 5 "<10V" H 1525 2975 50  0001 C CNN "power"
 F 6 "20%" H 1525 2975 50  0001 C CNN "precision"
 	1    1525 2975
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D23C
 P 1525 3075
-AR Path="/61367F02/6204D23C" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D23C" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D23C" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D23C" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D23C" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D23C" Ref="#PWR0228"  Part="1"
-AR Path="/6204D23C" Ref="#PWR0228"  Part="1"
+AR Path="/61367F02/6204D23C" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D23C" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D23C" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D23C" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D23C" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D23C" Ref="#PWR0228"  Part="1" 
+AR Path="/6204D23C" Ref="#PWR0228"  Part="1" 
 F 0 "#PWR0228" H 1525 2825 50  0001 C CNN
 F 1 "GND3" H 1530 2902 50  0000 C CNN
 F 2 "" H 1525 3075 50  0001 C CNN
 F 3 "" H 1525 3075 50  0001 C CNN
 	1    1525 3075
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1525 2875 1525 2725
@@ -540,19 +540,19 @@ $Comp
 L Device:R_Small R?
 U 1 1 6204D24E
 P 1325 4325
-AR Path="/61367F02/6204D24E" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D24E" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D24E" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D24E" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D24E" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D24E" Ref="R157"  Part="1"
+AR Path="/61367F02/6204D24E" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D24E" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D24E" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D24E" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D24E" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D24E" Ref="R157"  Part="1" 
 F 0 "R157" H 1384 4371 50  0000 L CNN
 F 1 "1K" H 1384 4280 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1325 4325 50  0001 C CNN
 F 3 "~" H 1325 4325 50  0001 C CNN
 F 4 "C21190" H 1325 4325 50  0001 C CNN "jlcpcb"
 	1    1325 4325
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1550 4225 1325 4225
@@ -565,19 +565,19 @@ $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D258
 P 1325 4425
-AR Path="/61367F02/6204D258" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D258" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D258" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D258" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D258" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D258" Ref="#PWR0230"  Part="1"
-AR Path="/6204D258" Ref="#PWR0230"  Part="1"
+AR Path="/61367F02/6204D258" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D258" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D258" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D258" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D258" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D258" Ref="#PWR0230"  Part="1" 
+AR Path="/6204D258" Ref="#PWR0230"  Part="1" 
 F 0 "#PWR0230" H 1325 4175 50  0001 C CNN
 F 1 "GND3" H 1330 4252 50  0000 C CNN
 F 2 "" H 1325 4425 50  0001 C CNN
 F 3 "" H 1325 4425 50  0001 C CNN
 	1    1325 4425
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 NoConn ~ 1550 4425
 NoConn ~ 1550 4625
@@ -585,19 +585,19 @@ $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D260
 P 1550 5150
-AR Path="/61367F02/6204D260" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D260" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D260" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D260" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D260" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D260" Ref="#PWR0231"  Part="1"
-AR Path="/6204D260" Ref="#PWR0231"  Part="1"
+AR Path="/61367F02/6204D260" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D260" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D260" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D260" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D260" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D260" Ref="#PWR0231"  Part="1" 
+AR Path="/6204D260" Ref="#PWR0231"  Part="1" 
 F 0 "#PWR0231" H 1550 4900 50  0001 C CNN
 F 1 "GND3" H 1555 4977 50  0000 C CNN
 F 2 "" H 1550 5150 50  0001 C CNN
 F 3 "" H 1550 5150 50  0001 C CNN
 	1    1550 5150
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	1550 5150 1550 4925
@@ -605,15 +605,15 @@ $Comp
 L Device:R R?
 U 1 1 6204D26B
 P 3500 4350
-AR Path="/5AD47FD6/6204D26B" Ref="R?"  Part="1"
-AR Path="/61FBB705/6204D26B" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/6204D26B" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D26B" Ref="R?"  Part="1"
-AR Path="/6204D26B" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D26B" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D26B" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D26B" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D26B" Ref="R161"  Part="1"
+AR Path="/5AD47FD6/6204D26B" Ref="R?"  Part="1" 
+AR Path="/61FBB705/6204D26B" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/6204D26B" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D26B" Ref="R?"  Part="1" 
+AR Path="/6204D26B" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D26B" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D26B" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D26B" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D26B" Ref="R161"  Part="1" 
 F 0 "R161" V 3580 4350 50  0000 C CNN
 F 1 "10K" V 3500 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3430 4350 50  0001 C CNN
@@ -623,21 +623,21 @@ F 5 "C17414" H 3500 4350 50  0001 C CNN "jlcpcb"
 F 6 "5%" H 3500 4350 50  0001 C CNN "precision"
 F 7 "1%" H 3500 4350 50  0001 C CNN "power"
 	1    3500 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6204D274
 P 3500 4050
-AR Path="/5AD47FD6/6204D274" Ref="D?"  Part="1"
-AR Path="/61FBB705/6204D274" Ref="D?"  Part="1"
-AR Path="/5AD46BE5/6204D274" Ref="D?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D274" Ref="D?"  Part="1"
-AR Path="/6204D274" Ref="D?"  Part="1"
-AR Path="/61B9A8A6/6204D274" Ref="D?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D274" Ref="D?"  Part="1"
-AR Path="/61C81F9D/6204D274" Ref="D?"  Part="1"
-AR Path="/62040DF5/6204D274" Ref="D34"  Part="1"
+AR Path="/5AD47FD6/6204D274" Ref="D?"  Part="1" 
+AR Path="/61FBB705/6204D274" Ref="D?"  Part="1" 
+AR Path="/5AD46BE5/6204D274" Ref="D?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D274" Ref="D?"  Part="1" 
+AR Path="/6204D274" Ref="D?"  Part="1" 
+AR Path="/61B9A8A6/6204D274" Ref="D?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D274" Ref="D?"  Part="1" 
+AR Path="/61C81F9D/6204D274" Ref="D?"  Part="1" 
+AR Path="/62040DF5/6204D274" Ref="D34"  Part="1" 
 F 0 "D34" H 3500 4150 50  0000 C CNN
 F 1 "LED" H 3500 3950 50  0000 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric" H 3500 4050 50  0001 C CNN
@@ -646,21 +646,21 @@ F 4 "" H 3500 4050 60  0001 C CNN "farnell"
 F 5 "C84256" H 3500 4050 50  0001 C CNN "jlcpcb"
 F 6 "red" H 3500 4050 50  0001 C CNN "power"
 	1    3500 4050
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 6204D27E
 P 3825 4350
-AR Path="/5AD47FD6/6204D27E" Ref="R?"  Part="1"
-AR Path="/61FBB705/6204D27E" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/6204D27E" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D27E" Ref="R?"  Part="1"
-AR Path="/6204D27E" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D27E" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D27E" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D27E" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D27E" Ref="R162"  Part="1"
+AR Path="/5AD47FD6/6204D27E" Ref="R?"  Part="1" 
+AR Path="/61FBB705/6204D27E" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/6204D27E" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D27E" Ref="R?"  Part="1" 
+AR Path="/6204D27E" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D27E" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D27E" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D27E" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D27E" Ref="R162"  Part="1" 
 F 0 "R162" V 3905 4350 50  0000 C CNN
 F 1 "10K" V 3825 4350 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 3755 4350 50  0001 C CNN
@@ -670,21 +670,21 @@ F 5 "C17414" H 3825 4350 50  0001 C CNN "jlcpcb"
 F 6 "5%" H 3825 4350 50  0001 C CNN "precision"
 F 7 "1%" H 3825 4350 50  0001 C CNN "power"
 	1    3825 4350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:LED D?
 U 1 1 6204D287
 P 3825 4050
-AR Path="/5AD47FD6/6204D287" Ref="D?"  Part="1"
-AR Path="/61FBB705/6204D287" Ref="D?"  Part="1"
-AR Path="/5AD46BE5/6204D287" Ref="D?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D287" Ref="D?"  Part="1"
-AR Path="/6204D287" Ref="D?"  Part="1"
-AR Path="/61B9A8A6/6204D287" Ref="D?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D287" Ref="D?"  Part="1"
-AR Path="/61C81F9D/6204D287" Ref="D?"  Part="1"
-AR Path="/62040DF5/6204D287" Ref="D35"  Part="1"
+AR Path="/5AD47FD6/6204D287" Ref="D?"  Part="1" 
+AR Path="/61FBB705/6204D287" Ref="D?"  Part="1" 
+AR Path="/5AD46BE5/6204D287" Ref="D?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D287" Ref="D?"  Part="1" 
+AR Path="/6204D287" Ref="D?"  Part="1" 
+AR Path="/61B9A8A6/6204D287" Ref="D?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D287" Ref="D?"  Part="1" 
+AR Path="/61C81F9D/6204D287" Ref="D?"  Part="1" 
+AR Path="/62040DF5/6204D287" Ref="D35"  Part="1" 
 F 0 "D35" H 3825 4150 50  0000 C CNN
 F 1 "LED" H 3825 3950 50  0000 C CNN
 F 2 "Diode_SMD:D_0805_2012Metric" H 3825 4050 50  0001 C CNN
@@ -693,7 +693,7 @@ F 4 "" H 3825 4050 60  0001 C CNN "farnell"
 F 5 "C84256" H 3825 4050 50  0001 C CNN "jlcpcb"
 F 6 "red" H 3825 4050 50  0001 C CNN "power"
 	1    3825 4050
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 NoConn ~ 3150 4725
 NoConn ~ 3150 4825
@@ -714,15 +714,15 @@ $Comp
 L Device:R R?
 U 1 1 6204D2A6
 P 2625 5800
-AR Path="/5AD47FD6/6204D2A6" Ref="R?"  Part="1"
-AR Path="/61FBB705/6204D2A6" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/6204D2A6" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D2A6" Ref="R?"  Part="1"
-AR Path="/6204D2A6" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D2A6" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D2A6" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D2A6" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D2A6" Ref="R159"  Part="1"
+AR Path="/5AD47FD6/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/61FBB705/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D2A6" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D2A6" Ref="R159"  Part="1" 
 F 0 "R159" V 2705 5800 50  0000 C CNN
 F 1 "10K" V 2625 5800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2555 5800 50  0001 C CNN
@@ -732,35 +732,35 @@ F 5 "C17414" H 2625 5800 50  0001 C CNN "jlcpcb"
 F 6 "5%" H 2625 5800 50  0001 C CNN "precision"
 F 7 "1%" H 2625 5800 50  0001 C CNN "power"
 	1    2625 5800
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L Device:Q_NPN_BCEC Q?
 U 1 1 6204D2AD
 P 3050 5800
-AR Path="/61C81F9D/6204D2AD" Ref="Q?"  Part="1"
-AR Path="/62040DF5/6204D2AD" Ref="Q41"  Part="1"
+AR Path="/61C81F9D/6204D2AD" Ref="Q?"  Part="1" 
+AR Path="/62040DF5/6204D2AD" Ref="Q41"  Part="1" 
 F 0 "Q41" H 3338 5846 50  0000 L CNN
 F 1 "BSP42" H 3338 5755 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 3050 5800 50  0001 C CNN
 F 3 "~" H 3050 5800 50  0001 C CNN
 F 4 "HOMESTOCK003" H 3050 5800 50  0001 C CNN "jlcpcb"
 	1    3050 5800
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_BCEC Q?
 U 1 1 6204D2B4
 P 2575 6650
-AR Path="/61C81F9D/6204D2B4" Ref="Q?"  Part="1"
-AR Path="/62040DF5/6204D2B4" Ref="Q40"  Part="1"
+AR Path="/61C81F9D/6204D2B4" Ref="Q?"  Part="1" 
+AR Path="/62040DF5/6204D2B4" Ref="Q40"  Part="1" 
 F 0 "Q40" H 2863 6696 50  0000 L CNN
 F 1 "BSP41" H 2863 6605 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-223" H 2575 6650 50  0001 C CNN
 F 3 "~" H 2575 6650 50  0001 C CNN
 F 4 "HOMESTOCK003" H 2575 6650 50  0001 C CNN "jlcpcb"
 	1    2575 6650
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 2300 5800 0    50   ~ 0
 DTR
@@ -776,15 +776,15 @@ $Comp
 L Device:R R?
 U 1 1 6204D2C3
 P 2225 6650
-AR Path="/5AD47FD6/6204D2C3" Ref="R?"  Part="1"
-AR Path="/61FBB705/6204D2C3" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/6204D2C3" Ref="R?"  Part="1"
-AR Path="/5AD46BE5/619A452E/6204D2C3" Ref="R?"  Part="1"
-AR Path="/6204D2C3" Ref="R?"  Part="1"
-AR Path="/61B9A8A6/6204D2C3" Ref="R?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D2C3" Ref="R?"  Part="1"
-AR Path="/61C81F9D/6204D2C3" Ref="R?"  Part="1"
-AR Path="/62040DF5/6204D2C3" Ref="R158"  Part="1"
+AR Path="/5AD47FD6/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/61FBB705/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/6204D2C3" Ref="R?"  Part="1" 
+AR Path="/62040DF5/6204D2C3" Ref="R158"  Part="1" 
 F 0 "R158" V 2305 6650 50  0000 C CNN
 F 1 "10K" V 2225 6650 50  0000 C CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 2155 6650 50  0001 C CNN
@@ -794,7 +794,7 @@ F 5 "C17414" H 2225 6650 50  0001 C CNN "jlcpcb"
 F 6 "5%" H 2225 6650 50  0001 C CNN "precision"
 F 7 "1%" H 2225 6650 50  0001 C CNN "power"
 	1    2225 6650
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Wire Wire Line
 	2025 6000 2025 6650
@@ -843,33 +843,33 @@ $Comp
 L power:GND3-power #PWR?
 U 1 1 6204D2E8
 P 875 4625
-AR Path="/61367F02/6204D2E8" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D2E8" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6204D2E8" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6204D2E8" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6204D2E8" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6204D2E8" Ref="#PWR0235"  Part="1"
-AR Path="/6204D2E8" Ref="#PWR0235"  Part="1"
+AR Path="/61367F02/6204D2E8" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6204D2E8" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6204D2E8" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6204D2E8" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6204D2E8" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6204D2E8" Ref="#PWR0235"  Part="1" 
+AR Path="/6204D2E8" Ref="#PWR0235"  Part="1" 
 F 0 "#PWR0235" H 875 4375 50  0001 C CNN
 F 1 "GND3" H 880 4452 50  0000 C CNN
 F 2 "" H 875 4625 50  0001 C CNN
 F 3 "" H 875 4625 50  0001 C CNN
 	1    875  4625
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Jumper:Jumper_2_Bridged JP?
 U 1 1 6204D2EF
 P 875 4425
-AR Path="/61C81F9D/6204D2EF" Ref="JP?"  Part="1"
-AR Path="/62040DF5/6204D2EF" Ref="JP8"  Part="1"
+AR Path="/61C81F9D/6204D2EF" Ref="JP?"  Part="1" 
+AR Path="/62040DF5/6204D2EF" Ref="JP8"  Part="1" 
 F 0 "JP8" V 829 4483 50  0000 L CNN
 F 1 "Jumper_2_Bridged" H 650 4275 50  0000 L CNN
 F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged2Bar_Pad1.0x1.5mm" H 875 4425 50  0001 C CNN
 F 3 "~" H 875 4425 50  0001 C CNN
 F 4 "DNP024" V 875 4425 50  0001 C CNN "jlcpcb"
 	1    875  4425
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 Connection ~ 875  4225
 Wire Wire Line
@@ -899,91 +899,91 @@ $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6207CE04
 P 5475 2400
-AR Path="/61367F02/6207CE04" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6207CE04" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6207CE04" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6207CE04" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6207CE04" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6207CE04" Ref="#PWR0217"  Part="1"
-AR Path="/6207CE04" Ref="#PWR0217"  Part="1"
+AR Path="/61367F02/6207CE04" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6207CE04" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6207CE04" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6207CE04" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6207CE04" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6207CE04" Ref="#PWR0217"  Part="1" 
+AR Path="/6207CE04" Ref="#PWR0217"  Part="1" 
 F 0 "#PWR0217" H 5475 2250 50  0001 C CNN
 F 1 "+3.3VP" H 5490 2573 50  0000 C CNN
 F 2 "" H 5475 2400 50  0001 C CNN
 F 3 "" H 5475 2400 50  0001 C CNN
 	1    5475 2400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6207DA95
 P 6575 2400
-AR Path="/61367F02/6207DA95" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6207DA95" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6207DA95" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6207DA95" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6207DA95" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6207DA95" Ref="#PWR0219"  Part="1"
-AR Path="/6207DA95" Ref="#PWR0219"  Part="1"
+AR Path="/61367F02/6207DA95" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6207DA95" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6207DA95" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6207DA95" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6207DA95" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6207DA95" Ref="#PWR0219"  Part="1" 
+AR Path="/6207DA95" Ref="#PWR0219"  Part="1" 
 F 0 "#PWR0219" H 6575 2250 50  0001 C CNN
 F 1 "+3.3VP" H 6590 2573 50  0000 C CNN
 F 2 "" H 6575 2400 50  0001 C CNN
 F 3 "" H 6575 2400 50  0001 C CNN
 	1    6575 2400
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 62082688
 P 9875 1300
-AR Path="/61367F02/62082688" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/62082688" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/62082688" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/62082688" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/62082688" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/62082688" Ref="#PWR0222"  Part="1"
-AR Path="/62082688" Ref="#PWR0222"  Part="1"
+AR Path="/61367F02/62082688" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/62082688" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/62082688" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/62082688" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/62082688" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/62082688" Ref="#PWR0222"  Part="1" 
+AR Path="/62082688" Ref="#PWR0222"  Part="1" 
 F 0 "#PWR0222" H 9875 1150 50  0001 C CNN
 F 1 "+3.3VP" H 9890 1473 50  0000 C CNN
 F 2 "" H 9875 1300 50  0001 C CNN
 F 3 "" H 9875 1300 50  0001 C CNN
 	1    9875 1300
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 620862C4
 P 4700 4925
-AR Path="/61367F02/620862C4" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/620862C4" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/620862C4" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/620862C4" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/620862C4" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/620862C4" Ref="#PWR0213"  Part="1"
-AR Path="/620862C4" Ref="#PWR0213"  Part="1"
+AR Path="/61367F02/620862C4" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/620862C4" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/620862C4" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/620862C4" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/620862C4" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/620862C4" Ref="#PWR0213"  Part="1" 
+AR Path="/620862C4" Ref="#PWR0213"  Part="1" 
 F 0 "#PWR0213" H 4700 4775 50  0001 C CNN
 F 1 "+3.3VP" H 4715 5098 50  0000 C CNN
 F 2 "" H 4700 4925 50  0001 C CNN
 F 3 "" H 4700 4925 50  0001 C CNN
 	1    4700 4925
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 620869AC
 P 4375 4925
-AR Path="/61367F02/620869AC" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/620869AC" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/620869AC" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/620869AC" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/620869AC" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/620869AC" Ref="#PWR0211"  Part="1"
-AR Path="/620869AC" Ref="#PWR0211"  Part="1"
+AR Path="/61367F02/620869AC" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/620869AC" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/620869AC" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/620869AC" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/620869AC" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/620869AC" Ref="#PWR0211"  Part="1" 
+AR Path="/620869AC" Ref="#PWR0211"  Part="1" 
 F 0 "#PWR0211" H 4375 4775 50  0001 C CNN
 F 1 "+3.3VP" H 4390 5098 50  0000 C CNN
 F 2 "" H 4375 4925 50  0001 C CNN
 F 3 "" H 4375 4925 50  0001 C CNN
 	1    4375 4925
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x16 J16
@@ -995,7 +995,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 8100 4325 50 
 F 3 "~" H 8100 4325 50  0001 C CNN
 F 4 "DNP022" H 8100 4325 50  0001 C CNN "jlcpcb"
 	1    8100 4325
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 7175 3000 0    50   ~ 0
 IO4
@@ -1045,163 +1045,163 @@ $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6210D6D2
 P 3825 3900
-AR Path="/61367F02/6210D6D2" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6210D6D2" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6210D6D2" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6210D6D2" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6210D6D2" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6210D6D2" Ref="#PWR0223"  Part="1"
-AR Path="/6210D6D2" Ref="#PWR0223"  Part="1"
+AR Path="/61367F02/6210D6D2" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6210D6D2" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6210D6D2" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6210D6D2" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6210D6D2" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6210D6D2" Ref="#PWR0223"  Part="1" 
+AR Path="/6210D6D2" Ref="#PWR0223"  Part="1" 
 F 0 "#PWR0223" H 3825 3750 50  0001 C CNN
 F 1 "+3.3VP" H 3840 4073 50  0000 C CNN
 F 2 "" H 3825 3900 50  0001 C CNN
 F 3 "" H 3825 3900 50  0001 C CNN
 	1    3825 3900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6210DC2C
 P 3500 3900
-AR Path="/61367F02/6210DC2C" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6210DC2C" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6210DC2C" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6210DC2C" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6210DC2C" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6210DC2C" Ref="#PWR0224"  Part="1"
-AR Path="/6210DC2C" Ref="#PWR0224"  Part="1"
+AR Path="/61367F02/6210DC2C" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6210DC2C" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6210DC2C" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6210DC2C" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6210DC2C" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6210DC2C" Ref="#PWR0224"  Part="1" 
+AR Path="/6210DC2C" Ref="#PWR0224"  Part="1" 
 F 0 "#PWR0224" H 3500 3750 50  0001 C CNN
 F 1 "+3.3VP" H 3515 4073 50  0000 C CNN
 F 2 "" H 3500 3900 50  0001 C CNN
 F 3 "" H 3500 3900 50  0001 C CNN
 	1    3500 3900
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 62117163
 P 2250 3225
-AR Path="/61367F02/62117163" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/62117163" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/62117163" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/62117163" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/62117163" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/62117163" Ref="#PWR0225"  Part="1"
-AR Path="/62117163" Ref="#PWR0225"  Part="1"
+AR Path="/61367F02/62117163" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/62117163" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/62117163" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/62117163" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/62117163" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/62117163" Ref="#PWR0225"  Part="1" 
+AR Path="/62117163" Ref="#PWR0225"  Part="1" 
 F 0 "#PWR0225" H 2250 3075 50  0001 C CNN
 F 1 "+3.3VP" H 2265 3398 50  0000 C CNN
 F 2 "" H 2250 3225 50  0001 C CNN
 F 3 "" H 2250 3225 50  0001 C CNN
 	1    2250 3225
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6211A6E0
 P 3150 4225
-AR Path="/61367F02/6211A6E0" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6211A6E0" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6211A6E0" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6211A6E0" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6211A6E0" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6211A6E0" Ref="#PWR0227"  Part="1"
-AR Path="/6211A6E0" Ref="#PWR0227"  Part="1"
+AR Path="/61367F02/6211A6E0" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6211A6E0" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6211A6E0" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6211A6E0" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6211A6E0" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6211A6E0" Ref="#PWR0227"  Part="1" 
+AR Path="/6211A6E0" Ref="#PWR0227"  Part="1" 
 F 0 "#PWR0227" H 3150 4075 50  0001 C CNN
 F 1 "+3.3VP" H 3165 4398 50  0000 C CNN
 F 2 "" H 3150 4225 50  0001 C CNN
 F 3 "" H 3150 4225 50  0001 C CNN
 	1    3150 4225
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 62128457
 P 2550 5350
-AR Path="/61367F02/62128457" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/62128457" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/62128457" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/62128457" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/62128457" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/62128457" Ref="#PWR0214"  Part="1"
-AR Path="/62128457" Ref="#PWR0214"  Part="1"
+AR Path="/61367F02/62128457" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/62128457" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/62128457" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/62128457" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/62128457" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/62128457" Ref="#PWR0214"  Part="1" 
+AR Path="/62128457" Ref="#PWR0214"  Part="1" 
 F 0 "#PWR0214" H 2550 5100 50  0001 C CNN
 F 1 "GND3" H 2555 5177 50  0000 C CNN
 F 2 "" H 2550 5350 50  0001 C CNN
 F 3 "" H 2550 5350 50  0001 C CNN
 	1    2550 5350
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6212A5DE
 P 4700 3200
-AR Path="/61367F02/6212A5DE" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6212A5DE" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6212A5DE" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6212A5DE" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6212A5DE" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6212A5DE" Ref="#PWR0218"  Part="1"
-AR Path="/6212A5DE" Ref="#PWR0218"  Part="1"
+AR Path="/61367F02/6212A5DE" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6212A5DE" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6212A5DE" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6212A5DE" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6212A5DE" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6212A5DE" Ref="#PWR0218"  Part="1" 
+AR Path="/6212A5DE" Ref="#PWR0218"  Part="1" 
 F 0 "#PWR0218" H 4700 2950 50  0001 C CNN
 F 1 "GND3" H 4705 3027 50  0000 C CNN
 F 2 "" H 4700 3200 50  0001 C CNN
 F 3 "" H 4700 3200 50  0001 C CNN
 	1    4700 3200
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6212BCA6
 P 4375 5125
-AR Path="/61367F02/6212BCA6" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6212BCA6" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6212BCA6" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6212BCA6" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6212BCA6" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6212BCA6" Ref="#PWR0220"  Part="1"
-AR Path="/6212BCA6" Ref="#PWR0220"  Part="1"
+AR Path="/61367F02/6212BCA6" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6212BCA6" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6212BCA6" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6212BCA6" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6212BCA6" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6212BCA6" Ref="#PWR0220"  Part="1" 
+AR Path="/6212BCA6" Ref="#PWR0220"  Part="1" 
 F 0 "#PWR0220" H 4375 4875 50  0001 C CNN
 F 1 "GND3" H 4380 4952 50  0000 C CNN
 F 2 "" H 4375 5125 50  0001 C CNN
 F 3 "" H 4375 5125 50  0001 C CNN
 	1    4375 5125
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6212BF4F
 P 4700 5125
-AR Path="/61367F02/6212BF4F" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6212BF4F" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6212BF4F" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6212BF4F" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6212BF4F" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6212BF4F" Ref="#PWR0221"  Part="1"
-AR Path="/6212BF4F" Ref="#PWR0221"  Part="1"
+AR Path="/61367F02/6212BF4F" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6212BF4F" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6212BF4F" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6212BF4F" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6212BF4F" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6212BF4F" Ref="#PWR0221"  Part="1" 
+AR Path="/6212BF4F" Ref="#PWR0221"  Part="1" 
 F 0 "#PWR0221" H 4700 4875 50  0001 C CNN
 F 1 "GND3" H 4705 4952 50  0000 C CNN
 F 2 "" H 4700 5125 50  0001 C CNN
 F 3 "" H 4700 5125 50  0001 C CNN
 	1    4700 5125
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6212D8D4
 P 5475 2825
-AR Path="/61367F02/6212D8D4" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6212D8D4" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6212D8D4" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6212D8D4" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6212D8D4" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6212D8D4" Ref="#PWR0226"  Part="1"
-AR Path="/6212D8D4" Ref="#PWR0226"  Part="1"
+AR Path="/61367F02/6212D8D4" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6212D8D4" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6212D8D4" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6212D8D4" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6212D8D4" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6212D8D4" Ref="#PWR0226"  Part="1" 
+AR Path="/6212D8D4" Ref="#PWR0226"  Part="1" 
 F 0 "#PWR0226" H 5475 2575 50  0001 C CNN
 F 1 "GND3" H 5480 2652 50  0000 C CNN
 F 2 "" H 5475 2825 50  0001 C CNN
 F 3 "" H 5475 2825 50  0001 C CNN
 	1    5475 2825
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x16 J18
@@ -1213,7 +1213,7 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x16_P2.54mm_Vertical" H 9225 4275 50 
 F 3 "~" H 9225 4275 50  0001 C CNN
 F 4 "DNP022" H 9225 4275 50  0001 C CNN "jlcpcb"
 	1    9225 4275
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Text Label 7900 5125 2    50   ~ 0
 IO23
@@ -1275,37 +1275,37 @@ $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 6215EBFB
 P 9025 4875
-AR Path="/61367F02/6215EBFB" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6215EBFB" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6215EBFB" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6215EBFB" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6215EBFB" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6215EBFB" Ref="#PWR0229"  Part="1"
-AR Path="/6215EBFB" Ref="#PWR0229"  Part="1"
+AR Path="/61367F02/6215EBFB" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6215EBFB" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6215EBFB" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6215EBFB" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6215EBFB" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6215EBFB" Ref="#PWR0229"  Part="1" 
+AR Path="/6215EBFB" Ref="#PWR0229"  Part="1" 
 F 0 "#PWR0229" H 9025 4725 50  0001 C CNN
 F 1 "+3.3VP" H 9040 5048 50  0000 C CNN
 F 2 "" H 9025 4875 50  0001 C CNN
 F 3 "" H 9025 4875 50  0001 C CNN
 	1    9025 4875
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 6215F38F
 P 8700 5100
-AR Path="/61367F02/6215F38F" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/6215F38F" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/6215F38F" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/6215F38F" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/6215F38F" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/6215F38F" Ref="#PWR0232"  Part="1"
-AR Path="/6215F38F" Ref="#PWR0232"  Part="1"
+AR Path="/61367F02/6215F38F" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6215F38F" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6215F38F" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6215F38F" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6215F38F" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/6215F38F" Ref="#PWR0232"  Part="1" 
+AR Path="/6215F38F" Ref="#PWR0232"  Part="1" 
 F 0 "#PWR0232" H 8700 4850 50  0001 C CNN
 F 1 "GND3" H 8705 4927 50  0000 C CNN
 F 2 "" H 8700 5100 50  0001 C CNN
 F 3 "" H 8700 5100 50  0001 C CNN
 	1    8700 5100
-	1    0    0    -1
+	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9025 4975 8700 4975
@@ -1321,14 +1321,14 @@ $Comp
 L power:PWR_FLAG-power #FLG0102
 U 1 1 6216EDFD
 P 8700 4975
-AR Path="/6216EDFD" Ref="#FLG0102"  Part="1"
-AR Path="/62040DF5/6216EDFD" Ref="#FLG0102"  Part="1"
+AR Path="/6216EDFD" Ref="#FLG0102"  Part="1" 
+AR Path="/62040DF5/6216EDFD" Ref="#FLG0102"  Part="1" 
 F 0 "#FLG0102" H 8700 5050 50  0001 C CNN
 F 1 "PWR_FLAG" V 8700 5102 50  0000 L CNN
 F 2 "" H 8700 4975 50  0001 C CNN
 F 3 "~" H 8700 4975 50  0001 C CNN
 	1    8700 4975
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Connection ~ 8700 4975
 Text Label 7900 3625 2    50   ~ 0
@@ -1345,43 +1345,43 @@ F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 5475 4100 50 
 F 3 "~" H 5475 4100 50  0001 C CNN
 F 4 "DNP021" H 5475 4100 50  0001 C CNN "jlcpcb"
 	1    5475 4100
-	-1   0    0    1
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:+3.3VP-power #PWR?
 U 1 1 61F4382D
 P 5675 4400
-AR Path="/61367F02/61F4382D" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/61F4382D" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/61F4382D" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/61F4382D" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/61F4382D" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/61F4382D" Ref="#PWR0233"  Part="1"
-AR Path="/61F4382D" Ref="#PWR0233"  Part="1"
+AR Path="/61367F02/61F4382D" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/61F4382D" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/61F4382D" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/61F4382D" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/61F4382D" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/61F4382D" Ref="#PWR0233"  Part="1" 
+AR Path="/61F4382D" Ref="#PWR0233"  Part="1" 
 F 0 "#PWR0233" H 5675 4250 50  0001 C CNN
 F 1 "+3.3VP" H 5690 4573 50  0000 C CNN
 F 2 "" H 5675 4400 50  0001 C CNN
 F 3 "" H 5675 4400 50  0001 C CNN
 	1    5675 4400
-	0    1    1    0
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND3-power #PWR?
 U 1 1 61F43CFB
 P 5700 3700
-AR Path="/61367F02/61F43CFB" Ref="#PWR?"  Part="1"
-AR Path="/5AD46BE5/619A452E/61B9A8A6/61F43CFB" Ref="#PWR?"  Part="1"
-AR Path="/61B9A8A6/61F43CFB" Ref="#PWR?"  Part="1"
-AR Path="/61C743E7/61B9A8A6/61F43CFB" Ref="#PWR?"  Part="1"
-AR Path="/61C81F9D/61F43CFB" Ref="#PWR?"  Part="1"
-AR Path="/62040DF5/61F43CFB" Ref="#PWR0234"  Part="1"
-AR Path="/61F43CFB" Ref="#PWR0234"  Part="1"
+AR Path="/61367F02/61F43CFB" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/61F43CFB" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/61F43CFB" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/61F43CFB" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/61F43CFB" Ref="#PWR?"  Part="1" 
+AR Path="/62040DF5/61F43CFB" Ref="#PWR0234"  Part="1" 
+AR Path="/61F43CFB" Ref="#PWR0234"  Part="1" 
 F 0 "#PWR0234" H 5700 3450 50  0001 C CNN
 F 1 "GND3" H 5705 3527 50  0000 C CNN
 F 2 "" H 5700 3700 50  0001 C CNN
 F 3 "" H 5700 3700 50  0001 C CNN
 	1    5700 3700
-	0    -1   -1   0
+	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	5700 3700 5675 3700
