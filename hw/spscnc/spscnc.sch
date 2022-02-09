@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 15
+Sheet 1 16
 Title "Trinamic FluidNC CNC Controller"
 Date "2022-01-27"
 Rev "1.0.0"
@@ -14,13 +14,13 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Sheet
-S 1750 875  1700 1275
+S 3900 1050 1800 775 
 U 61C743E7
 F0 "PSU" 50
 F1 "psu.sch" 50
 $EndSheet
 $Sheet
-S 3900 2150 1650 925 
+S 3900 2150 1800 600 
 U 61C80DCB
 F0 "Spindle controller" 50
 F1 "spindle.sch" 50
@@ -29,7 +29,7 @@ F3 "PWM_IN" I L 3900 2450 50
 F4 "PWM_DIRECTION" I L 3900 2550 50 
 $EndSheet
 $Sheet
-S 3925 3350 1825 1075
+S 3900 3075 1800 650 
 U 61C81F9D
 F0 "Controller" 50
 F1 "core.sch" 50
@@ -53,7 +53,7 @@ SDCARD_SCK
 Text GLabel 4050 6925 0    50   Input ~ 0
 SDCARD_CS
 $Sheet
-S 975  3775 950  650 
+S 975  5225 950  650 
 U 61E0961E
 F0 "Spindle PSU" 50
 F1 "spindlePSU.sch" 50
@@ -65,7 +65,7 @@ SPINDLE_PWM
 Text GLabel 3900 2550 0    50   Input ~ 0
 SPINDLE_DIR
 $Sheet
-S 1000 5250 1050 650 
+S 3900 5025 1800 500 
 U 61DEDDC1
 F0 "Probe Sensor" 50
 F1 "probe.sch" 50
@@ -151,7 +151,7 @@ U 61E6D951
 F0 "limit sensors" 50
 F1 "limitIF.sch" 50
 $EndSheet
-Text GLabel 6550 2275 0    50   Input ~ 0
+Text GLabel 6575 1250 0    50   Input ~ 0
 ~STEPPER_CS
 Text GLabel 8025 1425 0    50   Input ~ 0
 SDCARD_MOSI
@@ -173,13 +173,11 @@ Wire Wire Line
 	7525 3775 7525 5050
 Wire Wire Line
 	7525 5050 8400 5050
-Text GLabel 7825 4975 0    50   Output ~ 0
+Text GLabel 6900 4975 0    50   Output ~ 0
 SDCARD_MISO
 Wire Wire Line
-	8275 4975 8400 4975
-Wire Wire Line
-	7975 4975 7825 4975
-Text GLabel 6625 5000 0    50   Input ~ 0
+	7050 4975 6900 4975
+Text GLabel 6350 1500 0    50   Input ~ 0
 SDCARD_SCK
 $Comp
 L Device:R R37
@@ -302,7 +300,7 @@ F 3 "~" H 7275 800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 3925 4875 1775 1075
+S 3900 3950 1800 775 
 U 62040DF5
 F0 "extras" 50
 F1 "extraCPU.sch" 50
@@ -310,85 +308,41 @@ $EndSheet
 $Comp
 L Device:R R164
 U 1 1 61F0F506
-P 7050 5125
-F 0 "R164" V 6975 5125 50  0000 C CNN
-F 1 "47" V 7050 5125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 5125 50  0001 C CNN
-F 3 "~" H 7050 5125 50  0001 C CNN
-F 4 "C17714" H 7050 5125 50  0001 C CNN "jlcpcb"
-	1    7050 5125
+P 6500 1500
+F 0 "R164" V 6425 1500 50  0000 C CNN
+F 1 "47" V 6500 1500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6430 1500 50  0001 C CNN
+F 3 "~" H 6500 1500 50  0001 C CNN
+F 4 "C17714" H 6500 1500 50  0001 C CNN "jlcpcb"
+	1    6500 1500
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R R167
 U 1 1 61F120F9
-P 8125 4975
-F 0 "R167" V 8275 4925 50  0000 C CNN
-F 1 "47" V 8125 4975 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 8055 4975 50  0001 C CNN
-F 3 "~" H 8125 4975 50  0001 C CNN
-F 4 "C17714" H 8125 4975 50  0001 C CNN "jlcpcb"
-	1    8125 4975
+P 7200 4975
+F 0 "R167" V 7150 4775 50  0000 C CNN
+F 1 "47" V 7200 4975 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7130 4975 50  0001 C CNN
+F 3 "~" H 7200 4975 50  0001 C CNN
+F 4 "C17714" H 7200 4975 50  0001 C CNN "jlcpcb"
+	1    7200 4975
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	7250 5125 7250 3925
-Wire Wire Line
-	7250 1500 8425 1500
-Connection ~ 7250 5125
-Wire Wire Line
-	7250 5125 7200 5125
-Wire Wire Line
-	8400 3925 7250 3925
-Connection ~ 7250 3925
-Wire Wire Line
-	7250 3925 7250 2750
-Wire Wire Line
-	8400 2750 7250 2750
-Connection ~ 7250 2750
-Wire Wire Line
-	7250 2750 7250 1500
 $Comp
 L Device:R R36
 U 1 1 61F147FD
-P 6700 2275
-F 0 "R36" V 6850 2225 50  0000 C CNN
-F 1 "100" V 6700 2275 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6630 2275 50  0001 C CNN
-F 3 "~" H 6700 2275 50  0001 C CNN
-F 4 "C17408" H 6700 2275 50  0001 C CNN "jlcpcb"
-	1    6700 2275
+P 6725 1250
+F 0 "R36" V 6675 1425 50  0000 C CNN
+F 1 "100" V 6725 1250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6655 1250 50  0001 C CNN
+F 3 "~" H 6725 1250 50  0001 C CNN
+F 4 "C17408" H 6725 1250 50  0001 C CNN "jlcpcb"
+	1    6725 1250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	8425 1250 6875 1250
-Wire Wire Line
-	6875 1250 6875 2275
-Wire Wire Line
-	6875 4875 8400 4875
-Wire Wire Line
-	6875 2275 6850 2275
-Connection ~ 6875 2275
-Wire Wire Line
-	6875 2275 6875 2500
-Wire Wire Line
-	8400 3675 6875 3675
-Connection ~ 6875 3675
-Wire Wire Line
-	6875 3675 6875 4875
-Wire Wire Line
-	8400 2500 6875 2500
-Connection ~ 6875 2500
-Wire Wire Line
-	6875 2500 6875 3675
-Wire Wire Line
-	7250 5125 8400 5125
-Wire Wire Line
-	6900 5125 6775 5125
-Wire Wire Line
-	6775 5125 6775 5000
-Wire Wire Line
-	6775 5000 6625 5000
 $Sheet
 S 8400 2000 2175 900 
 U 6203DA5D
@@ -422,4 +376,163 @@ Wire Wire Line
 	8375 1425 8425 1425
 Wire Wire Line
 	8075 1425 8025 1425
+Text GLabel 8400 5625 0    50   Input ~ 0
+ENABLE_STEPPERS
+Text GLabel 8400 5700 0    50   Input ~ 0
+STEP_A
+Text GLabel 8400 5775 0    50   Input ~ 0
+DIR_A
+Text Label 7900 5550 0    50   ~ 0
+V_STEPPERS
+Wire Wire Line
+	7900 5550 8400 5550
+$Sheet
+S 8400 5500 825  875 
+U 6221509B
+F0 "Axis A" 50
+F1 "stepper.sch" 50
+F2 "~STEPPER_CS" I L 8400 6000 50 
+F3 "STEPPER_MISO" O L 8400 6100 50 
+F4 "STEPPER_MOSI" I L 8400 6175 50 
+F5 "STEPPER_SCK" I L 8400 6250 50 
+F6 "MOTOR_PWR" I L 8400 5550 50 
+F7 "~ENABLE" I L 8400 5625 50 
+F8 "STEP" I L 8400 5700 50 
+F9 "DIR" I L 8400 5775 50 
+$EndSheet
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 622A7998
+P 1875 3575
+AR Path="/6221509B/622A7998" Ref="J?"  Part="1" 
+AR Path="/622A7998" Ref="J21"  Part="1" 
+F 0 "J21" H 1955 3567 50  0000 L CNN
+F 1 "Conn_01x04" H 1955 3476 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1875 3575 50  0001 C CNN
+F 3 "~" H 1875 3575 50  0001 C CNN
+F 4 "DNP" H 1875 3575 50  0001 C CNN "jlcpcb"
+	1    1875 3575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J?
+U 1 1 622A799F
+P 1875 4225
+AR Path="/6221509B/622A799F" Ref="J?"  Part="1" 
+AR Path="/622A799F" Ref="J22"  Part="1" 
+F 0 "J22" H 1955 4217 50  0000 L CNN
+F 1 "Conn_01x06" H 1955 4126 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 1875 4225 50  0001 C CNN
+F 3 "~" H 1875 4225 50  0001 C CNN
+F 4 "DNP" H 1875 4225 50  0001 C CNN "jlcpcb"
+	1    1875 4225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1675 4225 1125 4225
+$Comp
+L industrial:GND #PWR?
+U 1 1 622A79AD
+P 1600 4550
+AR Path="/6221509B/622A79AD" Ref="#PWR?"  Part="1" 
+AR Path="/622A79AD" Ref="#PWR0196"  Part="1" 
+F 0 "#PWR0196" H 1600 4300 50  0001 C CNN
+F 1 "GND" H 1605 4377 50  0000 C CNN
+F 2 "" H 1600 4550 50  0001 C CNN
+F 3 "" H 1600 4550 50  0001 C CNN
+	1    1600 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 4550 1600 4525
+Wire Wire Line
+	1600 4425 1675 4425
+Wire Wire Line
+	1675 4525 1600 4525
+Connection ~ 1600 4525
+Wire Wire Line
+	1600 4525 1600 4425
+Text GLabel 7150 6100 0    50   Output ~ 0
+SDCARD_MISO
+$Comp
+L Device:R R192
+U 1 1 622AE21B
+P 7675 6100
+F 0 "R192" V 7600 6050 50  0000 C CNN
+F 1 "47" V 7675 6100 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7605 6100 50  0001 C CNN
+F 3 "~" H 7675 6100 50  0001 C CNN
+F 4 "C17714" H 7675 6100 50  0001 C CNN "jlcpcb"
+	1    7675 6100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7525 6100 7150 6100
+Text Label 8225 6175 2    50   ~ 0
+A_MISO
+Wire Wire Line
+	8225 6175 8400 6175
+Wire Wire Line
+	7825 6100 8400 6100
+Text Notes 1275 3225 0    50   ~ 0
+PROTO REUSE OPT1\n
+Text Label 8425 1250 2    50   ~ 0
+STEPPER_CS_B
+Text Label 1575 3475 2    50   ~ 0
+STEPPER_CS_B
+Wire Wire Line
+	1575 3475 1675 3475
+Text Label 8400 2500 2    50   ~ 0
+STEPPER_CS_B
+Text Label 8400 3675 2    50   ~ 0
+STEPPER_CS_B
+Text Label 8400 4875 2    50   ~ 0
+STEPPER_CS_B
+Text Label 8400 6000 2    50   ~ 0
+STEPPER_CS_B
+Text Label 8400 6250 2    50   ~ 0
+STEPPER_SCK_B
+Text Label 8400 5125 2    50   ~ 0
+STEPPER_SCK_B
+Text Label 8400 3925 2    50   ~ 0
+STEPPER_SCK_B
+Text Label 8400 2750 2    50   ~ 0
+STEPPER_SCK_B
+Text Label 7400 1500 2    50   ~ 0
+STEPPER_SCK_B
+Wire Wire Line
+	6650 1500 8425 1500
+Text Label 1675 3575 2    50   ~ 0
+STEPPER_SCK_B
+Wire Wire Line
+	7350 4975 8400 4975
+Text Label 7950 5050 0    50   ~ 0
+A_MOSI
+Text Label 1675 3775 2    50   ~ 0
+A_MOSI
+Wire Wire Line
+	1125 4225 1125 4125
+$Comp
+L industrial:+3V3 #PWR?
+U 1 1 622A79A5
+P 1125 4125
+AR Path="/6221509B/622A79A5" Ref="#PWR?"  Part="1" 
+AR Path="/622A79A5" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 1125 3975 50  0001 C CNN
+F 1 "+3V3" H 1140 4298 50  0000 C CNN
+F 2 "" H 1125 4125 50  0001 C CNN
+F 3 "" H 1125 4125 50  0001 C CNN
+	1    1125 4125
+	1    0    0    -1  
+$EndComp
+Text Label 8200 4975 2    50   ~ 0
+A_MISO
+Text Label 1675 3675 2    50   ~ 0
+A_MISO
+Text GLabel 1675 4025 0    50   Input ~ 0
+STEP_X
+Text GLabel 1675 4125 0    50   Input ~ 0
+DIR_X
+Text GLabel 1675 4325 0    50   Input ~ 0
+ENABLE_STEPPERS
 $EndSCHEMATC
