@@ -139,8 +139,6 @@ Connection ~ 5925 1950
 Wire Wire Line
 	1525 1000 1525 875 
 Connection ~ 1525 875 
-Wire Wire Line
-	1525 875  1750 875 
 $Comp
 L power:GND-power #PWR01
 U 1 1 61D71122
@@ -320,22 +318,12 @@ Wire Wire Line
 	5900 5000 5900 5100
 Wire Wire Line
 	1525 1425 1525 1300
-Wire Wire Line
-	1525 1300 1750 1300
 Connection ~ 1525 1300
-Connection ~ 1750 1300
-Wire Wire Line
-	1750 1300 2175 1300
 Wire Wire Line
 	2175 1000 2175 875 
 Connection ~ 2175 875 
 Wire Wire Line
 	2175 875  5925 875 
-Wire Wire Line
-	1750 1000 1750 875 
-Connection ~ 1750 875 
-Wire Wire Line
-	1750 875  2175 875 
 Wire Wire Line
 	2950 1600 2725 1600
 Wire Wire Line
@@ -617,18 +605,6 @@ F 4 "C668181" H 5900 5250 50  0001 C CNN "jlcpcb"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:CP C10
-U 1 1 61E7AF08
-P 1750 1150
-F 0 "C10" H 1775 1250 50  0000 L CNN
-F 1 "330uF @60V" H 1750 900 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D24.0mm_P10.00mm_SnapIn" H 1788 1000 50  0001 C CNN
-F 3 "~" H 1750 1150 50  0001 C CNN
-F 4 "DNP015" H 1750 1150 50  0001 C CNN "jlcpcb"
-	1    1750 1150
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:CP C11
 U 1 1 61E7E8E9
 P 2175 1150
@@ -906,4 +882,8 @@ Wire Wire Line
 Wire Wire Line
 	7075 2875 7075 5000
 Connection ~ 7800 2875
+Wire Wire Line
+	1525 1300 2175 1300
+Wire Wire Line
+	1525 875  2175 875 
 $EndSCHEMATC

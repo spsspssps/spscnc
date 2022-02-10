@@ -128,10 +128,7 @@ F 3 "" H 3925 3975 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3825 3775 3825 3675
-Wire Wire Line
 	3825 3675 3825 3575
-Connection ~ 3825 3675
 Wire Wire Line
 	3825 3575 4600 3575
 Wire Wire Line
@@ -290,9 +287,6 @@ Wire Wire Line
 	2650 3975 3325 3975
 Wire Wire Line
 	3925 3975 3825 3975
-Wire Wire Line
-	3825 3875 3825 3775
-Connection ~ 3825 3775
 $Comp
 L industrial:8P8C_4xShielded J?
 U 1 1 61E9D2A5
@@ -688,4 +682,82 @@ Text Label 3950 5950 0    50   ~ 0
 RESET_BTN
 Text Label 3325 4275 2    50   ~ 0
 RESET_BTN
+Text GLabel 8450 5175 3    50   Output ~ 0
+LIM_B
+Text GLabel 8200 5175 3    50   Output ~ 0
+LIM_A
+$Comp
+L Device:R R?
+U 1 1 62172151
+P 8200 5025
+AR Path="/61C80DFB/62172151" Ref="R?"  Part="1" 
+AR Path="/61C80E48/62172151" Ref="R?"  Part="1" 
+AR Path="/61C80E8F/62172151" Ref="R?"  Part="1" 
+AR Path="/61CEF4C9/62172151" Ref="R?"  Part="1" 
+AR Path="/61E6D951/62172151" Ref="R65"  Part="1" 
+F 0 "R65" V 8200 5000 50  0000 C CNN
+F 1 "10K" V 8084 5025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8130 5025 50  0001 C CNN
+F 3 "~" H 8200 5025 50  0001 C CNN
+F 4 "C17414" H 8200 5025 50  0001 C CNN "jlcpcb"
+	1    8200 5025
+	-1   0    0    1   
+$EndComp
+$Comp
+L industrial:+3V3 #PWR?
+U 1 1 6217215B
+P 8200 4875
+AR Path="/61C80DFB/6217215B" Ref="#PWR?"  Part="1" 
+AR Path="/61C80E48/6217215B" Ref="#PWR?"  Part="1" 
+AR Path="/61C80E8F/6217215B" Ref="#PWR?"  Part="1" 
+AR Path="/61CEF4C9/6217215B" Ref="#PWR?"  Part="1" 
+AR Path="/61E6D951/6217215B" Ref="#PWR0169"  Part="1" 
+F 0 "#PWR0169" H 8200 4725 50  0001 C CNN
+F 1 "+3V3" H 8215 5048 50  0000 C CNN
+F 2 "" H 8200 4875 50  0001 C CNN
+F 3 "" H 8200 4875 50  0001 C CNN
+	1    8200 4875
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 62172166
+P 8450 5025
+AR Path="/61C80DFB/62172166" Ref="R?"  Part="1" 
+AR Path="/61C80E48/62172166" Ref="R?"  Part="1" 
+AR Path="/61C80E8F/62172166" Ref="R?"  Part="1" 
+AR Path="/61CEF4C9/62172166" Ref="R?"  Part="1" 
+AR Path="/61E6D951/62172166" Ref="R192"  Part="1" 
+F 0 "R192" V 8450 5000 50  0000 C CNN
+F 1 "10K" V 8334 5025 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 8380 5025 50  0001 C CNN
+F 3 "~" H 8450 5025 50  0001 C CNN
+F 4 "C17414" H 8450 5025 50  0001 C CNN "jlcpcb"
+	1    8450 5025
+	-1   0    0    1   
+$EndComp
+$Comp
+L industrial:+3V3 #PWR?
+U 1 1 62172170
+P 8450 4875
+AR Path="/61C80DFB/62172170" Ref="#PWR?"  Part="1" 
+AR Path="/61C80E48/62172170" Ref="#PWR?"  Part="1" 
+AR Path="/61C80E8F/62172170" Ref="#PWR?"  Part="1" 
+AR Path="/61CEF4C9/62172170" Ref="#PWR?"  Part="1" 
+AR Path="/61E6D951/62172170" Ref="#PWR0170"  Part="1" 
+F 0 "#PWR0170" H 8450 4725 50  0001 C CNN
+F 1 "+3V3" H 8465 5048 50  0000 C CNN
+F 2 "" H 8450 4875 50  0001 C CNN
+F 3 "" H 8450 4875 50  0001 C CNN
+	1    8450 4875
+	1    0    0    -1  
+$EndComp
+Text GLabel 3900 3775 2    50   Output ~ 0
+LIM_B
+Text GLabel 3900 3875 2    50   Output ~ 0
+LIM_A
+Wire Wire Line
+	3900 3775 3825 3775
+Wire Wire Line
+	3825 3875 3900 3875
 $EndSCHEMATC

@@ -447,28 +447,10 @@ Wire Wire Line
 Connection ~ 1600 4525
 Wire Wire Line
 	1600 4525 1600 4425
-Text GLabel 6150 6125 0    50   Output ~ 0
-SDCARD_MISO
-$Comp
-L Device:R R192
-U 1 1 622AE21B
-P 6675 6125
-F 0 "R192" V 6600 6075 50  0000 C CNN
-F 1 "47" V 6675 6125 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6605 6125 50  0001 C CNN
-F 3 "~" H 6675 6125 50  0001 C CNN
-F 4 "C17714" H 6675 6125 50  0001 C CNN "jlcpcb"
-	1    6675 6125
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6525 6125 6150 6125
 Text Label 7225 6200 2    50   ~ 0
 A_MISO
 Wire Wire Line
 	7225 6200 7400 6200
-Wire Wire Line
-	6825 6125 7400 6125
 Text Notes 1275 3225 0    50   ~ 0
 PROTO REUSE OPT1\n
 Text Label 8425 1250 2    50   ~ 0
@@ -571,5 +553,16 @@ Text Label 10125 6050 2    50   ~ 0
 STEPPER_CS_B
 Text Label 10125 6300 2    50   ~ 0
 STEPPER_SCK_B
-NoConn ~ 10125 6225
+Wire Wire Line
+	6675 6125 6675 6500
+Wire Wire Line
+	6675 6500 9525 6500
+Wire Wire Line
+	9525 6500 9525 6225
+Wire Wire Line
+	9525 6225 10125 6225
+Wire Wire Line
+	6675 6125 7400 6125
+Text Notes 3900 8950 0    50   ~ 0
+CHECKS:\n[OK] change fluidnc config and attempt to boot.\n[OK] check bootmode is ok with GPIO signals\ncheck pulses during boot on output pins.\nComplete electrical checklist\nThorought layout checks on copper zones and signal crosstalk\n
 $EndSCHEMATC

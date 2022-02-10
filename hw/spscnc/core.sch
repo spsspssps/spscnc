@@ -687,8 +687,6 @@ F 3 "" H 10300 1125 50  0001 C CNN
 	1    10300 1125
 	1    0    0    -1  
 $EndComp
-Text Notes 5275 8450 0    50   ~ 0
-DRV8825 design used io15 for the door\n
 Text GLabel 7425 1975 2    39   Output ~ 0
 ~STEPPER_CS
 Wire Wire Line
@@ -1401,10 +1399,8 @@ F 3 "" H 8500 1875 50  0001 C CNN
 	1    8500 1875
 	-1   0    0    -1  
 $EndComp
-Text Notes 12650 3350 0    50   ~ 0
+Text Notes 9075 4125 0    50   ~ 0
 BOOT MODE:\nMTDI 0 => 3v3 SPI\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall\nGPIO5 SDIO Launch Fall
-Text Notes 12525 3900 0    50   ~ 0
-CHECKS:\n[OK] change fluidnc config and attempt to boot.\n[OK] check bootmode is ok with GPIO signals\ncheck pulses during boot on output pins.\n
 Text GLabel 7775 1475 2    50   Output ~ 0
 SPINDLE_EN
 Text GLabel 8650 2875 2    50   Output ~ 0
@@ -1549,7 +1545,7 @@ Wire Wire Line
 	7600 2075 7800 2075
 Wire Wire Line
 	7575 1475 7775 1475
-Text GLabel 9750 5000 2    50   Output ~ 0
+Text GLabel 9750 5100 2    50   Output ~ 0
 DIR_A
 $Comp
 L Device:R_Small R?
@@ -1583,7 +1579,7 @@ F 4 "C17714" H 9450 5100 50  0001 C CNN "jlcpcb"
 $EndComp
 Wire Wire Line
 	9550 5100 9750 5100
-Text GLabel 9750 5100 2    50   Output ~ 0
+Text GLabel 9750 5300 2    50   Output ~ 0
 STEP_A
 Wire Wire Line
 	5600 5075 4775 5075
@@ -1644,7 +1640,7 @@ Wire Wire Line
 	5600 5475 5425 5475
 Wire Wire Line
 	5425 5475 5425 5950
-Text GLabel 9750 5300 2    50   Output ~ 0
+Text GLabel 9750 5000 2    50   Output ~ 0
 DIR_B
 $Comp
 L Device:R_Small R?
@@ -1804,8 +1800,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 5775 6400 5775
 NoConn ~ 9350 5700
-NoConn ~ 7325 1775
-NoConn ~ 7325 1875
 NoConn ~ 7375 2775
 $Comp
 L power:+3.3VA-power #PWR?
@@ -2056,4 +2050,12 @@ F 3 "" H 6275 6825 50  0001 C CNN
 	1    6275 6825
 	1    0    0    -1  
 $EndComp
+Text GLabel 7400 1775 2    50   Input ~ 0
+LIM_A
+Text GLabel 7400 1875 2    50   Input ~ 0
+LIM_B
+Wire Wire Line
+	7400 1775 7325 1775
+Wire Wire Line
+	7325 1875 7400 1875
 $EndSCHEMATC
