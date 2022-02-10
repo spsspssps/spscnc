@@ -337,40 +337,6 @@ F 3 "" H 7150 1525 50  0001 C CNN
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H?
-U 1 1 61F038F0
-P 8225 1425
-AR Path="/61E601B6/61F038F0" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F038F0" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F038F0" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F038F0" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F038F0" Ref="H17"  Part="1" 
-F 0 "H17" H 8325 1474 50  0000 L CNN
-F 1 "MountingHole_Pad" H 8325 1383 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8225 1425 50  0001 C CNN
-F 3 "~" H 8225 1425 50  0001 C CNN
-F 4 "DNP003" H 8225 1425 50  0001 C CNN "jlcpcb"
-	1    8225 1425
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F038F6
-P 8225 1525
-AR Path="/61E601B6/61F038F6" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F038F6" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F038F6" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F038F6" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F038F6" Ref="#PWR0164"  Part="1" 
-AR Path="/61F038F6" Ref="#PWR0164"  Part="1" 
-F 0 "#PWR0164" H 8225 1275 50  0001 C CNN
-F 1 "GND" H 8230 1352 50  0000 C CNN
-F 2 "" H 8225 1525 50  0001 C CNN
-F 3 "" H 8225 1525 50  0001 C CNN
-	1    8225 1525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
 U 1 1 61F03E19
 P 5900 1950
 AR Path="/61E601B6/61F03E19" Ref="H?"  Part="1" 
@@ -435,40 +401,6 @@ F 1 "GND" H 7155 1902 50  0000 C CNN
 F 2 "" H 7150 2075 50  0001 C CNN
 F 3 "" H 7150 2075 50  0001 C CNN
 	1    7150 2075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 61F0468A
-P 8225 1975
-AR Path="/61E601B6/61F0468A" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F0468A" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F0468A" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F0468A" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F0468A" Ref="H18"  Part="1" 
-F 0 "H18" H 8325 2024 50  0000 L CNN
-F 1 "MountingHole_Pad" H 8325 1933 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8225 1975 50  0001 C CNN
-F 3 "~" H 8225 1975 50  0001 C CNN
-F 4 "DNP003" H 8225 1975 50  0001 C CNN "jlcpcb"
-	1    8225 1975
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F04690
-P 8225 2075
-AR Path="/61E601B6/61F04690" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F04690" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F04690" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F04690" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F04690" Ref="#PWR0165"  Part="1" 
-AR Path="/61F04690" Ref="#PWR0165"  Part="1" 
-F 0 "#PWR0165" H 8225 1825 50  0001 C CNN
-F 1 "GND" H 8230 1902 50  0000 C CNN
-F 2 "" H 8225 2075 50  0001 C CNN
-F 3 "" H 8225 2075 50  0001 C CNN
-	1    8225 2075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -677,108 +609,6 @@ F 3 "" H 8275 3200 50  0001 C CNN
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H?
-U 1 1 61F16812
-P 9325 1425
-AR Path="/61E601B6/61F16812" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F16812" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F16812" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F16812" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F16812" Ref="H21"  Part="1" 
-F 0 "H21" H 9425 1474 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9425 1383 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9325 1425 50  0001 C CNN
-F 3 "~" H 9325 1425 50  0001 C CNN
-F 4 "DNP003" H 9325 1425 50  0001 C CNN "jlcpcb"
-	1    9325 1425
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F16818
-P 9325 1525
-AR Path="/61E601B6/61F16818" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F16818" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F16818" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F16818" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F16818" Ref="#PWR0168"  Part="1" 
-AR Path="/61F16818" Ref="#PWR0168"  Part="1" 
-F 0 "#PWR0168" H 9325 1275 50  0001 C CNN
-F 1 "GND" H 9330 1352 50  0000 C CNN
-F 2 "" H 9325 1525 50  0001 C CNN
-F 3 "" H 9325 1525 50  0001 C CNN
-	1    9325 1525
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 61F1681F
-P 9325 1975
-AR Path="/61E601B6/61F1681F" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F1681F" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F1681F" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F1681F" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F1681F" Ref="H22"  Part="1" 
-F 0 "H22" H 9425 2024 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9425 1933 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9325 1975 50  0001 C CNN
-F 3 "~" H 9325 1975 50  0001 C CNN
-F 4 "DNP003" H 9325 1975 50  0001 C CNN "jlcpcb"
-	1    9325 1975
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F16825
-P 9325 2075
-AR Path="/61E601B6/61F16825" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F16825" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F16825" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F16825" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F16825" Ref="#PWR0169"  Part="1" 
-AR Path="/61F16825" Ref="#PWR0169"  Part="1" 
-F 0 "#PWR0169" H 9325 1825 50  0001 C CNN
-F 1 "GND" H 9330 1902 50  0000 C CNN
-F 2 "" H 9325 2075 50  0001 C CNN
-F 3 "" H 9325 2075 50  0001 C CNN
-	1    9325 2075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 61F1682C
-P 9325 2550
-AR Path="/61E601B6/61F1682C" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F1682C" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F1682C" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F1682C" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F1682C" Ref="H23"  Part="1" 
-F 0 "H23" H 9425 2599 50  0000 L CNN
-F 1 "MountingHole_Pad" H 9425 2508 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9325 2550 50  0001 C CNN
-F 3 "~" H 9325 2550 50  0001 C CNN
-F 4 "DNP003" H 9325 2550 50  0001 C CNN "jlcpcb"
-	1    9325 2550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F16832
-P 9325 2650
-AR Path="/61E601B6/61F16832" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F16832" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F16832" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F16832" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F16832" Ref="#PWR0170"  Part="1" 
-AR Path="/61F16832" Ref="#PWR0170"  Part="1" 
-F 0 "#PWR0170" H 9325 2400 50  0001 C CNN
-F 1 "GND" H 9330 2477 50  0000 C CNN
-F 2 "" H 9325 2650 50  0001 C CNN
-F 3 "" H 9325 2650 50  0001 C CNN
-	1    9325 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
 U 1 1 61F16839
 P 9375 3100
 AR Path="/61E601B6/61F16839" Ref="H?"  Part="1" 
@@ -847,40 +677,6 @@ F 3 "" H 10275 1525 50  0001 C CNN
 $EndComp
 $Comp
 L Mechanical:MountingHole_Pad H?
-U 1 1 61F1733A
-P 10275 1975
-AR Path="/61E601B6/61F1733A" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F1733A" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F1733A" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F1733A" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F1733A" Ref="H26"  Part="1" 
-F 0 "H26" H 10375 2024 50  0000 L CNN
-F 1 "MountingHole_Pad" H 10375 1933 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10275 1975 50  0001 C CNN
-F 3 "~" H 10275 1975 50  0001 C CNN
-F 4 "DNP003" H 10275 1975 50  0001 C CNN "jlcpcb"
-	1    10275 1975
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F17340
-P 10275 2075
-AR Path="/61E601B6/61F17340" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F17340" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F17340" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F17340" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F17340" Ref="#PWR0173"  Part="1" 
-AR Path="/61F17340" Ref="#PWR0173"  Part="1" 
-F 0 "#PWR0173" H 10275 1825 50  0001 C CNN
-F 1 "GND" H 10280 1902 50  0000 C CNN
-F 2 "" H 10275 2075 50  0001 C CNN
-F 3 "" H 10275 2075 50  0001 C CNN
-	1    10275 2075
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
 U 1 1 61F17347
 P 10275 2550
 AR Path="/61E601B6/61F17347" Ref="H?"  Part="1" 
@@ -911,40 +707,6 @@ F 1 "GND" H 10280 2477 50  0000 C CNN
 F 2 "" H 10275 2650 50  0001 C CNN
 F 3 "" H 10275 2650 50  0001 C CNN
 	1    10275 2650
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 61F17354
-P 10325 3100
-AR Path="/61E601B6/61F17354" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F17354" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F17354" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F17354" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F17354" Ref="H28"  Part="1" 
-F 0 "H28" H 10425 3149 50  0000 L CNN
-F 1 "MountingHole_Pad" H 10425 3058 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10325 3100 50  0001 C CNN
-F 3 "~" H 10325 3100 50  0001 C CNN
-F 4 "DNP003" H 10325 3100 50  0001 C CNN "jlcpcb"
-	1    10325 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F1735A
-P 10325 3200
-AR Path="/61E601B6/61F1735A" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F1735A" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F1735A" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F1735A" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F1735A" Ref="#PWR0175"  Part="1" 
-AR Path="/61F1735A" Ref="#PWR0175"  Part="1" 
-F 0 "#PWR0175" H 10325 2950 50  0001 C CNN
-F 1 "GND" H 10330 3027 50  0000 C CNN
-F 2 "" H 10325 3200 50  0001 C CNN
-F 3 "" H 10325 3200 50  0001 C CNN
-	1    10325 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1013,40 +775,6 @@ F 1 "GND" H 10180 4227 50  0000 C CNN
 F 2 "" H 10175 4400 50  0001 C CNN
 F 3 "" H 10175 4400 50  0001 C CNN
 	1    10175 4400
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 61F27B95
-P 10175 4875
-AR Path="/61E601B6/61F27B95" Ref="H?"  Part="1" 
-AR Path="/6203D74D/61F27B95" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/61F27B95" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/61F27B95" Ref="H?"  Part="1" 
-AR Path="/61C743E7/61F27B95" Ref="H31"  Part="1" 
-F 0 "H31" H 10275 4924 50  0000 L CNN
-F 1 "MountingHole_Pad" H 10275 4833 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10175 4875 50  0001 C CNN
-F 3 "~" H 10175 4875 50  0001 C CNN
-F 4 "DNP003" H 10175 4875 50  0001 C CNN "jlcpcb"
-	1    10175 4875
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 61F27B9F
-P 10175 4975
-AR Path="/61E601B6/61F27B9F" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/61F27B9F" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/61F27B9F" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/61F27B9F" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61F27B9F" Ref="#PWR0198"  Part="1" 
-AR Path="/61F27B9F" Ref="#PWR0198"  Part="1" 
-F 0 "#PWR0198" H 10175 4725 50  0001 C CNN
-F 1 "GND" H 10180 4802 50  0000 C CNN
-F 2 "" H 10175 4975 50  0001 C CNN
-F 3 "" H 10175 4975 50  0001 C CNN
-	1    10175 4975
 	1    0    0    -1  
 $EndComp
 $Comp

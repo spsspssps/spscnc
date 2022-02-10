@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 17 17
+Sheet 16 17
 Title ""
 Date ""
 Rev ""
@@ -13,13 +13,13 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text HLabel 4650 1650 0    50   Input ~ 0
-~STEPPER_CS
-Text HLabel 4650 1850 0    50   Output ~ 0
-STEPPER_MISO
-Text HLabel 4650 1950 0    50   Input ~ 0
-STEPPER_MOSI
 Text HLabel 4650 1750 0    50   Input ~ 0
+~STEPPER_CS
+Text HLabel 4650 1950 0    50   Output ~ 0
+STEPPER_MISO
+Text HLabel 4650 1850 0    50   Input ~ 0
+STEPPER_MOSI
+Text HLabel 4650 1650 0    50   Input ~ 0
 STEPPER_SCK
 Text HLabel 4650 2500 0    50   Input ~ 0
 ~ENABLE

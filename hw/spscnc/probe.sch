@@ -570,12 +570,6 @@ Wire Wire Line
 	5175 5825 5175 5725
 Wire Wire Line
 	8975 5575 8975 5375
-Text GLabel 9125 4650 2    50   Output ~ 0
-VACUUM_EN
-Wire Wire Line
-	9125 4650 8875 4650
-Wire Wire Line
-	8875 4650 8875 4775
 Text GLabel 5275 5625 2    50   Output ~ 0
 VACUUM_EN
 Wire Wire Line
@@ -606,4 +600,162 @@ Wire Wire Line
 	6875 4425 6750 4425
 Wire Wire Line
 	6800 4625 6875 4625
+$Comp
+L industrial:LBA710 U15
+U 2 1 620C5BE0
+P 1950 4650
+F 0 "U15" H 1950 4975 50  0000 C CNN
+F 1 "LBA710" H 1950 4884 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W8.89mm_SMDSocket_LongPads" H 1750 4450 50  0001 L CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=17036&prodName=TLP222A" H 1950 4650 50  0001 L CNN
+F 4 "own stock" H 1950 4650 50  0001 C CNN "alternatives"
+F 5 "DNP014" H 1950 4650 50  0001 C CNN "jlcpcb"
+	2    1950 4650
+	1    0    0    -1  
+$EndComp
+Text GLabel 1575 4750 0    50   Input ~ 0
+ENABLE_VACUUM
+$Comp
+L Device:R R?
+U 1 1 620C5BEB
+P 1525 4400
+AR Path="/5AD47FD6/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/61FBB705/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/61B9A8A6/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/620C5BEB" Ref="R?"  Part="1" 
+AR Path="/61DEDDC1/620C5BEB" Ref="R197"  Part="1" 
+F 0 "R197" V 1605 4400 50  0000 C CNN
+F 1 "1K" V 1525 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1455 4400 50  0001 C CNN
+F 3 "" H 1525 4400 50  0001 C CNN
+F 4 "" V 1525 4400 60  0001 C CNN "farnell"
+F 5 "C21190" H 1525 4400 50  0001 C CNN "jlcpcb"
+F 6 "5%" H 1525 4400 50  0001 C CNN "precision"
+F 7 "1%" H 1525 4400 50  0001 C CNN "power"
+	1    1525 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4550 2425 4550
+Wire Wire Line
+	2425 4550 2425 4450
+$Comp
+L Relay:EC2-3NU K1
+U 1 1 620C5BF4
+P 3350 5200
+F 0 "K1" H 3980 5246 50  0000 L CNN
+F 1 "HFD3/3" H 3980 5155 50  0000 L CNN
+F 2 "Relay_THT:Relay_DPDT_Kemet_EC2" H 3350 5200 50  0001 C CNN
+F 3 "https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf" H 3350 5200 50  0001 C CNN
+F 4 "DNP009" H 3350 5200 50  0001 C CNN "jlcpcb"
+	1    3350 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 4750 2550 4750
+Wire Wire Line
+	2950 4750 2950 4900
+$Comp
+L industrial:+3V3 #PWR0270
+U 1 1 620C5BFC
+P 2425 4450
+F 0 "#PWR0270" H 2425 4300 50  0001 C CNN
+F 1 "+3V3" H 2440 4623 50  0000 C CNN
+F 2 "" H 2425 4450 50  0001 C CNN
+F 3 "" H 2425 4450 50  0001 C CNN
+	1    2425 4450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND-power #PWR?
+U 1 1 620C5C02
+P 2950 5675
+AR Path="/620C5C02" Ref="#PWR?"  Part="1" 
+AR Path="/61DEDDC1/620C5C02" Ref="#PWR0271"  Part="1" 
+F 0 "#PWR0271" H 2950 5425 50  0001 C CNN
+F 1 "GND" H 2955 5502 50  0000 C CNN
+F 2 "" H 2950 5675 50  0001 C CNN
+F 3 "" H 2950 5675 50  0001 C CNN
+	1    2950 5675
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:1N4148 D56
+U 1 1 620C5C09
+P 2550 5200
+F 0 "D56" V 2500 4875 50  0000 L CNN
+F 1 "1N4148" V 2600 4825 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" H 2550 5025 50  0001 C CNN
+F 3 "https://assets.nexperia.com/documents/data-sheet/1N4148_1N4448.pdf" H 2550 5200 50  0001 C CNN
+F 4 "C81598" V 2550 5200 50  0001 C CNN "jlcpcb"
+	1    2550 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2550 5050 2550 4750
+Connection ~ 2550 4750
+Wire Wire Line
+	2550 4750 2950 4750
+Wire Wire Line
+	2550 5350 2550 5550
+Wire Wire Line
+	2550 5550 2950 5550
+Wire Wire Line
+	2950 5550 2950 5675
+Wire Wire Line
+	2950 5550 2950 5500
+Connection ~ 2950 5550
+$Comp
+L power:+24V-power #PWR?
+U 1 1 620C5C17
+P 3950 5700
+AR Path="/620C5C17" Ref="#PWR?"  Part="1" 
+AR Path="/61DEDDC1/620C5C17" Ref="#PWR0272"  Part="1" 
+F 0 "#PWR0272" H 3950 5550 50  0001 C CNN
+F 1 "+24V" H 3965 5873 50  0000 C CNN
+F 2 "" H 3950 5700 50  0001 C CNN
+F 3 "" H 3950 5700 50  0001 C CNN
+	1    3950 5700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3350 5700 3350 5500
+NoConn ~ 3450 4900
+NoConn ~ 3850 4900
+Wire Wire Line
+	3750 5700 3750 5500
+Text GLabel 3900 4775 2    50   Output ~ 0
+VACUUM_EN
+Wire Wire Line
+	3900 4775 3650 4775
+Wire Wire Line
+	3650 4775 3650 4900
+Wire Wire Line
+	3950 5700 3750 5700
+Wire Wire Line
+	3750 5700 3350 5700
+Connection ~ 3750 5700
+$Comp
+L industrial:+3V3 #PWR0269
+U 1 1 620C5C2A
+P 1525 4250
+F 0 "#PWR0269" H 1525 4100 50  0001 C CNN
+F 1 "+3V3" H 1540 4423 50  0000 C CNN
+F 2 "" H 1525 4250 50  0001 C CNN
+F 3 "" H 1525 4250 50  0001 C CNN
+	1    1525 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1650 4550 1525 4550
+Wire Wire Line
+	1575 4750 1650 4750
+NoConn ~ 8875 4775
+NoConn ~ 3250 4900
+Text Notes 4325 6400 0    50   ~ 0
+This connector drives External 24V relays which enable the 230V circuits.
 $EndSCHEMATC

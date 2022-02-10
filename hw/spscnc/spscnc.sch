@@ -473,7 +473,7 @@ Text Notes 1275 3225 0    50   ~ 0
 PROTO REUSE OPT1\n
 Text Label 8425 1250 2    50   ~ 0
 STEPPER_CS_B
-Text Label 1575 3475 2    50   ~ 0
+Text Label 1675 3575 2    50   ~ 0
 STEPPER_CS_B
 Wire Wire Line
 	1575 3475 1675 3475
@@ -497,13 +497,13 @@ Text Label 7400 1500 2    50   ~ 0
 STEPPER_SCK_B
 Wire Wire Line
 	6650 1500 8425 1500
-Text Label 1675 3575 2    50   ~ 0
+Text Label 1575 3475 2    50   ~ 0
 STEPPER_SCK_B
 Wire Wire Line
 	7350 4975 8400 4975
 Text Label 7950 5050 0    50   ~ 0
 A_MOSI
-Text Label 1675 3775 2    50   ~ 0
+Text Label 1675 3675 2    50   ~ 0
 A_MOSI
 Wire Wire Line
 	1125 4225 1125 4125
@@ -522,7 +522,7 @@ F 3 "" H 1125 4125 50  0001 C CNN
 $EndComp
 Text Label 8200 4975 2    50   ~ 0
 A_MISO
-Text Label 1675 3675 2    50   ~ 0
+Text Label 1675 3775 2    50   ~ 0
 A_MISO
 Text GLabel 1675 4025 0    50   Input ~ 0
 STEP_X
