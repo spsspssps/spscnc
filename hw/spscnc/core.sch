@@ -648,8 +648,6 @@ Wire Wire Line
 	7450 2475 7325 2475
 Wire Wire Line
 	7375 2775 7325 2775
-Wire Wire Line
-	7375 2875 7325 2875
 Text GLabel 7325 3275 2    50   Input ~ 0
 LIM_Y1
 Text GLabel 7325 3375 2    50   Input ~ 0
@@ -1407,46 +1405,46 @@ Text Notes 12650 3350 0    50   ~ 0
 BOOT MODE:\nMTDI 0 => 3v3 SPI\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall\nGPIO5 SDIO Launch Fall
 Text Notes 12525 3900 0    50   ~ 0
 TODO:\nchange fluidnc config and attempt to boot.\ncheck bootmode is ok with GPIO signals\ncheck pulses during boot on output pins.\n
-Text GLabel 9750 4900 2    50   Output ~ 0
+Text GLabel 7775 1475 2    50   Output ~ 0
 SPINDLE_EN
-Text GLabel 9625 5500 2    50   Output ~ 0
+Text GLabel 8650 2875 2    50   Output ~ 0
 ENABLE_STEPPERS
-Text GLabel 9750 5200 2    50   Output ~ 0
+Text GLabel 7800 2075 2    50   Output ~ 0
 SPINDLE_PWM
 Text GLabel 9750 4800 2    50   Output ~ 0
 SPINDLE_DIR
 $Comp
 L Device:R_Small R?
 U 1 1 62063E2A
-P 9575 5725
+P 8600 3100
 AR Path="/61367F02/62063E2A" Ref="R?"  Part="1" 
 AR Path="/5AD46BE5/619A452E/61B9A8A6/62063E2A" Ref="R?"  Part="1" 
 AR Path="/61B9A8A6/62063E2A" Ref="R?"  Part="1" 
 AR Path="/61C743E7/61B9A8A6/62063E2A" Ref="R?"  Part="1" 
 AR Path="/61C81F9D/62063E2A" Ref="R191"  Part="1" 
-F 0 "R191" H 9634 5771 50  0000 L CNN
-F 1 "1K" H 9634 5680 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9575 5725 50  0001 C CNN
-F 3 "~" H 9575 5725 50  0001 C CNN
-F 4 "C21190" H 9575 5725 50  0001 C CNN "jlcpcb"
-	1    9575 5725
+F 0 "R191" H 8659 3146 50  0000 L CNN
+F 1 "1K" H 8659 3055 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 8600 3100 50  0001 C CNN
+F 3 "~" H 8600 3100 50  0001 C CNN
+F 4 "C21190" H 8600 3100 50  0001 C CNN "jlcpcb"
+	1    8600 3100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND-power #PWR?
 U 1 1 62063E31
-P 9575 5825
+P 8600 3200
 AR Path="/61367F02/62063E31" Ref="#PWR?"  Part="1" 
 AR Path="/5AD46BE5/619A452E/61B9A8A6/62063E31" Ref="#PWR?"  Part="1" 
 AR Path="/61B9A8A6/62063E31" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61B9A8A6/62063E31" Ref="#PWR?"  Part="1" 
 AR Path="/61C81F9D/62063E31" Ref="#PWR0129"  Part="1" 
 AR Path="/62063E31" Ref="#PWR?"  Part="1" 
-F 0 "#PWR0129" H 9575 5575 50  0001 C CNN
-F 1 "GND" H 9580 5652 50  0000 C CNN
-F 2 "" H 9575 5825 50  0001 C CNN
-F 3 "" H 9575 5825 50  0001 C CNN
-	1    9575 5825
+F 0 "#PWR0129" H 8600 2950 50  0001 C CNN
+F 1 "GND" H 8605 3027 50  0000 C CNN
+F 2 "" H 8600 3200 50  0001 C CNN
+F 3 "" H 8600 3200 50  0001 C CNN
+	1    8600 3200
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1466,29 +1464,29 @@ $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 62063E3F
-P 9450 5200
+P 7500 2075
 AR Path="/62063E3F" Ref="R?"  Part="1" 
 AR Path="/61C81F9D/62063E3F" Ref="R188"  Part="1" 
-F 0 "R188" V 9425 5350 39  0000 C CNN
-F 1 "47" V 9450 5200 39  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9380 5200 50  0001 C CNN
-F 3 "~" H 9450 5200 50  0001 C CNN
-F 4 "C17714" H 9450 5200 50  0001 C CNN "jlcpcb"
-	1    9450 5200
+F 0 "R188" V 7475 2225 39  0000 C CNN
+F 1 "47" V 7500 2075 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7430 2075 50  0001 C CNN
+F 3 "~" H 7500 2075 50  0001 C CNN
+F 4 "C17714" H 7500 2075 50  0001 C CNN "jlcpcb"
+	1    7500 2075
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
 U 1 1 62063E46
-P 9450 4900
+P 7475 1475
 AR Path="/62063E46" Ref="R?"  Part="1" 
 AR Path="/61C81F9D/62063E46" Ref="R180"  Part="1" 
-F 0 "R180" V 9425 5050 39  0000 C CNN
-F 1 "47" V 9450 4900 39  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9380 4900 50  0001 C CNN
-F 3 "~" H 9450 4900 50  0001 C CNN
-F 4 "C17714" H 9450 4900 50  0001 C CNN "jlcpcb"
-	1    9450 4900
+F 0 "R180" V 7450 1625 39  0000 C CNN
+F 1 "47" V 7475 1475 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7405 1475 50  0001 C CNN
+F 3 "~" H 7475 1475 50  0001 C CNN
+F 4 "C17714" H 7475 1475 50  0001 C CNN "jlcpcb"
+	1    7475 1475
 	0    1    1    0   
 $EndComp
 $Comp
@@ -1548,9 +1546,9 @@ Text Label 5600 5475 2    50   ~ 0
 Wire Wire Line
 	9750 4800 9550 4800
 Wire Wire Line
-	9550 5200 9750 5200
+	7600 2075 7800 2075
 Wire Wire Line
-	9550 4900 9750 4900
+	7575 1475 7775 1475
 Text GLabel 9750 5000 2    50   Output ~ 0
 DIR_A
 $Comp
@@ -1815,12 +1813,10 @@ Wire Wire Line
 Wire Wire Line
 	8375 5400 8375 5875
 Wire Wire Line
-	9575 5625 9575 5500
-Connection ~ 9575 5500
+	8600 3000 8600 2875
+Connection ~ 8600 2875
 Wire Wire Line
-	9575 5500 9625 5500
-Wire Wire Line
-	9350 5500 9575 5500
+	8600 2875 8650 2875
 Text Label 6400 5775 0    50   ~ 0
 I2SB
 Text Label 8550 4800 2    50   ~ 0
@@ -1848,10 +1844,7 @@ Wire Wire Line
 NoConn ~ 9350 5700
 NoConn ~ 7325 1775
 NoConn ~ 7325 1875
-NoConn ~ 7325 2075
-NoConn ~ 7375 2875
 NoConn ~ 7375 2775
-NoConn ~ 7325 1475
 $Comp
 L power:+3.3VA-power #PWR?
 U 1 1 623077B6
@@ -1886,4 +1879,11 @@ F 3 "" H 8950 4600 50  0001 C CNN
 	1    8950 4600
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7325 2875 8600 2875
+NoConn ~ 9350 5500
+Wire Wire Line
+	7375 1475 7325 1475
+Wire Wire Line
+	7400 2075 7325 2075
 $EndSCHEMATC
