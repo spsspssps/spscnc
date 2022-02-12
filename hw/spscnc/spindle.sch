@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-01-27"
-Rev "1.0.0"
+Date "2022-02-12"
+Rev "1.0.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -15,7 +15,7 @@ Comment4 ""
 $EndDescr
 Text HLabel 3575 2575 0    50   Input ~ 0
 EN
-Text HLabel 3575 2475 0    50   Input ~ 0
+Text HLabel 2900 2475 0    50   Input ~ 0
 PWM_IN
 Text Label 6900 2675 2    50   ~ 0
 MOTOR_A
@@ -699,31 +699,31 @@ V_SPINDLE
 $Comp
 L power:GND-power #PWR0141
 U 1 1 61F8E60A
-P 2725 2500
+P 1300 2575
 AR Path="/61F8E60A" Ref="#PWR0141"  Part="1" 
 AR Path="/61C80DCB/61F8E60A" Ref="#PWR0141"  Part="1" 
-F 0 "#PWR0141" H 2725 2250 50  0001 C CNN
-F 1 "GND" H 2730 2327 50  0000 C CNN
-F 2 "" H 2725 2500 50  0001 C CNN
-F 3 "" H 2725 2500 50  0001 C CNN
-	1    2725 2500
+F 0 "#PWR0141" H 1300 2325 50  0001 C CNN
+F 1 "GND" H 1305 2402 50  0000 C CNN
+F 2 "" H 1300 2575 50  0001 C CNN
+F 3 "" H 1300 2575 50  0001 C CNN
+	1    1300 2575
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 61F99538
-P 2725 2400
+P 1300 2475
 AR Path="/61E601B6/61F99538" Ref="C?"  Part="1" 
 AR Path="/6203D74D/61F99538" Ref="C?"  Part="1" 
 AR Path="/6203DA5D/61F99538" Ref="C?"  Part="1" 
 AR Path="/6203DFCF/61F99538" Ref="C?"  Part="1" 
 AR Path="/61C80DCB/61F99538" Ref="C84"  Part="1" 
-F 0 "C84" V 2496 2400 50  0000 C CNN
-F 1 "100nF" V 2587 2400 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2725 2400 50  0001 C CNN
-F 3 "~" H 2725 2400 50  0001 C CNN
-F 4 "C14663" H 2725 2400 50  0001 C CNN "jlcpcb"
-	1    2725 2400
+F 0 "C84" V 1071 2475 50  0000 C CNN
+F 1 "100nF" V 1162 2475 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1300 2475 50  0001 C CNN
+F 3 "~" H 1300 2475 50  0001 C CNN
+F 4 "C14663" H 1300 2475 50  0001 C CNN "jlcpcb"
+	1    1300 2475
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -794,12 +794,12 @@ $EndComp
 $Comp
 L industrial:+5V #PWR0159
 U 1 1 61FB8C06
-P 2725 2300
-F 0 "#PWR0159" H 2725 2150 50  0001 C CNN
-F 1 "+5V" H 2740 2473 50  0000 C CNN
-F 2 "" H 2725 2300 50  0001 C CNN
-F 3 "" H 2725 2300 50  0001 C CNN
-	1    2725 2300
+P 1300 2375
+F 0 "#PWR0159" H 1300 2225 50  0001 C CNN
+F 1 "+5V" H 1315 2548 50  0000 C CNN
+F 2 "" H 1300 2375 50  0001 C CNN
+F 3 "" H 1300 2375 50  0001 C CNN
+	1    1300 2375
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -886,4 +886,20 @@ Wire Wire Line
 	1525 1300 2175 1300
 Wire Wire Line
 	1525 875  2175 875 
+$Comp
+L Device:Jumper_NO_Small JP9
+U 1 1 620AC53F
+P 3075 2475
+F 0 "JP9" H 3075 2660 50  0000 C CNN
+F 1 "Jumper_NO_Small" H 3075 2569 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3075 2475 50  0001 C CNN
+F 3 "~" H 3075 2475 50  0001 C CNN
+F 4 "DNP443" H 3075 2475 50  0001 C CNN "jlcpcb"
+	1    3075 2475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2975 2475 2900 2475
+Wire Wire Line
+	3175 2475 3575 2475
 $EndSCHEMATC

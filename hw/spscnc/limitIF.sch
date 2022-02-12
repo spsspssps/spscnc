@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 13 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-01-27"
-Rev "1.0.0"
+Date "2022-02-12"
+Rev "1.0.1"
 Comp ""
 Comment1 "Limit sensor connectors"
 Comment2 ""
@@ -760,4 +760,6 @@ Wire Wire Line
 	3900 3775 3825 3775
 Wire Wire Line
 	3825 3875 3900 3875
+Text Notes 4100 2500 0    50   ~ 0
+The system is designed for NC switches.\nThis allows detecting if the sensor is not in place\nIn particular, LIM_A not being connected may affect the flash\nbehavior (MTDO)
 $EndSCHEMATC

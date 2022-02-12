@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-01-27"
-Rev "1.0.0"
+Date "2022-02-12"
+Rev "1.0.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1400,12 +1400,12 @@ F 3 "" H 8500 1875 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 9075 4125 0    50   ~ 0
-BOOT MODE:\nMTDI 0 => 3v3 SPI\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall\nGPIO5 SDIO Launch Fall
+CRITICAL BOOT MODE:\nMTDI 0 => 3v3 SPI\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall\nGPIO5 SDIO Launch Falling edge.\n
 Text GLabel 7775 1475 2    50   Output ~ 0
 SPINDLE_EN
 Text GLabel 8650 2875 2    50   Output ~ 0
 ENABLE_STEPPERS
-Text GLabel 7800 2075 2    50   Output ~ 0
+Text GLabel 8750 2075 2    50   Output ~ 0
 SPINDLE_PWM
 Text GLabel 9750 4800 2    50   Output ~ 0
 SPINDLE_DIR
@@ -1520,29 +1520,12 @@ F 3 "" H 6000 5975 50  0001 C CNN
 $EndComp
 Text Label 5600 5375 2    50   ~ 0
 I2S_WORDSTROBE
-$Comp
-L power:GND-power #PWR?
-U 1 1 62063E5C
-P 5600 5175
-AR Path="/5AD46BE5/62063E5C" Ref="#PWR?"  Part="1" 
-AR Path="/5AD46BE5/619A452E/62063E5C" Ref="#PWR?"  Part="1" 
-AR Path="/62063E5C" Ref="#PWR?"  Part="1" 
-AR Path="/61B9A8A6/62063E5C" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61B9A8A6/62063E5C" Ref="#PWR?"  Part="1" 
-AR Path="/61C81F9D/62063E5C" Ref="#PWR024"  Part="1" 
-F 0 "#PWR024" H 5600 4925 50  0001 C CNN
-F 1 "GND" H 5600 5025 50  0000 C CNN
-F 2 "" H 5600 5175 50  0001 C CNN
-F 3 "" H 5600 5175 50  0001 C CNN
-	1    5600 5175
-	0    1    -1   0   
-$EndComp
 Text Label 5600 5475 2    50   ~ 0
 ~I2S_ENABLE
 Wire Wire Line
 	9750 4800 9550 4800
 Wire Wire Line
-	7600 2075 7800 2075
+	7600 2075 8750 2075
 Wire Wire Line
 	7575 1475 7775 1475
 Text GLabel 9750 5100 2    50   Output ~ 0
@@ -1730,23 +1713,6 @@ F 3 "" H 8950 5900 50  0001 C CNN
 $EndComp
 Text Label 8550 5300 2    50   ~ 0
 I2S_WORDSTROBE
-$Comp
-L power:GND-power #PWR?
-U 1 1 620F09C1
-P 8550 5100
-AR Path="/5AD46BE5/620F09C1" Ref="#PWR?"  Part="1" 
-AR Path="/5AD46BE5/619A452E/620F09C1" Ref="#PWR?"  Part="1" 
-AR Path="/620F09C1" Ref="#PWR?"  Part="1" 
-AR Path="/61B9A8A6/620F09C1" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61B9A8A6/620F09C1" Ref="#PWR?"  Part="1" 
-AR Path="/61C81F9D/620F09C1" Ref="#PWR083"  Part="1" 
-F 0 "#PWR083" H 8550 4850 50  0001 C CNN
-F 1 "GND" H 8550 4950 50  0000 C CNN
-F 2 "" H 8550 5100 50  0001 C CNN
-F 3 "" H 8550 5100 50  0001 C CNN
-	1    8550 5100
-	0    1    -1   0   
-$EndComp
 Text Label 8550 5400 2    50   ~ 0
 ~I2S_ENABLE
 $Comp
@@ -2058,4 +2024,44 @@ Wire Wire Line
 	7400 1775 7325 1775
 Wire Wire Line
 	7325 1875 7400 1875
+$Comp
+L power:+3.3VA-power #PWR?
+U 1 1 620826BE
+P 7975 5050
+AR Path="/61367F02/620826BE" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/620826BE" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/620826BE" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/620826BE" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/620826BE" Ref="#PWR?"  Part="1" 
+AR Path="/620826BE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7975 4900 50  0001 C CNN
+F 1 "+3.3VA" H 7975 5225 50  0000 C CNN
+F 2 "" H 7975 5050 50  0001 C CNN
+F 3 "" H 7975 5050 50  0001 C CNN
+	1    7975 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 5100 7975 5100
+Wire Wire Line
+	7975 5100 7975 5050
+$Comp
+L power:+3.3VA-power #PWR?
+U 1 1 6208D205
+P 5200 5175
+AR Path="/61367F02/6208D205" Ref="#PWR?"  Part="1" 
+AR Path="/5AD46BE5/619A452E/61B9A8A6/6208D205" Ref="#PWR?"  Part="1" 
+AR Path="/61B9A8A6/6208D205" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61B9A8A6/6208D205" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6208D205" Ref="#PWR?"  Part="1" 
+AR Path="/6208D205" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5200 5025 50  0001 C CNN
+F 1 "+3.3VA" V 5225 5425 50  0000 C CNN
+F 2 "" H 5200 5175 50  0001 C CNN
+F 3 "" H 5200 5175 50  0001 C CNN
+	1    5200 5175
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5200 5175 5600 5175
 $EndSCHEMATC

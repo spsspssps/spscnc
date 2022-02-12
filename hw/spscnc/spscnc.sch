@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-01-27"
-Rev "1.0.0"
+Date "2022-02-12"
+Rev "1.0.1"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -234,7 +234,7 @@ F 0 "JP3" H 6900 875 50  0000 C CNN
 F 1 "Jumper_NO_Small" H 6925 800 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6900 950 50  0001 C CNN
 F 3 "~" H 6900 950 50  0001 C CNN
-F 4 "DNP_NA0" H 6900 950 50  0001 C CNN "jlcpcb"
+F 4 "DNP443" H 6900 950 50  0001 C CNN "jlcpcb"
 	1    6900 950 
 	1    0    0    -1  
 $EndComp
