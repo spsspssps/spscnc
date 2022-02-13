@@ -146,7 +146,7 @@ axes:
 #      feed_scaler: 1.100
     
     motor0:
-      limit_all_pin: gpio.14
+      limit_all_pin: gpio.13
       hard_limits: true
       pulloff_mm: 1.000
       tmc_5160:
@@ -183,7 +183,7 @@ axes:
 #      feed_scaler: 1.100
     
     motor0:
-      limit_all_pin: gpio.13
+      limit_all_pin: gpio.14
       hard_limits: true
       pulloff_mm: 1.000
       tmc_5160:
@@ -304,7 +304,7 @@ control:
 # TODO place this
   safety_door_pin: gpio.33:pu
 # Red kills the machine TODO :pu once installed
-#  reset_pin: gpio.39
+  reset_pin: gpio.39
 # Pause yellow
 #  feed_hold_pin:
   cycle_start_pin: gpio.12:pu
