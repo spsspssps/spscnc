@@ -29,6 +29,8 @@ The card could be produced in JLCPCB for less than 100 USD per card when orderin
 | J6             | SD Card interface                                                                                      |
 
 # Secondary interfaces
+| Connector      | Function                                                                                               |
+|----------------|--------------------------------------------------------------------------------------------------------|
 | J7             | Optional USB Serial converter.                                                                         |
 | J15            | Secondary processor USB serial IF                                                                      |
 | J16            | Secondary processor spreadout                                                                          |
@@ -36,9 +38,11 @@ The card could be produced in JLCPCB for less than 100 USD per card when orderin
 | J18            | Secondary processor spreadout                                                                          |
 
 # Extensions for 2 extra axis:
-1 JP23, and JP24: B Axis interfaces.
-2 JP25, and JP26: A Axis interfaces.
-3 JP21, and JP22: End of SPI lines for the first 4 steppers. Strapping is required if steppers A and B are to be daisy chained into the SPI bus.
+| Connector      | Function                                                                                               |
+|----------------|--------------------------------------------------------------------------------------------------------|
+| JP23, and JP24 | B Axis interfaces. |
+| JP25, and JP26 | A Axis interfaces. |
+| JP21, and JP22 | End of SPI lines for the first 4 steppers. Strapping is required if steppers A and B are to be daisy chained into the SPI bus.|
 
 # Jumpers:
 | Jumper | Function |
@@ -53,6 +57,7 @@ The card could be produced in JLCPCB for less than 100 USD per card when orderin
 ## MAININPUT1
 Main 24V power supply input. Stepped power can be derived via solder bridge JP3 for stepper motors.
 | Pin | Function |
+|--------|----------|
 | 1| GND  |
 | 2| GND  |
 | 3| +24V |
@@ -61,6 +66,7 @@ Main 24V power supply input. Stepped power can be derived via solder bridge JP3 
 ## STEPINPUT1
 Stepper alternative power input. Requires solder bridge JP1 to be short.
 | Pin | Function |
+|--------|----------|
 | 1| GND  |
 | 2| GND  |
 | 3| +12V |
@@ -69,6 +75,7 @@ Stepper alternative power input. Requires solder bridge JP1 to be short.
 ## A1-A4
 Stepper motor 4W ports.
 | Pin | Function |
+|--------|----------|
 | 1| COIL_A_P|
 | 2| COIL_A_N|
 | 3| COIL_B_P|
@@ -77,6 +84,7 @@ Stepper motor 4W ports.
 ## MOTOR_CONN5
 Spindle motor connection (PWM)
 | Pin | Function |
+|--------|----------|
 | 1| MOTOR_B |
 | 2| MOTOR_B |
 | 3| MOTOR_A |
@@ -85,6 +93,7 @@ Spindle motor connection (PWM)
 ## J3
 +48V Spindle motor power input.
 | Pin | Function |
+|--------|----------|
 | 1| GND  |
 | 2| GND  |
 | 3| +48V |
@@ -96,6 +105,7 @@ Spindle and Vacuum 24V 100mA relay control outputs (Do not connect a motor direc
 In the original application, this output controls a power relay for the 48V power supply which feeds the spindle.
 
 | Pin | Function |
+|--------|----------|
 | 1| GND |
 | 2| GND |
 | 3| VACUUM_+24V 100mA |
@@ -105,6 +115,7 @@ In the original application, this output controls a power relay for the 48V powe
 Isolated probe connection interface. When pins 1 and 2 are shorted, the probe input is active. Since the interface is isolated, either pin can be attached to the spindle body, or to the probing pad permanently.
 
 | Pin | Function |
+|--------|----------|
 | 1| + 5V ISO probe |
 | 2| Isolated Input |
 | 3| Same as pin 1|
@@ -118,6 +129,7 @@ Isolated probe connection interface. When pins 1 and 2 are shorted, the probe in
 Button interface port. This connector can be attached to the control panel. 3V3 is provided for the reset button which cannot have a pull up mounted. In addition, 3V3 can be used to feed the panel LED's.
 
 | Pin | Function |
+|--------|----------|
 | 1| HOLD_BTN |
 | 2| GND |
 | 3| RESET_BTN |
@@ -130,6 +142,7 @@ Button interface port. This connector can be attached to the control panel. 3V3 
 ## Limit_IF
 NC Limit switch inputs and button inputs.
 | Pin | Function |
+|--------|----------|
 | 1| LIM_X |
 | 2| LIM_Y1 |
 | 3| LIM_Y2 |
@@ -151,6 +164,7 @@ NC Limit switch inputs and button inputs.
 CMOS Serial programming interface ESP32. This port is provided in case the USB serial converter is not assembled. Ground is not provided in this connector, but can be found in the SDCard connector. This interface is not intended to be used frequently.
 
 | Pin | Function |
+|--------|----------|
 | 1| BOOT MODE|
 | 2| TX |
 | 3| GPIO2|
@@ -159,6 +173,7 @@ CMOS Serial programming interface ESP32. This port is provided in case the USB s
 ## J6
 SD Card interface. A pin header to microSD adaptor can be made very easily. The pin functions are:
 | Pin | Function |
+|--------|----------|
 | 1| MISO|
 | 2| GND |
 | 3| SCK |
@@ -167,6 +182,6 @@ SD Card interface. A pin header to microSD adaptor can be made very easily. The 
 | 6| MOSI|
 | 7| CS  |
 
-<img src="https://github.com/spsspssps/spscnc/blob/main/sdcard.top.png" width="300">
+<img src="https://github.com/spsspssps/spscnc/blob/releases/1.0/1.0.1/sdcard.top.png" width="300">
 
-<img src="https://github.com/spsspssps/spscnc/blob/main/sdcard.bottom.png" width="300">
+<img src="https://github.com/spsspssps/spscnc/blob/releases/1.0/1.0.1/sdcard.bottom.png" width="300">
