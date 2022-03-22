@@ -12,6 +12,22 @@ The card could be produced in JLCPCB for less than 100 USD per card when orderin
 
 <img src="https://github.com/spsspssps/spscnc/blob/main/pcb.render.1.0.0.png" width="600">
 
+# Prototype test status
+22.04.22: 2 prototypes have been assembled. The initial tests have been successful after removing some pull resistors which are not necessary. A revision 1.0.2 will be published containing all the modifications which are achievable on the prototypes. If straps or more complicated modifications are needed, a revision 1.1.0 would be started.
+
+All SPI and I2S interfaces are operational. Voltage levels, and timing have been verified. 
+
+All power supplies and gate drive voltages are tested. 
+
+All stepper motors work after removing DCEN pull resistors. The software for the TMC2160 required some changes which are not published yet. Proper debugging required too many changes on the original driver. Trinamic Direct Mode may only be possible with some optimizations on the overall code structure of the driver. In particular, using the DCO feedback is not supported by the driver. Currently, SPI + STEP / DIR is the only choice.
+
+Simultaneous 3A drive on 4 steppers has been tested (using 24V supply) 20A tests would require additional test specimens.
+
+Pending verification of the spindle PWM controller.
+
+A complete test report may be formalized.
+
+
 # Main interfaces
 
 | Connector      | Function                                                                                               |
