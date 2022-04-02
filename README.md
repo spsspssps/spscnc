@@ -1,4 +1,4 @@
-# spscnc
+# spscnc 1.0.2 (Straps on produced prototypes. Rev 1.1.0 will integrate those in the PCB. This version is made to reflect the modification over the prototypes)
 CNC Controller board for FluidNC and TMC2160 controllers
 
 There are multiple options for FluidNC, however, this projects aims to
