@@ -1,4 +1,4 @@
-# spscnc
+# spscnc 1.0.1 (Note this version requires straps around the spindle drive, see 1.0.2 for modification drawings. Stay tuner for rev 1.1.0 for permanent fixes)
 CNC Controller board for FluidNC and TMC2160 controllers
 
 There are multiple options for FluidNC, however, this projects aims to
