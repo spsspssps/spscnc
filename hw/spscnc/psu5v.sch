@@ -883,4 +883,6 @@ Wire Wire Line
 	7475 2800 7325 2800
 Wire Wire Line
 	7475 2950 8075 2950
+Text Notes 5250 8775 0    50   ~ 0
+next time, place a second enable and do power sequencing
 $EndSCHEMATC

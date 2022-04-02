@@ -1400,7 +1400,7 @@ F 3 "" H 8500 1875 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Text Notes 9075 4125 0    50   ~ 0
-CRITICAL BOOT MODE:\nMTDI 0 => 3v3 SPI\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall\nGPIO5 SDIO Launch Falling edge.\n
+CRITICAL BOOT MODE:\nMTDI 0 => 3v3 SPI (GPIO12)\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall GPIO15\nGPIO5 SDIO Launch Falling edge.\n
 Text GLabel 7775 1475 2    50   Output ~ 0
 SPINDLE_EN
 Text GLabel 8650 2875 2    50   Output ~ 0
@@ -1578,10 +1578,10 @@ AR Path="/61B9A8A6/62063E7E" Ref="R?"  Part="1"
 AR Path="/61C743E7/61B9A8A6/62063E7E" Ref="R?"  Part="1" 
 AR Path="/61C81F9D/62063E7E" Ref="R64"  Part="1" 
 F 0 "R64" H 4834 5596 50  0000 L CNN
-F 1 "1K" H 4834 5505 50  0000 L CNN
+F 1 "DNP" H 4834 5505 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4775 5550 50  0001 C CNN
 F 3 "~" H 4775 5550 50  0001 C CNN
-F 4 "C21190" H 4775 5550 50  0001 C CNN "jlcpcb"
+F 4 "DNP654" H 4775 5550 50  0001 C CNN "jlcpcb"
 	1    4775 5550
 	1    0    0    -1  
 $EndComp
@@ -2064,4 +2064,6 @@ F 3 "" H 5200 5175 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5200 5175 5600 5175
+Text Notes 6425 8700 0    50   ~ 0
+Enable vacuum is glitching during start and reset.
 $EndSCHEMATC

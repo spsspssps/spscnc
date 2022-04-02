@@ -6,9 +6,9 @@ encoding utf-8
 Sheet 5 17
 Title "Trinamic FluidNC CNC Controller"
 Date "2022-02-12"
-Rev "1.0.1"
+Rev "1.0.2"
 Comp ""
-Comment1 ""
+Comment1 "Corrections implemented in 1.0.1 prototypes."
 Comment2 ""
 Comment3 ""
 Comment4 ""
@@ -279,7 +279,7 @@ Wire Wire Line
 Wire Wire Line
 	4975 2775 4975 2875
 Wire Wire Line
-	4175 2675 5275 2675
+	4175 2675 4375 2675
 Connection ~ 4975 2875
 Wire Wire Line
 	4975 2875 4975 3000
@@ -288,7 +288,7 @@ Wire Wire Line
 	5275 3075 5275 3450
 Connection ~ 5275 3450
 Wire Wire Line
-	4150 5000 5250 5000
+	4150 5000 4350 5000
 Connection ~ 4950 5225
 Wire Wire Line
 	4950 5100 4950 5225
@@ -902,4 +902,86 @@ Wire Wire Line
 	2975 2475 2900 2475
 Wire Wire Line
 	3175 2475 3575 2475
+Text Notes 6925 1075 0    50   ~ 0
+TODO: Cap shall tap to mid point and not GND!!!
+Text Notes 6300 900  0    79   ~ 16
+Defect: Vcc needs to be above 10V\nDefect: C4 and Cx need its negative pin connected to MOTOR_A and MOTOR_B
+Text Notes 6925 1400 0    50   ~ 0
+PWM injected over EN\nPWM_DIR as is\nPWM_IN could be DIR negated\nPWM needs to always toggle off for 50 time units at least\n
+Text Notes 2150 3525 0    50   ~ 0
+These drivers need to be supplied with +12V
+NoConn ~ 4525 1925
+NoConn ~ 4500 4225
+Wire Wire Line
+	4450 1925 4375 1925
+Wire Wire Line
+	4375 1925 4375 2675
+Connection ~ 4375 2675
+Wire Wire Line
+	4375 2675 5275 2675
+Wire Wire Line
+	4450 4225 4350 4225
+Wire Wire Line
+	4350 4225 4350 5000
+Connection ~ 4350 5000
+Wire Wire Line
+	4350 5000 5250 5000
+NoConn ~ 2725 1600
+NoConn ~ 2550 3925
+$Comp
+L power:+12V-power #PWR?
+U 1 1 624E1A1A
+P 2500 1575
+AR Path="/624E1A1A" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61A08BFB/624E1A1A" Ref="#PWR?"  Part="1" 
+AR Path="/61C80DCB/624E1A1A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2500 1425 50  0001 C CNN
+F 1 "+12V" H 2515 1748 50  0000 C CNN
+F 2 "" H 2500 1575 50  0001 C CNN
+F 3 "" H 2500 1575 50  0001 C CNN
+	1    2500 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V-power #PWR?
+U 1 1 624E5514
+P 2300 3825
+AR Path="/624E5514" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61A08BFB/624E5514" Ref="#PWR?"  Part="1" 
+AR Path="/61C80DCB/624E5514" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2300 3675 50  0001 C CNN
+F 1 "+12V" H 2315 3998 50  0000 C CNN
+F 2 "" H 2300 3825 50  0001 C CNN
+F 3 "" H 2300 3825 50  0001 C CNN
+	1    2300 3825
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V-power #PWR?
+U 1 1 624E5D0C
+P 1525 2350
+AR Path="/624E5D0C" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61A08BFB/624E5D0C" Ref="#PWR?"  Part="1" 
+AR Path="/61C80DCB/624E5D0C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1525 2200 50  0001 C CNN
+F 1 "+12V" H 1540 2523 50  0000 C CNN
+F 2 "" H 1525 2350 50  0001 C CNN
+F 3 "" H 1525 2350 50  0001 C CNN
+	1    1525 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V-power #PWR?
+U 1 1 624E6475
+P 2075 4625
+AR Path="/624E6475" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61A08BFB/624E6475" Ref="#PWR?"  Part="1" 
+AR Path="/61C80DCB/624E6475" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2075 4475 50  0001 C CNN
+F 1 "+12V" H 2090 4798 50  0000 C CNN
+F 2 "" H 2075 4625 50  0001 C CNN
+F 3 "" H 2075 4625 50  0001 C CNN
+	1    2075 4625
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

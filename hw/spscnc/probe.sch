@@ -758,4 +758,12 @@ NoConn ~ 8875 4775
 NoConn ~ 3250 4900
 Text Notes 4325 6400 0    50   ~ 0
 This connector drives External 24V relays which enable the 230V circuits.
+Text Notes 5925 8925 0    50   ~ 0
+The 3V3 net seems overloaded when we toggle the relays. And the polarity is the opposite.\n
+Text Notes 5900 9350 0    50   ~ 0
+We could have use the opposite mosfet relay. NC logic is more demanding during the startup.
+Text Notes 5925 9750 0    50   ~ 0
+WE can do the opposite. Use the vacuum relay which has the opposite polarity instead\n
+Text Notes 5925 9975 0    50   ~ 0
+Need caps around relay supplies
 $EndSCHEMATC
