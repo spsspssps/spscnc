@@ -240,7 +240,7 @@ sdcard:
   card_detect_pin: NO_PIN
 
 coolant:
-#  flood_pin: i2so.9
+  flood_pin: i2so.9
   mist_pin:  NO_PIN
 
 # TODO Probe seems to prevent boot!!
@@ -254,7 +254,7 @@ PWM:
   # Changed from gpio.4
   enable_pin: gpio.4
   #i2so.9
-  direction_pin: i2so.8
+  direction_pin: i2so.8:low
   disable_with_s0: false
   s0_with_disable: true
   spinup_ms: 0

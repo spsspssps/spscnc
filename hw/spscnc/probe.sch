@@ -766,4 +766,6 @@ Text Notes 5925 9750 0    50   ~ 0
 WE can do the opposite. Use the vacuum relay which has the opposite polarity instead\n
 Text Notes 5925 9975 0    50   ~ 0
 Need caps around relay supplies
+Text Notes -275 -175 0    50   ~ 0
+SPINDLE_EN and VACUUM_EN begin low. So, it would have been wiser to connect them to the Anode instead of the Cathode. 1.1.0 Revision may do just that. Also choosing to expose both NC and NO gives flexibility to the end user.\n\nI could also have chosen the NO contacts on the mechanical relays instead!\nFor my own use:\n1) As it is, MIST provides +24V when enabled, but also when the 3V3 is dead. That's not too bad if MIST is used as coolant control output. Coolant will be active during 3v3 failure.\n2) Regarding SPINDLE_EN: I can ignore it (and set the spindle power activation on MIST_EN. Or, I can attempt to use it. But all of this logic should be rethought with safety in mind. As it is, PWM_POWER_RELAY is activated if 3v3 is dead. Also, SPINDLE_EN polarity seems wrong.\n\n I can connect the external relay between VACUUM_EN and +24V and invert the signal.\n\n\n
 $EndSCHEMATC

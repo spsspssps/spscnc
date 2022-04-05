@@ -2066,4 +2066,6 @@ Wire Wire Line
 	5200 5175 5600 5175
 Text Notes 6425 8700 0    50   ~ 0
 Enable vacuum is glitching during start and reset.
+NoConn ~ 4775 5525
+NoConn ~ 4775 5575
 $EndSCHEMATC
