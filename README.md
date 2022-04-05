@@ -1,4 +1,4 @@
-# spscnc
+# spscnc 1.0.2 (Straps on produced prototypes. Rev 1.1.0 will integrate those in the PCB. This version is made to reflect the modification over the prototypes)
 CNC Controller board for FluidNC and TMC2160 controllers
 
 There are multiple options for FluidNC, however, this projects aims to
@@ -8,7 +8,7 @@ The board integrates components which should tolerate 20A operation on every axi
 
 The card integrates the ESP32 module, 4 axis, and a simple PWM controller for the spindle. The card integrates an isolated probe sensor which can be connected directly to the spindle body, and a connector for the 4 limit sensors.
 
-The card could be produced in JLCPCB for less than 100 USD per card when ordering 10 pcs (without a heatsink). Cost optimizations are possible. But the card is intended to be reliable in systems requiring high current.
+Version 1.0.1 of the card was produced by JLCPCB. Rev 1.0.1 needs straps to become 1.0.2. Straps will be removed when the fixes are implemented under 1.1.0. The current version is going through component testing at the moment. 1.1.0 is delayed unit component and integration is considered to be complete.
 
 <img src="https://github.com/spsspssps/spscnc/blob/main/pcb.render.1.0.0.png" width="600">
 
