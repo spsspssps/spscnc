@@ -12,6 +12,7 @@ The main defects are: 12V are needed to drive the gate drivers, and the charge p
 
 The current spindle controller is supported by FluidNC using the HBridge driver. Note that in order to have two directions, the enable and output_b_pins have been swapped and strapped. This is because the driver does not support PWM over i2s.
 
+~~~
 HBridgeSpindle:
   pwm_hz: 5000
   output_a_pin: gpio.16
@@ -23,6 +24,7 @@ HBridgeSpindle:
   spindown_ms: 1000
   tool_num: 0
   speed_map: 0=0% 10000=99%
+~~~
 
 Revision 1.1.0 Of the card may fix this issue, or just provide a single rotation direction, as support for two types of rotations is not in high demand. 
 
