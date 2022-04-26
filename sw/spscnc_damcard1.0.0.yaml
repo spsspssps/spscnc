@@ -1,0 +1,352 @@
+name: "SPSCNC HW1.0.1 Damaged card"
+board: "ESP32 SPS Controller"
+# This oard has two damaged TMC2160 drivers (dead while probing the chargepumps)
+stepping:
+  engine: I2S_STREAM
+  idle_ms: 250
+  dir_delay_us: 1
+  pulse_us: 4
+  # was 4us
+  disable_delay_us: 4
+axes:
+  shared_stepper_disable_pin: NO_PIN
+#gpio.26
+#:low
+  x:
+    steps_per_mm: 40
+    max_rate_mm_per_min: 600
+    acceleration_mm_per_sec2: 120
+    # 5mm per revolution screw pitch
+    # drv8825 default 1.8 deg per step.
+    # 200 steps per revolution
+    # 40 steps per mm
+    max_travel_mm: 150
+    homing:
+      cycle: 3
+      mpos_mm: -10
+      positive_direction: false
+      #      feed_mm_per_min: 100.000
+      #      seek_mm_per_min: 200.000
+#      settle_ms: 500
+#      seek_scaler: 1.100
+#      feed_scaler: 1.100
+    
+    motor0:
+      limit_all_pin: gpio.27:pu
+      hard_limits: true
+      pulloff_mm: 1.000
+      tmc_5160:
+        cs_pin: gpio.15
+        spi_index: 1
+        r_sense_ohms: 0.075
+        run_amps: 2.250
+        hold_amps: 2.250
+        microsteps: 1
+        stallguard: 0
+        stallguard_debug: false
+        toff_disable: 1
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: CoolStep
+        homing_mode: CoolStep
+        use_enable: false
+        step_pin: i2so.7
+        disable_pin: NO_PIN
+        direction_pin: i2so.6
+  
+  y:
+    steps_per_mm: 40
+    max_rate_mm_per_min: 600
+    acceleration_mm_per_sec2: 120
+
+    # 66 mm per second => 4000 seems limit for furthest Y rail
+    # 400
+    #2400
+    max_travel_mm: 900
+    homing:
+      cycle: 1
+      mpos_mm: 10
+      positive_direction: true
+
+    # motor1:
+    #   limit_all_pin: gpio.35
+    #   tmc_5160:
+    #     spi_index: 2
+    #     r_sense_ohms: 0.075
+    #     run_amps: 2.250
+    #     hold_amps: 2.250
+    #     microsteps: 1
+    #     stallguard: 1
+    #     stallguard_debug: false
+    #     toff_disable: 3
+    #     toff_stealthchop: 5
+    #     toff_coolstep: 3
+    #     run_mode: CoolStep
+    #     homing_mode: CoolStep
+    #     use_enable: false
+    #     direction_pin: i2so.4:low
+    #     step_pin: i2so.5
+
+    motor0:
+      limit_all_pin: gpio.34
+      tmc_5160:
+# was 3
+        spi_index: 2
+        r_sense_ohms: 0.075
+        run_amps: 2.250
+        hold_amps: 2.250
+        microsteps: 1
+        stallguard: 1
+        stallguard_debug: false
+        toff_disable: 3
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: CoolStep
+        homing_mode: CoolStep
+        use_enable: false
+        direction_pin: i2so.2:low
+        step_pin: i2so.3
+        disable_pin: NO_PIN
+
+  z:
+# At full step
+    steps_per_mm: 40
+# with default microstepping of 256    
+#    steps_per_mm: 40960
+#    steps_per_mm:
+
+# half a turn per second 2mm per second
+# max_rate_mm_per_min: 1200
+    max_rate_mm_per_min: 600
+#    max_rate_mm_per_min: 1200
+    acceleration_mm_per_sec2: 120
+    max_travel_mm: 1200
+    homing:
+      cycle: 2
+      mpos_mm: 10
+      positive_direction: false
+      
+      feed_mm_per_min: 10.000
+      seek_mm_per_min: 20.000
+      settle_ms: 500
+      seek_scaler: 1.100
+      feed_scaler: 1.100
+
+    motor0:
+      limit_all_pin: gpio.36
+      tmc_5160:
+ # Was 4     
+        spi_index: 3
+        r_sense_ohms: 0.075
+        run_amps: 2.000
+        hold_amps: 1.100
+        microsteps: 1
+        stallguard: 1
+        stallguard_debug: true
+        toff_disable: 3
+        toff_stealthchop: 5
+        toff_coolstep: 3
+        run_mode: CoolStep
+        homing_mode: StallGuard
+        use_enable: false
+        disable_pin: NO_PIN
+#        disable_pin: gpio.26
+        direction_pin: i2so.0
+        step_pin: i2so.1
+
+#   a:
+#     steps_per_mm: 40
+#     max_rate_mm_per_min: 40000
+#     acceleration_mm_per_sec2: 50000
+#     max_travel_mm: 150
+#     homing:
+#       cycle: 3
+#       mpos_mm: -10
+#       positive_direction: false
+#       #      feed_mm_per_min: 100.000
+#       #      seek_mm_per_min: 200.000
+# #      settle_ms: 500
+# #      seek_scaler: 1.100
+# #      feed_scaler: 1.100
+    
+#     motor0:
+#       limit_all_pin: gpio.13
+#       hard_limits: true
+#       pulloff_mm: 1.000
+#       tmc_5160:
+#         spi_index: 5
+#         r_sense_ohms: 0.050
+#         run_amps: 1.750
+#         hold_amps: 1.750
+#         microsteps: 1
+#         stallguard: 0
+#         stallguard_debug: false
+#         toff_disable: 0
+#         toff_stealthchop: 5
+#         toff_coolstep: 3
+#         run_mode: CoolStep
+#         homing_mode: CoolStep
+#         use_enable: true
+#         step_pin: i2so.13
+#         disable_pin: NO_PIN
+#         direction_pin: i2so.11
+
+#   b:
+#     steps_per_mm: 40
+#     max_rate_mm_per_min: 40000
+#     acceleration_mm_per_sec2: 50000
+#     max_travel_mm: 150
+#     homing:
+#       cycle: 3
+#       mpos_mm: -10
+#       positive_direction: false
+#       #      feed_mm_per_min: 100.000
+#       #      seek_mm_per_min: 200.000
+# #      settle_ms: 500
+# #      seek_scaler: 1.100
+# #      feed_scaler: 1.100
+    
+#     motor0:
+#       limit_all_pin: gpio.14
+#       hard_limits: true
+#       pulloff_mm: 1.000
+#       tmc_5160:
+#         spi_index: 6
+#         r_sense_ohms: 0.050
+#         run_amps: 1.750
+#         hold_amps: 1.750
+#         microsteps: 1
+#         stallguard: 0
+#         stallguard_debug: false
+#         toff_disable: 0
+#         toff_stealthchop: 5
+#         toff_coolstep: 3
+#         run_mode: CoolStep
+#         homing_mode: CoolStep
+#         use_enable: true
+#         step_pin: i2so.14
+#         disable_pin: NO_PIN
+#         direction_pin: i2so.10
+
+spi:
+  miso_pin: gpio.19
+  mosi_pin: gpio.23
+  sck_pin: gpio.18
+
+sdcard:
+  cs_pin: gpio.5
+  card_detect_pin: NO_PIN
+
+coolant:
+#  flood_pin: i2so.9
+  mist_pin:  NO_PIN
+
+# TODO Probe seems to prevent boot!!
+probe:
+  pin: gpio.32
+  #:low
+  #:pu
+
+HBridge:
+  pwm_hz: 5000
+  # We may swap these two.
+  output_cw_pin: gpio.16
+  enable_pin: i2so.8
+  output_ccw_pin: gpio.4
+  disable_with_s0: false
+#  s0_with_disable: true
+  spinup_ms: 3000
+  spindown_ms: 1000
+  tool_num: 0
+  speed_map: 0=0% 10000=99%
+
+i2so:
+    bck_pin: gpio.22
+    data_pin: gpio.21
+    ws_pin: gpio.17
+
+#A 0 gpio.0
+#A 1 GPIO.1 UART.TX
+#A 2 gpio.2
+#A 3 GPIO.3 UART.RX
+#  4 spindle.en: gpio.4
+#  5 spi.cs_pin: gpio.5
+# 6 to 11 SPI Internal flash
+# 12 cycle_start_pin: gpio.12
+# 13 a.lim: gpio.13
+# 14 b.lim: gpio.14
+#A15 STEPPER cs_pin: gpio.15
+# 16 pwm.output_pin: gpio.16 
+# 17 i2s.ws: gpio.17
+# 18 spi.sck_pin: gpio.18
+# 19 spi.miso_pin: gpio.19
+# 21 i2s.d: gpio.21
+# 22 i2s.bclk: gpio.22 
+# 23 spi.mosi_pin: gpio.23
+#A25 : gpio.25
+# 26 enable_steppers: gpio.26:low
+# 27 z.limit_all_pin: gpio.27:pu
+# 32 probe.pin: gpio.32:low:pu ???
+# 33 safety_door_pin: gpio.33
+# 34 y1.Limit: gpio.34
+# 35 y2.Limit: gpio.35
+# 36 VP x.limit: gpio.36 gg
+# 39 VN hold: gpio.39
+#
+#  
+#
+
+# Pins defining BOOT MODES:
+# 0 Is high during boot, DIR (OK)
+# 2 floating during normal mode. STP normally, should be fine, TEST
+# 4 may affect boot, no pullup
+# 5 may affect boot, no pullup
+# 12 Low during boot (3v3). MTDI flash voltage selection.
+# 15 If HIGH during boot (silence mode)
+
+# i2so pin assignment: (little endian??)
+#  0 x.dir:    i2so.0 
+#  1 x.step:   i2so.1 
+#  2 y1.dir:   i2so.2
+#  3 y1.step:  i2so.3
+#  4 y2.dir:   i2so.4
+#  5 y2.step:  i2so.5
+#  6 z.dir:    i2so.6
+#  7 z.step:   i2so.7
+#  8 spindle.dir i2so.8
+#  9 enable_vacuum   i2so.9
+# 10 b.dir:     i2so.10
+# 11 a.dir:     i2so.11
+# 12 A          i2so.12
+# 13 a.step:    i2so.13
+# 14 b.step:    i2so.14
+# 15 ACTIVELED  i2so.15
+
+
+# Pins affected HIGH during BOOT:
+# 1 3 5 OK
+# 6 - 11 OK
+# 14 15  OK
+control:
+# Change bit: blue :TODO pu once installed
+# TODO place this
+#  safety_door_pin: gpio.33:pu
+# Red kills the machine TODO :pu once installed
+#  reset_pin: gpio.39:low
+# Pause yellow
+#  feed_hold_pin:
+# TODO: Active at start  cycle_start_pin: gpio.12
+  # :pu
+# TODO: Big relay for 24v with SET from a button, and RESET from button or failsafe circuit.
+
+start:
+  must_home: false
+  deactivate_parking: true
+  check_limits: true
+
+
+# TODO: Add vacuum and coolant GPIO.
+# TODO: Check need for additional pu
+# TODO: Add hold_pin??
+# TODO: Other recommended GPIO?
+# TODO: A / B limits

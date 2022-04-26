@@ -628,7 +628,7 @@ F 4 "C17594" H 3100 1600 50  0001 C CNN "jlcpcb"
 	1    3100 1600
 	0    -1   -1   0   
 $EndComp
-Text Notes 7525 4075 0    50   ~ 0
+Text Notes 3100 9225 0    50   ~ 0
 We could consider a half bridge to save cost. And consider no inversion
 $Comp
 L Device:R R150
@@ -644,7 +644,7 @@ F 4 "C17594" H 3075 3925 50  0001 C CNN "jlcpcb"
 $EndComp
 Wire Wire Line
 	2550 3925 2925 3925
-Text Notes 7525 3925 0    50   ~ 0
+Text Notes 4125 8900 0    50   ~ 0
 Note: when changing direction, the PWM signal should be inverted (SW or HW)
 $Comp
 L Connector:Conn_01x04_Female J?
@@ -902,11 +902,11 @@ Wire Wire Line
 	2975 2475 2900 2475
 Wire Wire Line
 	3175 2475 3575 2475
-Text Notes 6925 1075 0    50   ~ 0
+Text Notes 8825 8600 0    50   ~ 0
 TODO: Cap shall tap to mid point and not GND!!!
-Text Notes 6300 900  0    79   ~ 16
+Text Notes 2675 8625 0    79   ~ 16
 Defect: Vcc needs to be above 10V\nDefect: C4 and Cx need its negative pin connected to MOTOR_A and MOTOR_B
-Text Notes 6925 1400 0    50   ~ 0
+Text Notes 8875 9000 0    50   ~ 0
 PWM injected over EN\nPWM_DIR as is\nPWM_IN could be DIR negated\nPWM needs to always toggle off for 50 time units at least\n
 Text Notes 2150 3525 0    50   ~ 0
 These drivers need to be supplied with +12V
@@ -984,4 +984,6 @@ F 3 "" H 2075 4625 50  0001 C CNN
 	1    2075 4625
 	1    0    0    -1  
 $EndComp
+Text Notes 7025 6125 0    50   ~ 0
+PWM_IN_B cannot be allocated to i2s\nSN1 (modified to swap pin allocation.\nSN2 (unidirectional)
 $EndSCHEMATC
