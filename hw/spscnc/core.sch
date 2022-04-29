@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-02-12"
-Rev "1.0.1"
+Date "2022-04-29"
+Rev "1.1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -646,8 +646,6 @@ Wire Wire Line
 	7450 2175 7325 2175
 Wire Wire Line
 	7450 2475 7325 2475
-Wire Wire Line
-	7375 2775 7325 2775
 Text GLabel 7325 3275 2    50   Input ~ 0
 LIM_Y1
 Text GLabel 7325 3375 2    50   Input ~ 0
@@ -1401,14 +1399,12 @@ F 3 "" H 8500 1875 50  0001 C CNN
 $EndComp
 Text Notes 9075 4125 0    50   ~ 0
 CRITICAL BOOT MODE:\nMTDI 0 => 3v3 SPI (GPIO12)\nGPIO0 1 => Boot APP\nGPIO2 0 => Download\nMTDO 0 => Silent UART / SDIO Sample Fall GPIO15\nGPIO5 SDIO Launch Falling edge.\n
-Text GLabel 7775 1475 2    50   Output ~ 0
+Text GLabel 9750 4800 2    50   Output ~ 0
 SPINDLE_EN
 Text GLabel 8650 2875 2    50   Output ~ 0
 ENABLE_STEPPERS
 Text GLabel 8750 2075 2    50   Output ~ 0
-SPINDLE_PWM
-Text GLabel 9750 4800 2    50   Output ~ 0
-SPINDLE_DIR
+SPINDLE_CW
 $Comp
 L Device:R_Small R?
 U 1 1 62063E2A
@@ -1442,20 +1438,6 @@ F 2 "" H 8600 3200 50  0001 C CNN
 F 3 "" H 8600 3200 50  0001 C CNN
 	1    8600 3200
 	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_Small R?
-U 1 1 62063E38
-P 9450 4800
-AR Path="/62063E38" Ref="R?"  Part="1" 
-AR Path="/61C81F9D/62063E38" Ref="R179"  Part="1" 
-F 0 "R179" V 9425 4950 39  0000 C CNN
-F 1 "47" V 9450 4800 39  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 9380 4800 50  0001 C CNN
-F 3 "~" H 9450 4800 50  0001 C CNN
-F 4 "C17714" H 9450 4800 50  0001 C CNN "jlcpcb"
-	1    9450 4800
-	0    1    1    0   
 $EndComp
 $Comp
 L Device:R_Small R?
@@ -1523,8 +1505,6 @@ I2S_WORDSTROBE
 Text Label 5600 5475 2    50   ~ 0
 ~I2S_ENABLE
 Wire Wire Line
-	9750 4800 9550 4800
-Wire Wire Line
 	7600 2075 8750 2075
 Wire Wire Line
 	7575 1475 7775 1475
@@ -1564,44 +1544,6 @@ Wire Wire Line
 	9550 5100 9750 5100
 Text GLabel 9750 5300 2    50   Output ~ 0
 STEP_A
-Wire Wire Line
-	5600 5075 4775 5075
-Wire Wire Line
-	4775 5075 4775 5450
-$Comp
-L Device:R_Small R?
-U 1 1 62063E7E
-P 4775 5550
-AR Path="/61367F02/62063E7E" Ref="R?"  Part="1" 
-AR Path="/5AD46BE5/619A452E/61B9A8A6/62063E7E" Ref="R?"  Part="1" 
-AR Path="/61B9A8A6/62063E7E" Ref="R?"  Part="1" 
-AR Path="/61C743E7/61B9A8A6/62063E7E" Ref="R?"  Part="1" 
-AR Path="/61C81F9D/62063E7E" Ref="R64"  Part="1" 
-F 0 "R64" H 4834 5596 50  0000 L CNN
-F 1 "DNP" H 4834 5505 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4775 5550 50  0001 C CNN
-F 3 "~" H 4775 5550 50  0001 C CNN
-F 4 "DNP654" H 4775 5550 50  0001 C CNN "jlcpcb"
-	1    4775 5550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 62063E84
-P 4775 5650
-AR Path="/5AD46BE5/62063E84" Ref="#PWR?"  Part="1" 
-AR Path="/5AD46BE5/619A452E/62063E84" Ref="#PWR?"  Part="1" 
-AR Path="/62063E84" Ref="#PWR?"  Part="1" 
-AR Path="/61B9A8A6/62063E84" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/61B9A8A6/62063E84" Ref="#PWR?"  Part="1" 
-AR Path="/61C81F9D/62063E84" Ref="#PWR012"  Part="1" 
-F 0 "#PWR012" H 4775 5400 50  0001 C CNN
-F 1 "GND" H 4775 5500 50  0000 C CNN
-F 2 "" H 4775 5650 50  0001 C CNN
-F 3 "" H 4775 5650 50  0001 C CNN
-	1    4775 5650
-	-1   0    0    -1  
-$EndComp
 $Comp
 L power:GND-power #PWR?
 U 1 1 62063E8A
@@ -1766,7 +1708,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 5775 6400 5775
 NoConn ~ 9350 5700
-NoConn ~ 7375 2775
 $Comp
 L power:+3.3VA-power #PWR?
 U 1 1 623077B6
@@ -2032,9 +1973,9 @@ AR Path="/61367F02/620826BE" Ref="#PWR?"  Part="1"
 AR Path="/5AD46BE5/619A452E/61B9A8A6/620826BE" Ref="#PWR?"  Part="1" 
 AR Path="/61B9A8A6/620826BE" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61B9A8A6/620826BE" Ref="#PWR?"  Part="1" 
-AR Path="/61C81F9D/620826BE" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/620826BE" Ref="#PWR0175"  Part="1" 
 AR Path="/620826BE" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 7975 4900 50  0001 C CNN
+F 0 "#PWR0175" H 7975 4900 50  0001 C CNN
 F 1 "+3.3VA" H 7975 5225 50  0000 C CNN
 F 2 "" H 7975 5050 50  0001 C CNN
 F 3 "" H 7975 5050 50  0001 C CNN
@@ -2053,9 +1994,9 @@ AR Path="/61367F02/6208D205" Ref="#PWR?"  Part="1"
 AR Path="/5AD46BE5/619A452E/61B9A8A6/6208D205" Ref="#PWR?"  Part="1" 
 AR Path="/61B9A8A6/6208D205" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61B9A8A6/6208D205" Ref="#PWR?"  Part="1" 
-AR Path="/61C81F9D/6208D205" Ref="#PWR?"  Part="1" 
+AR Path="/61C81F9D/6208D205" Ref="#PWR0198"  Part="1" 
 AR Path="/6208D205" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 5200 5025 50  0001 C CNN
+F 0 "#PWR0198" H 5200 5025 50  0001 C CNN
 F 1 "+3.3VA" V 5225 5425 50  0000 C CNN
 F 2 "" H 5200 5175 50  0001 C CNN
 F 3 "" H 5200 5175 50  0001 C CNN
@@ -2066,6 +2007,25 @@ Wire Wire Line
 	5200 5175 5600 5175
 Text Notes 6425 8700 0    50   ~ 0
 Enable vacuum is glitching during start and reset.
-NoConn ~ 4775 5525
-NoConn ~ 4775 5575
+Wire Wire Line
+	7375 2775 7325 2775
+NoConn ~ 7375 2775
+Wire Wire Line
+	9750 4800 9550 4800
+$Comp
+L Device:R_Small R?
+U 1 1 62063E38
+P 9450 4800
+AR Path="/62063E38" Ref="R?"  Part="1" 
+AR Path="/61C81F9D/62063E38" Ref="R179"  Part="1" 
+F 0 "R179" V 9425 4950 39  0000 C CNN
+F 1 "47" V 9450 4800 39  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 9380 4800 50  0001 C CNN
+F 3 "~" H 9450 4800 50  0001 C CNN
+F 4 "C17714" H 9450 4800 50  0001 C CNN "jlcpcb"
+	1    9450 4800
+	0    1    1    0   
+$EndComp
+Text GLabel 7775 1475 2    50   Output ~ 0
+SPINDLE_CCW
 $EndSCHEMATC

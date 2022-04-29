@@ -120,7 +120,7 @@ axes:
   z:
 # At full step
     steps_per_mm: 40
-    max_rate_mm_per_min: 4800
+    max_rate_mm_per_min: 2000
     acceleration_mm_per_sec2: 220
 # with default microstepping of 256    
 #    steps_per_mm: 40960
@@ -133,7 +133,7 @@ axes:
       cycle: 1
       mpos_mm: 150
 #      mpos_mm: 10
-      positive_direction: true
+      positive_direction: false
       feed_mm_per_min: 2000.000
       seek_mm_per_min: 2000.000
       settle_ms: 500
@@ -160,7 +160,8 @@ axes:
         use_enable: false
         disable_pin: NO_PIN
 #        disable_pin: gpio.26
-        direction_pin: i2so.0:low
+        direction_pin: i2so.0
+#:low
         step_pin: i2so.1
 
 spi:

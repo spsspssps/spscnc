@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-02-12"
-Rev "1.0.1"
+Date "2022-04-29"
+Rev "1.1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -25,8 +25,8 @@ U 61C80DCB
 F0 "Spindle controller" 50
 F1 "spindle.sch" 50
 F2 "EN" I L 3900 2350 50 
-F3 "PWM_IN" I L 3900 2450 50 
-F4 "PWM_DIRECTION" I L 3900 2550 50 
+F3 "PWM_CW" I L 3900 2550 50 
+F4 "PWM_CCW" I L 3900 2650 50 
 $EndSheet
 $Sheet
 S 3900 3075 1800 650 
@@ -60,10 +60,10 @@ F1 "spindlePSU.sch" 50
 $EndSheet
 Text GLabel 3900 2350 0    50   Input ~ 0
 SPINDLE_EN
-Text GLabel 3900 2450 0    50   Input ~ 0
-SPINDLE_PWM
 Text GLabel 3900 2550 0    50   Input ~ 0
-SPINDLE_DIR
+SPINDLE_CW
+Text GLabel 3900 2650 0    50   Input ~ 0
+SPINDLE_CCW
 $Sheet
 S 3900 5025 1800 500 
 U 61DEDDC1
@@ -563,6 +563,4 @@ Wire Wire Line
 	9525 6225 10125 6225
 Wire Wire Line
 	6675 6125 7400 6125
-Text Notes 3900 8950 0    50   ~ 0
-CHECKS:\n[OK] change fluidnc config and attempt to boot.\n[OK] check bootmode is ok with GPIO signals\ncheck pulses during boot on output pins.\nComplete electrical checklist\nThorought layout checks on copper zones and signal crosstalk\n
 $EndSCHEMATC

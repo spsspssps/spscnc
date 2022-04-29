@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-02-12"
-Rev "1.0.1"
+Date "2022-04-29"
+Rev "1.1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -278,7 +278,7 @@ AR Path="/6203DFCF/61EFD3E6" Ref="H?"  Part="1"
 AR Path="/61C743E7/61EFD3E6" Ref="H1"  Part="1" 
 F 0 "H1" H 6000 1474 50  0000 L CNN
 F 1 "MountingHole_Pad" H 6000 1383 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 5900 1425 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5900 1425 50  0001 C CNN
 F 3 "~" H 5900 1425 50  0001 C CNN
 F 4 "DNP003" H 5900 1425 50  0001 C CNN "jlcpcb"
 	1    5900 1425
@@ -312,7 +312,7 @@ AR Path="/6203DFCF/61F03565" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F03565" Ref="H13"  Part="1" 
 F 0 "H13" H 7250 1474 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7250 1383 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7150 1425 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7150 1425 50  0001 C CNN
 F 3 "~" H 7150 1425 50  0001 C CNN
 F 4 "DNP003" H 7150 1425 50  0001 C CNN "jlcpcb"
 	1    7150 1425
@@ -346,7 +346,7 @@ AR Path="/6203DFCF/61F03E19" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F03E19" Ref="H12"  Part="1" 
 F 0 "H12" H 6000 1999 50  0000 L CNN
 F 1 "MountingHole_Pad" H 6000 1908 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 5900 1950 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5900 1950 50  0001 C CNN
 F 3 "~" H 5900 1950 50  0001 C CNN
 F 4 "DNP003" H 5900 1950 50  0001 C CNN "jlcpcb"
 	1    5900 1950
@@ -380,7 +380,7 @@ AR Path="/6203DFCF/61F0423A" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F0423A" Ref="H14"  Part="1" 
 F 0 "H14" H 7250 2024 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7250 1933 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7150 1975 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7150 1975 50  0001 C CNN
 F 3 "~" H 7150 1975 50  0001 C CNN
 F 4 "DNP003" H 7150 1975 50  0001 C CNN "jlcpcb"
 	1    7150 1975
@@ -414,7 +414,7 @@ AR Path="/6203DFCF/61F04B21" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F04B21" Ref="H2"  Part="1" 
 F 0 "H2" H 5975 2574 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5975 2483 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 5875 2525 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5875 2525 50  0001 C CNN
 F 3 "~" H 5875 2525 50  0001 C CNN
 F 4 "DNP003" H 5875 2525 50  0001 C CNN "jlcpcb"
 	1    5875 2525
@@ -448,7 +448,7 @@ AR Path="/6203DFCF/61F04F96" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F04F96" Ref="H15"  Part="1" 
 F 0 "H15" H 7275 2574 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7275 2483 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7175 2525 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7175 2525 50  0001 C CNN
 F 3 "~" H 7175 2525 50  0001 C CNN
 F 4 "DNP003" H 7175 2525 50  0001 C CNN "jlcpcb"
 	1    7175 2525
@@ -482,7 +482,7 @@ AR Path="/6203DFCF/61F0536A" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F0536A" Ref="H19"  Part="1" 
 F 0 "H19" H 8325 2599 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8325 2508 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8225 2550 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 8225 2550 50  0001 C CNN
 F 3 "~" H 8225 2550 50  0001 C CNN
 F 4 "DNP003" H 8225 2550 50  0001 C CNN "jlcpcb"
 	1    8225 2550
@@ -516,7 +516,7 @@ AR Path="/6203DFCF/61F058D6" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F058D6" Ref="H11"  Part="1" 
 F 0 "H11" H 5975 3174 50  0000 L CNN
 F 1 "MountingHole_Pad" H 5975 3083 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 5875 3125 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 5875 3125 50  0001 C CNN
 F 3 "~" H 5875 3125 50  0001 C CNN
 F 4 "DNP003" H 5875 3125 50  0001 C CNN "jlcpcb"
 	1    5875 3125
@@ -550,7 +550,7 @@ AR Path="/6203DFCF/61F05CAC" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F05CAC" Ref="H16"  Part="1" 
 F 0 "H16" H 7300 3149 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7300 3058 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7200 3100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7200 3100 50  0001 C CNN
 F 3 "~" H 7200 3100 50  0001 C CNN
 F 4 "DNP003" H 7200 3100 50  0001 C CNN "jlcpcb"
 	1    7200 3100
@@ -584,7 +584,7 @@ AR Path="/6203DFCF/61F060A6" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F060A6" Ref="H20"  Part="1" 
 F 0 "H20" H 8375 3149 50  0000 L CNN
 F 1 "MountingHole_Pad" H 8375 3058 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 8275 3100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 8275 3100 50  0001 C CNN
 F 3 "~" H 8275 3100 50  0001 C CNN
 F 4 "DNP003" H 8275 3100 50  0001 C CNN "jlcpcb"
 	1    8275 3100
@@ -618,7 +618,7 @@ AR Path="/6203DFCF/61F16839" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F16839" Ref="H24"  Part="1" 
 F 0 "H24" H 9475 3149 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9475 3058 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9375 3100 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9375 3100 50  0001 C CNN
 F 3 "~" H 9375 3100 50  0001 C CNN
 F 4 "DNP003" H 9375 3100 50  0001 C CNN "jlcpcb"
 	1    9375 3100
@@ -652,7 +652,7 @@ AR Path="/6203DFCF/61F1732D" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F1732D" Ref="H25"  Part="1" 
 F 0 "H25" H 10375 1474 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 1383 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10275 1425 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10275 1425 50  0001 C CNN
 F 3 "~" H 10275 1425 50  0001 C CNN
 F 4 "DNP003" H 10275 1425 50  0001 C CNN "jlcpcb"
 	1    10275 1425
@@ -686,7 +686,7 @@ AR Path="/6203DFCF/61F17347" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F17347" Ref="H27"  Part="1" 
 F 0 "H27" H 10375 2599 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10375 2508 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10275 2550 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10275 2550 50  0001 C CNN
 F 3 "~" H 10275 2550 50  0001 C CNN
 F 4 "DNP003" H 10275 2550 50  0001 C CNN "jlcpcb"
 	1    10275 2550
@@ -720,7 +720,7 @@ AR Path="/6203DFCF/61F27959" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F27959" Ref="H29"  Part="1" 
 F 0 "H29" H 10275 3799 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10275 3708 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10175 3750 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10175 3750 50  0001 C CNN
 F 3 "~" H 10175 3750 50  0001 C CNN
 F 4 "DNP003" H 10175 3750 50  0001 C CNN "jlcpcb"
 	1    10175 3750
@@ -754,7 +754,7 @@ AR Path="/6203DFCF/61F27B80" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F27B80" Ref="H30"  Part="1" 
 F 0 "H30" H 10275 4349 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10275 4258 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10175 4300 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10175 4300 50  0001 C CNN
 F 3 "~" H 10175 4300 50  0001 C CNN
 F 4 "DNP003" H 10175 4300 50  0001 C CNN "jlcpcb"
 	1    10175 4300
@@ -788,7 +788,7 @@ AR Path="/6203DFCF/61F27BAA" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F27BAA" Ref="H32"  Part="1" 
 F 0 "H32" H 10325 5474 50  0000 L CNN
 F 1 "MountingHole_Pad" H 10325 5383 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 10225 5425 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 10225 5425 50  0001 C CNN
 F 3 "~" H 10225 5425 50  0001 C CNN
 F 4 "DNP003" H 10225 5425 50  0001 C CNN "jlcpcb"
 	1    10225 5425
@@ -822,7 +822,7 @@ AR Path="/6203DFCF/61F34B80" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F34B80" Ref="H33"  Part="1" 
 F 0 "H33" H 9450 3849 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9450 3758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9350 3800 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9350 3800 50  0001 C CNN
 F 3 "~" H 9350 3800 50  0001 C CNN
 F 4 "DNP003" H 9350 3800 50  0001 C CNN "jlcpcb"
 	1    9350 3800
@@ -856,7 +856,7 @@ AR Path="/6203DFCF/61F34DF7" Ref="H?"  Part="1"
 AR Path="/61C743E7/61F34DF7" Ref="H34"  Part="1" 
 F 0 "H34" H 9500 4399 50  0000 L CNN
 F 1 "MountingHole_Pad" H 9500 4308 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 9400 4350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 9400 4350 50  0001 C CNN
 F 3 "~" H 9400 4350 50  0001 C CNN
 F 4 "DNP003" H 9400 4350 50  0001 C CNN "jlcpcb"
 	1    9400 4350
@@ -890,7 +890,7 @@ AR Path="/6203DFCF/62012368" Ref="H?"  Part="1"
 AR Path="/61C743E7/62012368" Ref="H35"  Part="1" 
 F 0 "H35" H 7725 4174 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7725 4083 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7625 4125 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7625 4125 50  0001 C CNN
 F 3 "~" H 7625 4125 50  0001 C CNN
 F 4 "DNP003" H 7625 4125 50  0001 C CNN "jlcpcb"
 	1    7625 4125
@@ -924,7 +924,7 @@ AR Path="/6203DFCF/62012707" Ref="H?"  Part="1"
 AR Path="/61C743E7/62012707" Ref="H36"  Part="1" 
 F 0 "H36" H 7725 4724 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7725 4633 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7625 4675 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7625 4675 50  0001 C CNN
 F 3 "~" H 7625 4675 50  0001 C CNN
 F 4 "DNP003" H 7625 4675 50  0001 C CNN "jlcpcb"
 	1    7625 4675
@@ -958,7 +958,7 @@ AR Path="/6203DFCF/6201271C" Ref="H?"  Part="1"
 AR Path="/61C743E7/6201271C" Ref="H37"  Part="1" 
 F 0 "H37" H 7725 5299 50  0000 L CNN
 F 1 "MountingHole_Pad" H 7725 5208 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7625 5250 50  0001 C CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3_Pad_Via" H 7625 5250 50  0001 C CNN
 F 3 "~" H 7625 5250 50  0001 C CNN
 F 4 "DNP003" H 7625 5250 50  0001 C CNN "jlcpcb"
 	1    7625 5250
@@ -979,40 +979,6 @@ F 1 "GND" H 7630 5177 50  0000 C CNN
 F 2 "" H 7625 5350 50  0001 C CNN
 F 3 "" H 7625 5350 50  0001 C CNN
 	1    7625 5350
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole_Pad H?
-U 1 1 62012731
-P 7675 5800
-AR Path="/61E601B6/62012731" Ref="H?"  Part="1" 
-AR Path="/6203D74D/62012731" Ref="H?"  Part="1" 
-AR Path="/6203DA5D/62012731" Ref="H?"  Part="1" 
-AR Path="/6203DFCF/62012731" Ref="H?"  Part="1" 
-AR Path="/61C743E7/62012731" Ref="H38"  Part="1" 
-F 0 "H38" H 7775 5849 50  0000 L CNN
-F 1 "MountingHole_Pad" H 7775 5758 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.2mm_M2_Pad_Via" H 7675 5800 50  0001 C CNN
-F 3 "~" H 7675 5800 50  0001 C CNN
-F 4 "DNP003" H 7675 5800 50  0001 C CNN "jlcpcb"
-	1    7675 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND-power #PWR?
-U 1 1 6201273B
-P 7675 5900
-AR Path="/61E601B6/6201273B" Ref="#PWR?"  Part="1" 
-AR Path="/6203D74D/6201273B" Ref="#PWR?"  Part="1" 
-AR Path="/6203DA5D/6201273B" Ref="#PWR?"  Part="1" 
-AR Path="/6203DFCF/6201273B" Ref="#PWR?"  Part="1" 
-AR Path="/61C743E7/6201273B" Ref="#PWR0207"  Part="1" 
-AR Path="/6201273B" Ref="#PWR0207"  Part="1" 
-F 0 "#PWR0207" H 7675 5650 50  0001 C CNN
-F 1 "GND" H 7680 5727 50  0000 C CNN
-F 2 "" H 7675 5900 50  0001 C CNN
-F 3 "" H 7675 5900 50  0001 C CNN
-	1    7675 5900
 	1    0    0    -1  
 $EndComp
 Text Notes 3725 6450 0    50   ~ 0

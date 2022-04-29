@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-02-12"
-Rev "1.0.1"
+Date "2022-04-29"
+Rev "1.1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -325,8 +325,6 @@ F 4 "DNP019" H 6025 2650 50  0001 C CNN "jlcpcb"
 	1    6025 2650
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4425 2550 5275 2550
 $Comp
 L power:GND-power #PWR034
 U 1 1 61E686BF
@@ -766,14 +764,8 @@ Wire Wire Line
 	4775 5600 4975 5600
 Text Label 5900 5350 0    50   ~ 0
 ~ENABLE
-Text Label 6125 3375 2    50   ~ 0
-~ENABLE
 Wire Wire Line
 	5775 3800 6950 3800
-Wire Wire Line
-	6225 3375 6225 3250
-Wire Wire Line
-	6125 3375 6225 3375
 $Comp
 L Device:R_Small R?
 U 1 1 61ECD852
@@ -883,6 +875,12 @@ Wire Wire Line
 	7475 2800 7325 2800
 Wire Wire Line
 	7475 2950 8075 2950
-Text Notes 5250 8775 0    50   ~ 0
-next time, place a second enable and do power sequencing
+Wire Wire Line
+	6225 3375 6225 3250
+Wire Wire Line
+	4425 2550 5275 2550
+Wire Wire Line
+	6125 3375 6225 3375
+Text Label 6125 3375 2    50   ~ 0
+~ENABLE
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 17
 Title "Trinamic FluidNC CNC Controller"
-Date "2022-02-12"
-Rev "1.0.2"
+Date "2022-04-29"
+Rev "1.1.0"
 Comp ""
 Comment1 "Corrections implemented in 1.0.1 prototypes."
 Comment2 ""
@@ -16,13 +16,13 @@ $EndDescr
 Text HLabel 3575 2575 0    50   Input ~ 0
 EN
 Text HLabel 2900 2475 0    50   Input ~ 0
-PWM_IN
+PWM_CW
 Text Label 6900 2675 2    50   ~ 0
 MOTOR_A
 Text Label 6975 5000 2    50   ~ 0
 MOTOR_B
 Text HLabel 3550 4800 0    50   Input ~ 0
-PWM_DIRECTION
+PWM_CCW
 $Comp
 L power:GND-power #PWR07
 U 1 1 61D29F5D
@@ -89,21 +89,8 @@ Wire Wire Line
 Wire Wire Line
 	3600 1600 3600 1700
 Connection ~ 3600 1600
-$Comp
-L power:GND-power #PWR09
-U 1 1 61D4BC61
-P 4525 1900
-AR Path="/61D4BC61" Ref="#PWR09"  Part="1" 
-AR Path="/61C80DCB/61D4BC61" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 4525 1650 50  0001 C CNN
-F 1 "GND" H 4530 1727 50  0000 C CNN
-F 2 "" H 4525 1900 50  0001 C CNN
-F 3 "" H 4525 1900 50  0001 C CNN
-	1    4525 1900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4525 1600 4300 1600
+	4425 1600 4300 1600
 Connection ~ 4300 1600
 Wire Wire Line
 	6025 2550 5925 2550
@@ -217,35 +204,11 @@ Wire Wire Line
 	4275 3925 4275 4500
 Wire Wire Line
 	4275 4500 4150 4500
-$Comp
-L industrial:+5V #PWR02
-U 1 1 61D7BA1A
-P 2550 3825
-F 0 "#PWR02" H 2550 3675 50  0001 C CNN
-F 1 "+5V" H 2565 3998 50  0000 C CNN
-F 2 "" H 2550 3825 50  0001 C CNN
-F 3 "" H 2550 3825 50  0001 C CNN
-	1    2550 3825
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3575 3925 3575 4025
 Connection ~ 3575 3925
-$Comp
-L power:GND-power #PWR08
-U 1 1 61D7BA31
-P 4500 4225
-AR Path="/61D7BA31" Ref="#PWR08"  Part="1" 
-AR Path="/61C80DCB/61D7BA31" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 4500 3975 50  0001 C CNN
-F 1 "GND" H 4505 4052 50  0000 C CNN
-F 2 "" H 4500 4225 50  0001 C CNN
-F 3 "" H 4500 4225 50  0001 C CNN
-	1    4500 4225
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4500 3925 4275 3925
+	4400 3925 4275 3925
 Connection ~ 4275 3925
 Wire Wire Line
 	6000 4875 5900 4875
@@ -272,14 +235,12 @@ Wire Wire Line
 Connection ~ 5900 4275
 Wire Wire Line
 	2550 3825 2550 3925
-Text Notes 1925 7225 0    50   ~ 0
+Text Notes 650  7000 0    50   ~ 0
 NOTES:\nAccording to datasheet, IN threshold is at 3V\nThe selected schottky diode tolerates 30A 60V
 Wire Wire Line
 	5275 2600 5275 2675
 Wire Wire Line
 	4975 2775 4975 2875
-Wire Wire Line
-	4175 2675 4375 2675
 Connection ~ 4975 2875
 Wire Wire Line
 	4975 2875 4975 3000
@@ -287,8 +248,6 @@ Connection ~ 5275 2675
 Wire Wire Line
 	5275 3075 5275 3450
 Connection ~ 5275 3450
-Wire Wire Line
-	4150 5000 4350 5000
 Connection ~ 4950 5225
 Wire Wire Line
 	4950 5100 4950 5225
@@ -427,13 +386,13 @@ $EndComp
 $Comp
 L Device:CP C4
 U 1 1 61D4801E
-P 4525 1750
-F 0 "C4" H 4643 1796 50  0000 L CNN
-F 1 "1uF @60V" H 4643 1705 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 4563 1600 50  0001 C CNN
-F 3 "~" H 4525 1750 50  0001 C CNN
-F 4 "C487554" H 4525 1750 50  0001 C CNN "jlcpcb"
-	1    4525 1750
+P 4425 1750
+F 0 "C4" H 4543 1796 50  0000 L CNN
+F 1 "1uF @60V" H 4543 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 4463 1600 50  0001 C CNN
+F 3 "~" H 4425 1750 50  0001 C CNN
+F 4 "C487554" H 4425 1750 50  0001 C CNN "jlcpcb"
+	1    4425 1750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -571,13 +530,13 @@ $EndComp
 $Comp
 L Device:CP C3
 U 1 1 61D7BA27
-P 4500 4075
-F 0 "C3" H 4618 4121 50  0000 L CNN
-F 1 "1uF @60V" H 4618 4030 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 4538 3925 50  0001 C CNN
-F 3 "~" H 4500 4075 50  0001 C CNN
-F 4 "C487554" H 4500 4075 50  0001 C CNN "jlcpcb"
-	1    4500 4075
+P 4400 4075
+F 0 "C3" H 4518 4121 50  0000 L CNN
+F 1 "1uF @60V" H 4518 4030 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_5x5.7" H 4438 3925 50  0001 C CNN
+F 3 "~" H 4400 4075 50  0001 C CNN
+F 4 "C487554" H 4400 4075 50  0001 C CNN "jlcpcb"
+	1    4400 4075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -628,8 +587,8 @@ F 4 "C17594" H 3100 1600 50  0001 C CNN "jlcpcb"
 	1    3100 1600
 	0    -1   -1   0   
 $EndComp
-Text Notes 3100 9225 0    50   ~ 0
-We could consider a half bridge to save cost. And consider no inversion
+Text Notes 2800 7625 0    50   ~ 0
+We could consider a half bridge to save cost. And consider no inversion.\nThe cheapest would be to control a single low side mosfet with an inverted PWM signal
 $Comp
 L Device:R R150
 U 1 1 61FC0102
@@ -644,8 +603,6 @@ F 4 "C17594" H 3075 3925 50  0001 C CNN "jlcpcb"
 $EndComp
 Wire Wire Line
 	2550 3925 2925 3925
-Text Notes 4125 8900 0    50   ~ 0
-Note: when changing direction, the PWM signal should be inverted (SW or HW)
 $Comp
 L Connector:Conn_01x04_Female J?
 U 1 1 62005119
@@ -729,90 +686,35 @@ $EndComp
 $Comp
 L power:GND-power #PWR0157
 U 1 1 61FA28C7
-P 2575 4875
+P 1450 4850
 AR Path="/61FA28C7" Ref="#PWR0157"  Part="1" 
 AR Path="/61C80DCB/61FA28C7" Ref="#PWR0157"  Part="1" 
-F 0 "#PWR0157" H 2575 4625 50  0001 C CNN
-F 1 "GND" H 2580 4702 50  0000 C CNN
-F 2 "" H 2575 4875 50  0001 C CNN
-F 3 "" H 2575 4875 50  0001 C CNN
-	1    2575 4875
+F 0 "#PWR0157" H 1450 4600 50  0001 C CNN
+F 1 "GND" H 1455 4677 50  0000 C CNN
+F 2 "" H 1450 4850 50  0001 C CNN
+F 3 "" H 1450 4850 50  0001 C CNN
+	1    1450 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 61FA28D2
-P 2575 4775
+P 1450 4750
 AR Path="/61E601B6/61FA28D2" Ref="C?"  Part="1" 
 AR Path="/6203D74D/61FA28D2" Ref="C?"  Part="1" 
 AR Path="/6203DA5D/61FA28D2" Ref="C?"  Part="1" 
 AR Path="/6203DFCF/61FA28D2" Ref="C?"  Part="1" 
 AR Path="/61C80DCB/61FA28D2" Ref="C83"  Part="1" 
-F 0 "C83" V 2346 4775 50  0000 C CNN
-F 1 "100nF" V 2437 4775 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2575 4775 50  0001 C CNN
-F 3 "~" H 2575 4775 50  0001 C CNN
-F 4 "C14663" H 2575 4775 50  0001 C CNN "jlcpcb"
-	1    2575 4775
+F 0 "C83" V 1221 4750 50  0000 C CNN
+F 1 "100nF" V 1312 4750 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1450 4750 50  0001 C CNN
+F 3 "~" H 1450 4750 50  0001 C CNN
+F 4 "C14663" H 1450 4750 50  0001 C CNN "jlcpcb"
+	1    1450 4750
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	3225 3925 3575 3925
-$Comp
-L industrial:+5V #PWR0140
-U 1 1 61FB4DAA
-P 3850 4300
-F 0 "#PWR0140" H 3850 4150 50  0001 C CNN
-F 1 "+5V" H 3865 4473 50  0000 C CNN
-F 2 "" H 3850 4300 50  0001 C CNN
-F 3 "" H 3850 4300 50  0001 C CNN
-	1    3850 4300
-	1    0    0    -1  
-$EndComp
-$Comp
-L industrial:+5V #PWR0156
-U 1 1 61FB5746
-P 2575 4675
-F 0 "#PWR0156" H 2575 4525 50  0001 C CNN
-F 1 "+5V" H 2590 4848 50  0000 C CNN
-F 2 "" H 2575 4675 50  0001 C CNN
-F 3 "" H 2575 4675 50  0001 C CNN
-	1    2575 4675
-	1    0    0    -1  
-$EndComp
-$Comp
-L industrial:+5V #PWR0158
-U 1 1 61FB5CC3
-P 3875 1975
-F 0 "#PWR0158" H 3875 1825 50  0001 C CNN
-F 1 "+5V" H 3890 2148 50  0000 C CNN
-F 2 "" H 3875 1975 50  0001 C CNN
-F 3 "" H 3875 1975 50  0001 C CNN
-	1    3875 1975
-	1    0    0    -1  
-$EndComp
-$Comp
-L industrial:+5V #PWR0159
-U 1 1 61FB8C06
-P 1300 2375
-F 0 "#PWR0159" H 1300 2225 50  0001 C CNN
-F 1 "+5V" H 1315 2548 50  0000 C CNN
-F 2 "" H 1300 2375 50  0001 C CNN
-F 3 "" H 1300 2375 50  0001 C CNN
-	1    1300 2375
-	1    0    0    -1  
-$EndComp
-$Comp
-L industrial:+5V #PWR0160
-U 1 1 61FB8FDB
-P 2725 1575
-F 0 "#PWR0160" H 2725 1425 50  0001 C CNN
-F 1 "+5V" H 2740 1748 50  0000 C CNN
-F 2 "" H 2725 1575 50  0001 C CNN
-F 3 "" H 2725 1575 50  0001 C CNN
-	1    2725 1575
-	1    0    0    -1  
-$EndComp
 $Comp
 L Device:D_Schottky D?
 U 1 1 6206B5DF
@@ -902,88 +804,108 @@ Wire Wire Line
 	2975 2475 2900 2475
 Wire Wire Line
 	3175 2475 3575 2475
-Text Notes 8825 8600 0    50   ~ 0
-TODO: Cap shall tap to mid point and not GND!!!
-Text Notes 2675 8625 0    79   ~ 16
-Defect: Vcc needs to be above 10V\nDefect: C4 and Cx need its negative pin connected to MOTOR_A and MOTOR_B
-Text Notes 8875 9000 0    50   ~ 0
-PWM injected over EN\nPWM_DIR as is\nPWM_IN could be DIR negated\nPWM needs to always toggle off for 50 time units at least\n
+Text Notes 7725 5425 0    50   ~ 0
+PWM cannot be driven above 99.9%.\nOtherwise C3 and C4 pump will discharge.\n\n
 Text Notes 2150 3525 0    50   ~ 0
 These drivers need to be supplied with +12V
-NoConn ~ 4525 1925
-NoConn ~ 4500 4225
-Wire Wire Line
-	4450 1925 4375 1925
-Wire Wire Line
-	4375 1925 4375 2675
-Connection ~ 4375 2675
-Wire Wire Line
-	4375 2675 5275 2675
-Wire Wire Line
-	4450 4225 4350 4225
-Wire Wire Line
-	4350 4225 4350 5000
-Connection ~ 4350 5000
-Wire Wire Line
-	4350 5000 5250 5000
-NoConn ~ 2725 1600
-NoConn ~ 2550 3925
 $Comp
 L power:+12V-power #PWR?
 U 1 1 624E1A1A
-P 2500 1575
+P 2725 1575
 AR Path="/624E1A1A" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61A08BFB/624E1A1A" Ref="#PWR?"  Part="1" 
-AR Path="/61C80DCB/624E1A1A" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2500 1425 50  0001 C CNN
-F 1 "+12V" H 2515 1748 50  0000 C CNN
-F 2 "" H 2500 1575 50  0001 C CNN
-F 3 "" H 2500 1575 50  0001 C CNN
-	1    2500 1575
+AR Path="/61C80DCB/624E1A1A" Ref="#PWR0140"  Part="1" 
+F 0 "#PWR0140" H 2725 1425 50  0001 C CNN
+F 1 "+12V" H 2740 1748 50  0000 C CNN
+F 2 "" H 2725 1575 50  0001 C CNN
+F 3 "" H 2725 1575 50  0001 C CNN
+	1    2725 1575
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V-power #PWR?
 U 1 1 624E5514
-P 2300 3825
+P 2550 3825
 AR Path="/624E5514" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61A08BFB/624E5514" Ref="#PWR?"  Part="1" 
-AR Path="/61C80DCB/624E5514" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2300 3675 50  0001 C CNN
-F 1 "+12V" H 2315 3998 50  0000 C CNN
-F 2 "" H 2300 3825 50  0001 C CNN
-F 3 "" H 2300 3825 50  0001 C CNN
-	1    2300 3825
+AR Path="/61C80DCB/624E5514" Ref="#PWR0156"  Part="1" 
+F 0 "#PWR0156" H 2550 3675 50  0001 C CNN
+F 1 "+12V" H 2565 3998 50  0000 C CNN
+F 2 "" H 2550 3825 50  0001 C CNN
+F 3 "" H 2550 3825 50  0001 C CNN
+	1    2550 3825
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V-power #PWR?
 U 1 1 624E5D0C
-P 1525 2350
+P 1300 2375
 AR Path="/624E5D0C" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61A08BFB/624E5D0C" Ref="#PWR?"  Part="1" 
-AR Path="/61C80DCB/624E5D0C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 1525 2200 50  0001 C CNN
-F 1 "+12V" H 1540 2523 50  0000 C CNN
-F 2 "" H 1525 2350 50  0001 C CNN
-F 3 "" H 1525 2350 50  0001 C CNN
-	1    1525 2350
+AR Path="/61C80DCB/624E5D0C" Ref="#PWR0158"  Part="1" 
+F 0 "#PWR0158" H 1300 2225 50  0001 C CNN
+F 1 "+12V" H 1315 2548 50  0000 C CNN
+F 2 "" H 1300 2375 50  0001 C CNN
+F 3 "" H 1300 2375 50  0001 C CNN
+	1    1300 2375
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V-power #PWR?
 U 1 1 624E6475
-P 2075 4625
+P 3850 4300
 AR Path="/624E6475" Ref="#PWR?"  Part="1" 
 AR Path="/61C743E7/61A08BFB/624E6475" Ref="#PWR?"  Part="1" 
-AR Path="/61C80DCB/624E6475" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2075 4475 50  0001 C CNN
-F 1 "+12V" H 2090 4798 50  0000 C CNN
-F 2 "" H 2075 4625 50  0001 C CNN
-F 3 "" H 2075 4625 50  0001 C CNN
-	1    2075 4625
+AR Path="/61C80DCB/624E6475" Ref="#PWR0159"  Part="1" 
+F 0 "#PWR0159" H 3850 4150 50  0001 C CNN
+F 1 "+12V" H 3865 4473 50  0000 C CNN
+F 2 "" H 3850 4300 50  0001 C CNN
+F 3 "" H 3850 4300 50  0001 C CNN
+	1    3850 4300
 	1    0    0    -1  
 $EndComp
-Text Notes 7025 6125 0    50   ~ 0
-PWM_IN_B cannot be allocated to i2s\nSN1 (modified to swap pin allocation.\nSN2 (unidirectional)
+Text Notes 7725 5050 0    50   ~ 0
+HW 1.0.2 could not do bidirectional.\nHW 1.0.1 and HW 1.1.0 have the same pin allocation\nI2S PINS CANNOT BE USED FOR PWM SIGNALS\n
+Wire Wire Line
+	4175 2675 4425 2675
+Wire Wire Line
+	4425 1900 4425 2675
+Connection ~ 4425 2675
+Wire Wire Line
+	4425 2675 5275 2675
+Wire Wire Line
+	4150 5000 4400 5000
+Wire Wire Line
+	4400 4225 4400 5000
+Connection ~ 4400 5000
+Wire Wire Line
+	4400 5000 5250 5000
+$Comp
+L power:+12V-power #PWR?
+U 1 1 626E4D40
+P 1450 4650
+AR Path="/626E4D40" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61A08BFB/626E4D40" Ref="#PWR?"  Part="1" 
+AR Path="/61C80DCB/626E4D40" Ref="#PWR0160"  Part="1" 
+F 0 "#PWR0160" H 1450 4500 50  0001 C CNN
+F 1 "+12V" H 1465 4823 50  0000 C CNN
+F 2 "" H 1450 4650 50  0001 C CNN
+F 3 "" H 1450 4650 50  0001 C CNN
+	1    1450 4650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V-power #PWR?
+U 1 1 626E62ED
+P 3875 1975
+AR Path="/626E62ED" Ref="#PWR?"  Part="1" 
+AR Path="/61C743E7/61A08BFB/626E62ED" Ref="#PWR?"  Part="1" 
+AR Path="/61C80DCB/626E62ED" Ref="#PWR0173"  Part="1" 
+F 0 "#PWR0173" H 3875 1825 50  0001 C CNN
+F 1 "+12V" H 3890 2148 50  0000 C CNN
+F 2 "" H 3875 1975 50  0001 C CNN
+F 3 "" H 3875 1975 50  0001 C CNN
+	1    3875 1975
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
